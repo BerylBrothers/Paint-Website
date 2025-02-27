@@ -32,16 +32,16 @@ const links = [
 const info = [
     {icon: <FaPhoneAlt />,
       title:"Phone",
-      description:"555-555-5555"
+      description:"904-477-8782"
     },
     {icon: <FaEnvelope />,
       title:"Envelope",
       description:"Daniel@BerylBrothers.com"
     },
-    {icon: <FaMapMarkerAlt />,
-      title:"Address",
-      description:"1547 database dr, Boston, MA"
-    },
+    // {icon: <FaMapMarkerAlt />,
+    //   title:"Address",
+    //   description:"1547 database dr, Boston, MA"
+    // },
    ]
 
 

@@ -18,17 +18,15 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const info = [
   { icon: <FaPhoneAlt />,
-    title: "Phone",
     description: "904-477-8782"
   },
   { icon: <FaEnvelope />,
-    title: "Envelope",
     description: "Daniel@BerylBrothers.com"
   },
-  { icon: <FaMapMarkerAlt />,
-    title: "Address",
-    description: "154e7 database dr, Boston, MA"
-  },
+  // { icon: <FaMapMarkerAlt />,
+  //   title: "Address",
+  //   description: "154e7 database dr, Boston, MA"
+  // },
 ]
 
 const Contact = () => {
@@ -324,7 +322,7 @@ return (
               <Input name="phone" type="phone" placeholder="Phone Number" value={formData.phone} onChange={handleInputChange} />
             </div>
 
-            {/* Select dropdown */}
+            {/* Select dropdown
             <Select value={formData.service} onValueChange={handleServiceChange}>
               <SelectTrigger className="w-full rounded-xl">
                 <SelectValue placeholder="Select a service" />
@@ -337,7 +335,7 @@ return (
                   <SelectItem value="Logo-Design">Logo Design</SelectItem>
                 </SelectGroup>
               </SelectContent>
-            </Select>
+            </Select> */}
 
             {/* Text Area */}
             <Textarea name="message" className="h-[200px]" placeholder="Type your message here." value={formData.message} onChange={handleInputChange} />

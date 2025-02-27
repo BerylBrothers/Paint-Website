@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
-import {FaGithub, FaLinkedin, FaYoutube} from 'react-icons/fa'
+import {FaGithub, FaLinkedin, FaYoutube, FaFacebook} from 'react-icons/fa'
 
 const icons = [
-    {icon:<FaGithub />, path: ''},
-    {icon:<FaLinkedin />, path: ''},
-    {icon:<FaYoutube />, path: ''},
+    {icon:<FaGithub />, path: 'https://github.com/BerylBrothers'},
+    {icon:<FaLinkedin />, path: 'https://www.linkedin.com/in/daniel-collins-web-design/'},
+    {icon:<FaFacebook />, path: 'https://www.facebook.com/profile.php?id=61558742784719'},
 ]
 
 const Socials = ({containerStyles, IconStyles}) => {

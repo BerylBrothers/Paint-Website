@@ -61,12 +61,12 @@ const about = {
         },
         {
           company:"ElderSource",
-          position:"Fullstack Developer",
+          position:"Software Engineer",
           duration:"2020-2021"
         },
         {
           company:"Spinspire",
-          position:"Fullstack Developer",
+          position:"Web Designer",
           duration:"2018-2019"
         },
       ]

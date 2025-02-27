@@ -6,6 +6,15 @@ import {useState} from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import WorkSliderBtns from '../../components/WorkSliderBtns';
 import "swiper/css";
+import {
+  FaHtml5,
+  FaCss3, FaJs, FaReact, FaFigma, FaNodeJs
+} from "react-icons/fa";
+
+import {
+  SiTailwindcss, SiNextdotjs
+  } from "react-icons/si";
+  
 
 import {BsArrowUpRight, BsGithub} from 'react-icons/bs';
 
@@ -22,13 +31,13 @@ const projects = [
     description: "The Aqua Solutions website is designed with a clean, modern, and user-friendly interface that reflects the professionalism and reliability of the plumbing company. The website offers a seamless experience for users who are looking for high-quality plumbing services, whether for residential or commercial needs",
     stack:[
       {
-        name:'Figma'
+        name:< FaFigma />
       },
       {
-        name:'Next.JS'
+        name:< SiNextdotjs />
       },
       {
-        name:'Tailwind CSS'
+        name:<  SiTailwindcss />
       },
     ],
       image: '/assets/work/Web-Screen-1.png',
@@ -42,13 +51,13 @@ const projects = [
     description: "The Lotus Garden website features a clean, elegant design that reflects the restaurant's authentic Asian flavors and inviting atmosphere. The interactive menu showcases a variety of dishes with high-quality images and detailed descriptions, while the About Us section shares the restaurant's story and dedication to quality.",
     stack:[
       {
-        name:'Figma'
+        name:< FaFigma />
       },
       {
-        name:'Next.JS'
+        name:< SiNextdotjs />
       },
       {
-        name:'Javascript'
+        name:< FaJs />
       },
     ],
       image: '/assets/work/Web-Screen-2.png',
@@ -62,13 +71,13 @@ const projects = [
     description: "I created a sleek and user-friendly website for Pulse Fitness that showcases the gym's offerings in a modern and engaging way. The design emphasizes simplicity and ease of navigation, highlighting key features like membership options, class schedules, and contact information. With a focus on clean visuals and clear calls to action, the website provides an inviting experience for potential members.",
     stack:[
       {
-        name:'Next.JS'
+        name:< SiNextdotjs />
       },
       {
-        name:'Tailwind CSS'
+        name:<  SiTailwindcss />
       },
       {
-        name:'HTML 5'
+        name:< FaHtml5 />
       },
     ],
       image: '/assets/work/Web-Screen-3.png',
@@ -111,7 +120,7 @@ const work = () => {
                   {project.stack.map((item, index) =>{
                     return <li  key={index} className='bg-blue-600 text-xl text-white p-2 rounded-xl'>
                       {item.name}
-                      {index !== project.stack.length - 1 && ","}
+                      {/* {index !== project.stack.length - 1 && ","} */}
                       </li>
                   })}
                 </ul>
