@@ -5,6 +5,12 @@ import Image from "next/image";
 import React from 'react'
 
 const Photo = () => {
+
+    const handleVideoEnd = (e) => {
+        e.target.currentTime = 0;
+        e.target.play(); // Ensure video loops immediately without delay
+      };
+
   return (
     <div className="w-full h-full relative">
        
@@ -20,16 +26,29 @@ const Photo = () => {
         {{opacity: 1, 
            transition: {delay:2.4, duration: 0.4, ease:"easeInOut"},}}
         
-        className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute">
+        className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute rounded-full overflow-hidden">
             {/* <Image 
             src="/assets/photo.png"
             priority quality={100}
             fill 
             alt="" 
             className="object-contain"/> */}
+             <video
+            className="object-cover w-full h-full" // Ensures the video covers the frame without distortion
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto" // Preloads the video
+            onEnded={handleVideoEnd} // Ensures smooth looping without black screen
+            // Replace '/assets/video.mp4' with your video source path
+          >
+            <source src="/assets/Waves.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </motion.div>
         {/* circle */}
-        <motion.svg className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]" 
+        <motion.svg className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px] z-10" 
         fill="transparent"
          viewBox="0 0 506 506"
          xmlns="http://www.w3.org/2000/svg"

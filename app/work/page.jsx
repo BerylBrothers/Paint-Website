@@ -68,7 +68,7 @@ const projects = [
     num: '03',
     category: 'frontend',
     title: 'Pulse Fitness',
-    description: "I created a sleek and user-friendly website for Pulse Fitness that showcases the gym's offerings in a modern and engaging way. The design emphasizes simplicity and ease of navigation, highlighting key features like membership options, class schedules, and contact information. With a focus on clean visuals and clear calls to action, the website provides an inviting experience for potential members.",
+    description: "I created a sleek and user-friendly website for Pulse Fitness that showcases the gym's offerings in a modern and engaging way. The design emphasizes simplicity and ease of navigation, highlighting key features like membership options, class schedules, and contact information. With a focus on clean visuals and clear calls to action, the website provides an inviting experience.",
     stack:[
       {
         name:< SiNextdotjs />

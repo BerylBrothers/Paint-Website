@@ -5,6 +5,7 @@ import {FiDownload} from "react-icons/fi";
 import Socials from "../components/Socials";
 import Photo from "../components/Photo"
 import Stats from "../components/Stats"
+import Link from 'next/link';
 
 const Hero = () => {
     return (
@@ -21,10 +22,11 @@ const Hero = () => {
                   languages and libriaries.</p>
                   {/* button and socials */}
                   <div className="flex flex-col xl:flex-row items-center gap-8">
-                    {/* <Button variant="outline" size="lg" className="uppercase flex items-center gap-2 border-white text-white">
-                      <span>Download CV</span>
-                      <FiDownload />
-                    </Button> */}
+                    <Link href={"/contact"}>
+                    <Button variant="outline" size="lg" className="uppercase flex items-center gap-2 border-white text-white">
+                      <span>Get In Touch</span>
+                    </Button>
+                    </Link>
                     <div className="mb-8 xl:mb-0">
                       <Socials containerStyles="flex gap-6" IconStyles="w-9 h-9 border border-white rounded-full 
                       flex justify-center items-center  
