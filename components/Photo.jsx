@@ -33,7 +33,7 @@ const Photo = () => {
             fill 
             alt="" 
             className="object-contain"/> */}
-             <video
+             {/* <video
             className="object-cover w-full h-full" // Ensures the video covers the frame without distortion
             autoPlay
             loop
@@ -45,7 +45,7 @@ const Photo = () => {
           >
             <source src="/assets/Waves.mp4" type="video/mp4" />
             Your browser does not support the video tag.
-          </video>
+          </video> */}
         </motion.div>
         {/* circle */}
         <motion.svg className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px] z-10" 
