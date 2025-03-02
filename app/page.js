@@ -12,7 +12,7 @@ export default function Home() {
     <Work />
     <About />
     <Services />
-    {/* <CallToAction /> */}
+    <CallToAction />
     </>
   );
   
