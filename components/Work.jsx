@@ -74,12 +74,13 @@ const Work = () => {
               <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
                 {projects.map((project, index) => {
                   return (
-                    <div className='border border-black flex flex-col' key={index}>
+                    <div className='border border-black flex flex-col rounded-xl' key={index}>
                       <Link href={project.href}>
-                          <div className='relative h-80'>
+                          <div className='relative h-80 opacity-100 transition-opacity rounded-xl duration-300 ease-in-out hover:opacity-70 '>
                             <Image
                               src={project.image}
                               alt={project.title}
+                              className='rounded-t-xl'
                               layout="fill"  // This makes the image take up the full container
                               objectFit="cover" // Ensures the image covers the div without distortion
                             />
