@@ -34,7 +34,10 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		  boxShadow: {
+			'blue-glow': '0 4px 15px rgba(0, 0, 255, 0.3)', // Custom blue shadow
+		  },
   	}
   },
   plugins: [require("tailwindcss-animate")],

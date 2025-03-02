@@ -1,6 +1,7 @@
 import React from 'react'
 import {FaCode, FaPencilAlt, FaPencilRuler, FaSearch, FaMobileAlt, FaCogs } from 'react-icons/fa'
 
+
 const services = [
     {
       icons: <FaCode />,
@@ -43,7 +44,7 @@ const Services = () => {
     <section className="h-full text-black bg-white">
       <div className="container mx-auto h-full">
         <div className="py-12">
-          <h3 className="py-12">Services</h3>
+          <h3 className="py-12 ">Services</h3>
           <div className="flex pt-12 justify-center items-center">
             <div className="grid md:grid-cols-3 grid-rows-2 grid-cols-1 gap-20"> {/* Increased gap */}
               {services.map((service, index) => (
@@ -54,7 +55,7 @@ const Services = () => {
                   </div>
   
                   {/* Description div */}
-                  <div className="flex justify-center items-center border text-[14px] h-[350px] w-[350px] bg-gray-600/10  text-black p-12 rounded-xl">
+                  <div className="flex justify-center items-center border text-[14px] h-[350px] w-[350px] bg-gray-600/10 text-black p-12 rounded-xl transition-shadow duration-300 hover:shadow-lg">
                     <div className="flex flex-col justify-center items-center">
                       <h3 className="m-4 pt-2 text-center">{service.title}</h3>
                       <div>{service.description}</div>

@@ -1,9 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
+import {Button} from "../components/ui/button";
 
 const About = () => {
   return (
-    <div className='bg-blue-600'>
+    <div className='bg-gray-200 py-6'>
         <div className='container mx-auto'>
           <div className='flex flex-col xl:flex-row items-center justify-between py-6'>
             <div className='text-center xl:text-left bg-primary rounded-xl p-4'>
@@ -26,7 +27,13 @@ const About = () => {
               </div>
              
               </div>
+       
           </div>
+          <div className=" flex justify-center">
+          <Button variant="outline" size="lg" className="uppercase flex justify-center items-center border-black text-black">
+            <span>Get In Touch</span>
+          </Button>
+        </div>
           </div>
         </div>
   )

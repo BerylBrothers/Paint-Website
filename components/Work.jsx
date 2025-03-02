@@ -81,7 +81,7 @@ const Work = () => {
                               src={project.image}
                               alt={project.title}
                               className='rounded-t-xl'
-                              layout="fill"  // This makes the image take up the full container
+                              fill  // This makes the image take up the full container
                               objectFit="cover" // Ensures the image covers the div without distortion
                             />
                           </div>
