@@ -33,6 +33,20 @@ const services = [
     "I offer comprehensive SEO services designed to help your website rank higher on search engines and attract more organic traffic. From on-page optimization, such as keyword research, meta tags, and content strategy, to technical SEO like site speed improvements, I ensure that every aspect of your site is optimized for better visibility and performance.",
     href:""
   },
+  {
+    num:'05',
+    title:'SEO',
+    description:
+    "I offer comprehensive SEO services designed to help your website rank higher on search engines and attract more organic traffic. From on-page optimization, such as keyword research, meta tags, and content strategy, to technical SEO like site speed improvements, I ensure that every aspect of your site is optimized for better visibility and performance.",
+    href:""
+  },
+  {
+    num:'06',
+    title:'SEO',
+    description:
+    "I offer comprehensive SEO services designed to help your website rank higher on search engines and attract more organic traffic. From on-page optimization, such as keyword research, meta tags, and content strategy, to technical SEO like site speed improvements, I ensure that every aspect of your site is optimized for better visibility and performance.",
+    href:""
+  },
 ]
 
 
