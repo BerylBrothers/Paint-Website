@@ -70,7 +70,7 @@ const Work = () => {
         <section className='h-full bg-white text-black'>
           <div className="container mx-auto h-full">
             <div className='py-12'>
-              <h3 className='py-12'>My Work</h3>
+              <h2 className='pt-6 pb-20 text-center'>Recent Projects</h2>
               <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
                 {projects.map((project, index) => {
                   return (

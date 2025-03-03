@@ -43,8 +43,8 @@ const Services = () => {
   return (
     <section className="h-full text-black bg-white">
       <div className="container mx-auto h-full">
-        <div className="py-12">
-          <h3 className="py-12 ">Services</h3>
+        <div className="py-10">
+          <h2 className="text-center pt-6 pb-20">Crafting Beautiful, Functional Websites</h2>
           <div className="flex pt-12 justify-center items-center">
             <div className="grid md:grid-cols-3 grid-rows-2 grid-cols-1 gap-20"> {/* Increased gap */}
               {services.map((service, index) => (
