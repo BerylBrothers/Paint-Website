@@ -9,6 +9,8 @@ import {
 SiTailwindcss, SiNextdotjs
 } from "react-icons/si";
 
+import PageTitle from "@/components/PageTitle";
+
 //about data
 const about = {
   title:"About Me",
@@ -147,9 +149,10 @@ import React from 'react'
 const resume = () => {
   return (
     <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition:{delay: 2.4, duration:0.4, ease:"easeIn"},}}
-    className="min-h-[80vh] flex flex-col justify-center py-6 xl:py-0"
+    className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0"
     >
       <div className="container mx-auto xl:py-6">
+      <PageTitle title="Resume" />
         <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-[60px]">
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
             <TabsTrigger value="experience">Experience</TabsTrigger>

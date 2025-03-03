@@ -15,7 +15,7 @@ import {
   SiTailwindcss, SiNextdotjs
   } from "react-icons/si";
   
-
+import PageTitle from '@/components/PageTitle';
 import {BsArrowUpRight, BsGithub} from 'react-icons/bs';
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../../components/ui/tooltip';
@@ -101,6 +101,8 @@ const work = () => {
   return (
     <motion.section initial={{opacity: 0}} animate={{opacity: 1, transition:{delay: 2.4, duration:0.4, ease:"easeIn"},}} className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0">
       <div className="container mx-auto">
+      <PageTitle title="Work" />
+   
         <div className='flex flex-col xl:flex-row xl:gap-[30px]'>
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className='flex flex-col gap-[30px] h-[50%]'>

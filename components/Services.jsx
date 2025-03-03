@@ -1,5 +1,6 @@
 import React from 'react'
 import {FaCode, FaPencilAlt, FaPencilRuler, FaSearch, FaMobileAlt, FaCogs } from 'react-icons/fa'
+import PageTitle from './PageTitle'
 
 
 const services = [

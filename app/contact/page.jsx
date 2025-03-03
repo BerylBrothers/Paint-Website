@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 
+import PageTitle from '@/components/PageTitle';
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
 import { Textarea } from "../../components/ui/textarea";
@@ -305,9 +306,12 @@ console.log('Form data:', Object.fromEntries(formData));
 };
 
 return (
-  <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }} className='py-6'>
+  <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }} className='py-12'>
     <div className="container mx-auto">
+    <PageTitle title="Contact" />
+   
       <div className='flex flex-col xl:flex-row gap-[30px]'>
+  
         {/* form */}
         <div className='xl:-[54%] order-2 xl:order-none'>
           <form className="flex flex-col gap-6 p-10 bg-blue-600 rounded-xl" onSubmit={handleSubmit}>
