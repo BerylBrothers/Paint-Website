@@ -13,6 +13,7 @@ const Header = () => {
       <div className='container mx-auto flex justify-between items-center'>
       {/* logo */}
      <Link href={"/"}>
+     <a title="Go to homepage">
      {/* {<h1 className='text-4xl'>
       Daniel <span className='text-accent'>.</span>
      </h1> */}
@@ -23,6 +24,7 @@ const Header = () => {
        alt=""
        className='bg-white object-contain rounded-xl'
        />
+       </a>
      </Link>
 
     
