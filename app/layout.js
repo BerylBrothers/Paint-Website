@@ -28,10 +28,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${outfit.variable}`}>
          <Header />
-         <StairTransition />
-         <PageTransition>
+         {/* <StairTransition /> */}
          {children}
-         </PageTransition>
+         {/* <PageTransition>
+         
+         </PageTransition> */}
         <Footer />
       </body>
     </html>
