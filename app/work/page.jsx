@@ -23,9 +23,6 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../../
 import Link from "next/link";
 import Image from "next/image";
 
-export const metadata = {
-  title: 'Projects',
-};
 
 const projects = [
   {

@@ -7,9 +7,6 @@ import PageTitle from '@/components/PageTitle';
 
 import React from 'react'
 
-export const metadata = {
-  title: 'Services',
-};
 
 const services = [
   {

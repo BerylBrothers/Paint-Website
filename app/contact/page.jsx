@@ -17,9 +17,7 @@ import { motion } from 'framer-motion';
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
-export const metadata = {
-  title: 'Contact',
-};
+
 
 const info = [
   { icon: <FaPhoneAlt />,

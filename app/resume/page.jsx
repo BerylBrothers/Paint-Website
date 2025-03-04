@@ -142,9 +142,7 @@ const about = {
 
     import { motion } from "framer-motion";
 
-    export const metadata = {
-      title: 'Resume',
-    };
+ 
 
 import React from 'react'
 
