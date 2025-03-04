@@ -6,6 +6,11 @@ import PageTransition from "../components/PageTransition";
 import StairTransition from "../components/StairTransition";
 import Footer from "../components/Footer"
 
+export const metadata = {
+  title: 'Your Site Title',
+  description: 'A brief description of your site for SEO.',
+};
+
 const jetbrains_Mono = JetBrains_Mono({
   subsets: ["latin"], weight: ["100", "200", "300", "400",
     "500", "600", "700", "800",],
@@ -28,11 +33,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${outfit.variable}`}>
          <Header />
-         {/* <StairTransition /> */}
+         <StairTransition />
+         <PageTransition>
          {children}
-         {/* <PageTransition>
-         
-         </PageTransition> */}
+         </PageTransition>
         <Footer />
       </body>
     </html>
