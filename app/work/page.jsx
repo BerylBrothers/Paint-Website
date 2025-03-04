@@ -40,7 +40,7 @@ const projects = [
         name:<  SiTailwindcss />
       },
     ],
-      image: '/assets/work/Web-Screen-1.png',
+      image: '/assets/work/Thumbnail2.png',
       live:'',
       github:"",
   },
@@ -60,7 +60,7 @@ const projects = [
         name:< FaJs />
       },
     ],
-      image: '/assets/work/Web-Screen-2.png',
+      image: '/assets/work/Thumbnail1.png',
       live:'',
       github:"",
   },
@@ -80,7 +80,7 @@ const projects = [
         name:< FaHtml5 />
       },
     ],
-      image: '/assets/work/Web-Screen-3.png',
+      image: '/assets/work/Thumbnail3.png',
       live:'',
       github:"",
   }
@@ -159,22 +159,22 @@ const work = () => {
                 </div>
                 </div>
           </div>
-          <div className="w-full xl:w-[50%]">
+          <div className="w-full xl:w-[50%] rounded-xl">
             <Swiper spaceBetween={30}
              slidesPerView={1}
              className='xl:h-[520px] mb-12'
              onSlideChange={handleSlideChange}>
               {projects.map((project, index) => {
                 return (<SwiperSlide key={index} className='w-full'>
-                  <div className='h-[460px] flex group relative 
+                  <div className='h-[460px] rounded-xl flex group relative 
                   justify-center items-center bg-pink-50/20'>
                     {/* overlay */}
-                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10">
+                    <div className="absolute rounded-xl top-0 bottom-0 w-full h-full bg-black/10 z-10">
 
                     </div>
                   {/* image */}
-                  <div className='relative w-full h-full'>
-                    <Image src={project.image} fill className='object-cover' alt=""/>
+                  <div className='relative w-full h-full rounded-xl'>
+                    <Image src={project.image} fill alt=""/>
                   </div>
                   </div>
                   

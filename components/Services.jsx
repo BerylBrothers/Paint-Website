@@ -1,6 +1,7 @@
 import React from 'react'
 import {FaCode, FaPencilAlt, FaPencilRuler, FaSearch, FaMobileAlt, FaCogs } from 'react-icons/fa'
 import PageTitle from './PageTitle'
+import Link from 'next/link'
 
 
 const services = [
@@ -49,7 +50,7 @@ const Services = () => {
           <div className="flex pt-12 justify-center items-center">
             <div className="grid md:grid-cols-3 grid-rows-2 grid-cols-1 gap-20"> {/* Increased gap */}
               {services.map((service, index) => (
-                <div key={index} className="relative">
+                <Link href={"/services"} key={index} className="relative">
                   {/* Icon Container */}
                   <div className="absolute flex justify-center items-center border h-[110px] w-[110px] border-black p-2 -top-16 left-1/2 transform -translate-x-1/2 bg-primary text-white rounded-xl -mb-8 mx-auto z-10"> {/* Added margin bottom */}
                     <div className="flex items-center justify-center text-4xl">{service.icons}</div>
@@ -62,7 +63,7 @@ const Services = () => {
                       <div>{service.description}</div>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>

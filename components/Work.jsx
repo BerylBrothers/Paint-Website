@@ -15,7 +15,7 @@ const projects = [
   {
     title: 'Aqua Solutions',
     description: "The Aqua Solutions website is designed with a clean, modern, and user-friendly interface that reflects the professionalism and reliability of the plumbing company. The website offers a seamless experience for users who are looking for high-quality plumbing services, whether for residential or commercial needs",
-    href:"/",
+    href:"/work",
     stack:[
       {
         name:< FaFigma />
@@ -27,12 +27,12 @@ const projects = [
         name:<  SiTailwindcss />
       },
     ],
-      image: '/assets/work/Web-Screen-1.png',
+      image: '/assets/work/Thumbnail2.png',
   },
   {
     title: 'The Lotus Garden',
     description: "The Lotus Garden website features a clean, elegant design that reflects the restaurant's authentic Asian flavors and inviting atmosphere. The interactive menu showcases a variety of dishes with high-quality images and detailed descriptions, while the About Us section shares the restaurant's story and dedication to quality.",
-    href:"/",
+    href:"/work",
     stack:[
       {
         name:< FaFigma />
@@ -44,12 +44,12 @@ const projects = [
         name:< FaJs />
       },
     ],
-      image: '/assets/work/Web-Screen-2.png',
+      image: '/assets/work/Thumbnail1.png',
   },
   {
     title: 'Pulse Fitness',
     description: "I created a sleek and user-friendly website for Pulse Fitness that showcases the gym's offerings in a modern and engaging way. The design emphasizes simplicity and ease of navigation, highlighting key features like membership options, class schedules, and contact information blah blah blah blah.",
-    href:"/",
+    href:"/work",
     stack:[
       {
         name:< SiNextdotjs />
@@ -61,7 +61,7 @@ const projects = [
         name:< FaHtml5 />
       },
     ],
-      image: '/assets/work/Web-Screen-3.png',
+      image: '/assets/work/Thumbnail3.png',
   }
 ]
 
@@ -83,7 +83,7 @@ const Work = () => {
                               alt={project.title}
                               className='rounded-t-xl'
                               fill  // This makes the image take up the full container
-                              objectFit="cover" // Ensures the image covers the div without distortion
+                              
                             />
                           </div>
                       </Link>
@@ -93,6 +93,7 @@ const Work = () => {
                           <span key={idx} className="mr-2 text-xl">{tech.name}</span>
                         ))}
                       </div>
+                      <div className='p-2'><h3>{project.title}</h3></div>
                       <div className='p-2'>{project.description}</div>
                     </div>
                   );
