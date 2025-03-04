@@ -12,7 +12,7 @@ const Header = () => {
     <header className="py-8 xl:py-6 text-white bg-primary">
       <div className='container mx-auto flex justify-between items-center'>
       {/* logo */}
-     <Link href={"/"}>
+     <Link href={"/"} passHref>
      <a title="Go to homepage">
      {/* {<h1 className='text-4xl'>
       Daniel <span className='text-accent'>.</span>
