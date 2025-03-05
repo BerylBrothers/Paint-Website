@@ -24,6 +24,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 
+
 const projects = [
   {
     num: '01',
@@ -42,8 +43,13 @@ const projects = [
       },
     ],
       image: '/assets/work/Thumbnail2.png',
-      live:'',
+      live:'/aqua',
       github:"",
+      showcase:"/assets/work/Aqua.png",
+      showcase2:"",
+      showcase3:"",
+      showcaseTitle:"Aqua Soultions Design",
+      showcaseParagraph:""
   },
   {
     num: '02',
@@ -62,8 +68,13 @@ const projects = [
       },
     ],
       image: '/assets/work/Thumbnail1.png',
-      live:'',
+      live:'/lotus',
       github:"",
+      showcase:"/assets/work/Lotus.png",
+      showcase2:"",
+      showcase3:"",
+      showcaseTitle:"The Lotus Garden Design",
+      showcaseParagraph:""
   },
   {
     num: '03',
@@ -82,8 +93,13 @@ const projects = [
       },
     ],
       image: '/assets/work/Thumbnail3.png',
-      live:'',
+      live:'/pulse',
       github:"",
+      showcase:"",
+      showcase2:"",
+      showcase3:"",
+      showcaseTitle:"Pulse Fitness Design",
+      showcaseParagraph:""
   }
 ]
 
@@ -144,19 +160,7 @@ const work = () => {
                     </Tooltip>
                   </TooltipProvider>
                   </Link>
-                    {/* github project button */}
-                  <Link href={project.live}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className='w-[70px] h-[70px] bg-white/5  rounded-full flex justify-center items-center group'>
-                        <BsGithub className="text-white text-3xl group-hover:text-accent"/>
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github Repo</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                  </Link>
+                  
                 </div>
                 </div>
           </div>
@@ -167,14 +171,14 @@ const work = () => {
              onSlideChange={handleSlideChange}>
               {projects.map((project, index) => {
                 return (<SwiperSlide key={index} className='w-full'>
-                  <div className='h-[460px] rounded-xl flex group relative 
+                  <div className='h-[460px]  flex group relative 
                   justify-center items-center bg-pink-50/20'>
                     {/* overlay */}
-                    <div className="absolute rounded-xl top-0 bottom-0 w-full h-full bg-black/10 z-10">
+                    <div className="absolute  top-0 bottom-0 w-full h-full bg-black/10 z-10">
 
                     </div>
                   {/* image */}
-                  <div className='relative w-full h-full rounded-xl'>
+                  <div className='relative w-full h-full border-4 border-white'>
                     <Image src={project.image} fill alt=""/>
                   </div>
                   </div>

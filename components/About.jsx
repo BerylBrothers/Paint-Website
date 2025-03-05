@@ -4,7 +4,7 @@ import {Button} from "../components/ui/button";
 
 const About = () => {
   return (
-    <div className='bg-gray-200 py-6'>
+    <section className='hero-bg py-6'>
         <div className='container mx-auto'>
           <div className='flex flex-col xl:flex-row items-center justify-between py-6'>
             <div className='text-center xl:text-left bg-primary rounded-xl p-4'>
@@ -30,12 +30,12 @@ const About = () => {
        
           </div>
           <div className=" flex justify-center">
-          <Button variant="outline" size="lg" className="uppercase flex justify-center items-center border-black text-black">
+          <Button variant="outline" size="lg" className="uppercase flex justify-center items-center border-white text-white">
             <span>Get In Touch</span>
           </Button>
         </div>
           </div>
-        </div>
+        </section>
   )
 }
 
