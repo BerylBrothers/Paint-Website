@@ -29,7 +29,7 @@ const Pulse = () => {
                     {/* Image */}
                     <div className="flex flex-col justify-center items-center pt-6">
                         <Image 
-                            src="/assets/work/LotusGardenShowcase.png"
+                            src="/assets/work/PulseFitnessShowcase.png"
                             alt="Lotus Garden Showcase"
                             height={1200}
                             width={1200}
