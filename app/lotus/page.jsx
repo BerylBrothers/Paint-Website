@@ -48,7 +48,7 @@ const LotusGarden = () => {
                                 alt="Lotus Garden Showcase"
                                 height={1200}
                                 width={1200}
-                                className="w-full h-auto object-cover transition-transform duration-1000 ease-in-out group-hover:translate-y-[-67%]"
+                                className="w-full h-auto object-cover transition-transform duration-1000 ease-in-out xl:group-hover:translate-y-[-67%]"
                             />
                         </div>
                     </div>
