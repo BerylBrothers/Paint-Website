@@ -6,27 +6,7 @@ import Image from 'next/image'; // assuming you're using Next.js' Image componen
 import PageTitle from '@/components/PageTitle';
 
 const LotusGarden = () => {
-    const [isHovered, setIsHovered] = useState(false);
-    const imageRef = useRef(null);
-
-    useEffect(() => {
-        let scrollInterval;
-
-        if (isHovered) {
-            // Start scrolling the image when hovered
-            scrollInterval = setInterval(() => {
-                if (imageRef.current) {
-                    imageRef.current.scrollBy(0, 2); // Scroll by 2px every 100ms
-                }
-            }, 100);
-        } else {
-            // Stop scrolling when hover ends
-            clearInterval(scrollInterval);
-        }
-
-        return () => clearInterval(scrollInterval); // Cleanup interval on unmount
-    }, [isHovered]);
-
+    
     return (
         <motion.section
             initial={{ opacity: 0 }}
@@ -59,20 +39,16 @@ const LotusGarden = () => {
                     {/* Second Image with scroll effect */}
                     <div
                         className="flex flex-col justify-center items-center w-full max-w-[600px] relative border-4 border-white"
-                        onMouseEnter={() => setIsHovered(true)}  // Trigger scrolling on hover
-                        onMouseLeave={() => setIsHovered(false)} // Stop scrolling on hover leave
                     >
                         <div
-                            ref={imageRef}
-                            className="w-full h-[600px] overflow-hidden relative" // Hide scrollbar
-                            style={{ scrollBehavior: 'smooth' }} // Optional: for smooth scrolling
+                            className="w-full h-[600px] relative overflow-hidden group" // group to enable hover effect
                         >
                             <Image
                                 src="/assets/work/Lotus.png"
                                 alt="Lotus Garden Showcase"
                                 height={1200}
                                 width={1200}
-                                className="w-full h-auto object-cover"
+                                className="w-full h-auto object-cover transition-transform duration-1000 ease-in-out group-hover:translate-y-[-67%]"
                             />
                         </div>
                     </div>

@@ -1,0 +1,69 @@
+.flow{
+    overflow: hidden;
+}
+
+/* styles.css */
+.main {
+  font-family: Rubik, sans-serif;
+  background-color: #f4f6ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the content horizontally */
+  height: 100vh;
+  margin: 0; /* Ensure no margin around the page */
+}
+
+.window {
+  width: 400px;
+  margin: auto;
+  border: none; /* Remove any border around the container */
+  border-radius: 5px;
+  box-shadow: 0px 20px 46px 2px #bcc6ff;
+  cursor: n-resize;
+  overflow: hidden; /* Prevent image overflow */
+}
+
+.window img {
+  width: 100%;
+  object-fit: cover;
+  height: 270px;
+  display: block; /* Remove unwanted gaps at the bottom of the image */
+  transition: transform 1s ease-in-out; /* Smooth transition for the transform */
+  object-position: top; /* Ensure it starts at the top */
+}
+
+.window img:hover {
+  transform: translateY(-100%); /* Scroll the image up on hover */
+}
+
+.credit {
+  font-weight: 300;
+  text-align: center;
+  margin-top: 6rem;
+  color: #b6bee8;
+  font-size: 14px;
+}
+
+.credit:hover {
+  color: #e91e63;
+}
+
+.credit span {
+  color: #b6bee8;
+  transition: ease all 200ms;
+}
+
+.credit a {
+  color: #b6bee8;
+  transition: ease-in all 700ms;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-bottom: 2px solid #b6bee8;
+}
+
+.credit a:hover {
+  color: #fff;
+  box-shadow: inset 0 -5.5rem 0 #e91e63;
+  border-bottom: 2px solid #e91e63;
+}
