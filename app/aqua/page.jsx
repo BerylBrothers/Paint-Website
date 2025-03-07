@@ -67,7 +67,7 @@ const Aqua = () => {
                                     alt="Lotus Garden Showcase"
                                     height={1200}
                                     width={1200}
-                                    className="w-full h-auto object-cover transition-transform duration-1000 ease-in-out group-hover:translate-y-[-64%] xl:group-hover:translate-y-[-77.5%]"
+                                    className="w-full h-auto object-cover transition-transform duration-1000 ease-in-out group-hover:translate-y-[-66%] xl:group-hover:translate-y-[-77.5%]"
                                 />
                             </div>
                         </div>
