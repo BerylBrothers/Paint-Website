@@ -62,7 +62,7 @@ const Pulse = () => {
                                 <div></div>
                             <div className="w-full h-[600px] relative overflow-hidden group">
                                 <Image
-                                    src="/assets/work/pulse.png"
+                                    src="/assets/work/Pulse.png"
                                     alt="Lotus Garden Showcase"
                                     height={1200}
                                     width={1200}
