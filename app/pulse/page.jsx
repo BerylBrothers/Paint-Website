@@ -66,7 +66,7 @@ const Pulse = () => {
                                     alt="Lotus Garden Showcase"
                                     height={1200}
                                     width={1200}
-                                    className="w-full h-auto object-cover transition-transform duration-1000 ease-in-out group-hover:translate-y-[-70.4%] xl:group-hover:translate-y-[-76.5%]"
+                                    className="w-full h-auto object-cover transition-transform duration-1000 ease-in-out group-hover:translate-y-[-60.4%] xl:group-hover:translate-y-[-76.5%]"
                                 />
                             </div>
                         </div>
