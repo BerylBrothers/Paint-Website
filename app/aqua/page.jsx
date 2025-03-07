@@ -46,7 +46,7 @@ const Aqua = () => {
                         />
                     </div>
 
-                    <div className='flex justify-between py-6'>
+                    <div className='flex flex-col xl:flex-row xl:justify-between py-6'>
                         <div className='flex flex-col'>
                     <h3 className=" text-black text-center mb-4">Results</h3>
                         

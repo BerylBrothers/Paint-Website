@@ -45,7 +45,7 @@ const Pulse = () => {
                         />
                     </div>
 
-                    <div className='flex justify-between py-6'>
+                    <div className='flex flex-col xl:flex-row xl:justify-between py-6'>
                         <div className='flex flex-col'>
                     <h3 className=" text-black text-center mb-4">Results</h3>
                         
@@ -66,7 +66,7 @@ const Pulse = () => {
                                     alt="Lotus Garden Showcase"
                                     height={1200}
                                     width={1200}
-                                    className="w-full h-auto object-cover transition-transform duration-1000 ease-in-out group-hover:translate-y-[-64.7%] xl:group-hover:translate-y-[-76.5%]"
+                                    className="w-full h-auto object-cover transition-transform duration-1000 ease-in-out group-hover:translate-y-[-70.4%] xl:group-hover:translate-y-[-76.5%]"
                                 />
                             </div>
                         </div>

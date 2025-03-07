@@ -47,7 +47,7 @@ const LotusGarden = () => {
                         />
                     </div>
 
-                    <div className='flex justify-between py-6'>
+                    <div className='flex flex-col xl:flex-row xl:justify-between py-6'>
                         <div className='flex flex-col'>
                     <h3 className=" text-black text-center mb-4">Results</h3>
                         
@@ -68,7 +68,7 @@ const LotusGarden = () => {
                                     alt="Lotus Garden Showcase"
                                     height={1200}
                                     width={1200}
-                                    className="w-full h-auto object-cover transition-transform duration-1000 ease-in-out group-hover:translate-y-[-60%] xl:group-hover:translate-y-[-67%]"
+                                    className="w-full h-auto object-cover transition-transform duration-1000 ease-in-out group-hover:translate-y-[-58.5%] xl:group-hover:translate-y-[-67%]"
                                 />
                             </div>
                         </div>
