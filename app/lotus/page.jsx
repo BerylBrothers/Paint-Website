@@ -28,7 +28,7 @@ const LotusGarden = () => {
                     </div>
                     
 
-                    <div className=' w-full flex flex-col justify-center items-center bg-white text-black py-12'>
+                    <div className=' w-full flex flex-col justify-center items-center px-4 xl:px-0 bg-white text-black py-12'>
                         {/* Title */}
                         <div className="pb-12 flex justify-center items-center">
                         <h2 className=" text-black text-center">UI/UX</h2>

@@ -12,7 +12,7 @@ const Pulse = () => {
                 opacity: 1,
                 transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
             }}
-            className=" flex flex-col items-center justify-center xl:px-0 pt-12 overflow-hidden"
+            className=" flex flex-col items-center justify-center px-4 xl:px-0 pt-12 overflow-hidden"
         >
             <div className=" flex justify-center items-center w-full">
                 <div className="flex flex-col justify-center items-center w-full text-center">
@@ -26,7 +26,7 @@ const Pulse = () => {
                     </div>
                     
 
-                    <div className=' w-full flex flex-col justify-center items-center bg-white text-black py-12'>
+                    <div className=' w-full flex flex-col justify-center items-center px-4 xl:px-0 bg-white text-black py-12'>
                         {/* Title */}
                         <div className="pb-12 flex justify-center items-center">
                         <h2 className=" text-black text-center">UI/UX</h2>
