@@ -14,7 +14,7 @@ const About = () => {
                                           your brand’s story, engage visitors, and turn them into loyal customers. 
               </p>
             </div>
-            <div className='order-1 xl:order-none mb-8 xl:mb-0 rounded-full border-white'>
+            <div className='order-1 xl:order-none mt-8 xl:mt-0 mb-4 xl:mb-0 rounded-full border-white'>
               <div className='relative w-[298px] h-[298px] xl:w-[400px] xl:h-[400px] rounded-full overflow-hidden border-4 border-white'>
                 <Image 
                 src={"/assets/About-Me.png" } 

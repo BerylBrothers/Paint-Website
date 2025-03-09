@@ -49,7 +49,7 @@ const LotusGarden = () => {
 
                     <div className='flex flex-col xl:flex-row xl:justify-between py-6'>
                         <div className='flex flex-col'>
-                    <h3 className=" text-black text-center mb-4">Results</h3>
+                    <h3 className=" text-black text-center mb-4">Our Design Process</h3>
                         
                         {/* Paragraph with max-width */}
                         <p className="max-w-[600px] text-left mb-6">
