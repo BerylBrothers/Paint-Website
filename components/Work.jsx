@@ -15,7 +15,7 @@ const projects = [
   {
     title: 'Aqua Solutions',
     description: "The Aqua Solutions website is designed with a clean, modern, and user-friendly interface that reflects the professionalism and reliability of the plumbing company. The website offers a seamless experience for users who are looking for high-quality plumbing services, whether for residential or commercial needs",
-    href:"/work",
+    href:"/aqua",
     stack:[
       {
         name:< FaFigma />
@@ -32,7 +32,7 @@ const projects = [
   {
     title: 'The Lotus Garden',
     description: "The Lotus Garden website features a clean, elegant design that reflects the restaurant's authentic Asian flavors and inviting atmosphere. The interactive menu showcases a variety of dishes with high-quality images and detailed descriptions, while the About Us section shares the restaurant's story and dedication to quality.",
-    href:"/work",
+    href:"/lotus",
     stack:[
       {
         name:< FaFigma />
@@ -49,7 +49,7 @@ const projects = [
   {
     title: 'Pulse Fitness',
     description: "I created a sleek and user-friendly website for Pulse Fitness that showcases the gym's offerings in a modern and engaging way. The design emphasizes simplicity and ease of navigation, highlighting key features like membership options, class schedules, and contact information blah blah blah blah.",
-    href:"/work",
+    href:"/pulse",
     stack:[
       {
         name:< SiNextdotjs />

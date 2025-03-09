@@ -18,13 +18,10 @@ const Aqua = () => {
         >
             <div className="flex justify-center items-center w-full">
                 <div className="flex flex-col justify-center items-center w-full text-center">
-                    <div className="flex flex-col justify-center items-center pb-16">
+                    <div className="flex flex-col justify-center items-center ">
                         {/* Title */}
                         <PageTitle title="Aqua Solutions Design" className="mb-2 text-black" />
                         {/* Paragraph with max-width */}
-                        <p className="max-w-[600px] text-left mb-6">
-                            The Lotus Garden website features a clean, elegant design that reflects the restaurant's authentic Asian flavors and inviting atmosphere. The interactive menu showcases a variety of dishes with high-quality images and detailed descriptions, while the About Us section shares the restaurant's story and dedication to quality.
-                        </p>
                     </div>
 
                     <div className="w-full flex flex-col justify-center items-center px-4 xl:px-0 bg-white text-black py-6 xl:py-12">
@@ -84,9 +81,9 @@ const Aqua = () => {
                         </div>
 
                     </div>
-                    <div className="flex flex-col pt-6 bg-gray-200 text-black w-full">
+                    <div className="flex flex-col pt-6 bg-white w-full">
                         <div className="flex flex-col justify-center items-center">
-                            <div>
+                            <div className='bg-gray-200 text-black p-4 rounded-xl'>
                                 <h3 className="text-black text-center xl:text-left mb-4">Results</h3>
                                 {/* Paragraph with max-width */}
                                 <p className="max-w-[600px] text-left mb-6">
