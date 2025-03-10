@@ -54,10 +54,12 @@ const services = [
 
 const Services = () => {
   return (
-    <section className='min-h-[80vh] flex flex-col justify-center py-6 xl:py-0'>
-     <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition:{delay: 2.4, duration:0.4, ease:"easeIn"},}} className="container mx-auto py-12">
+    <section className=' flex flex-col justify-center py-6 xl:py-0'>
+     <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition:{delay: 2.4, duration:0.4, ease:"easeIn"},}} className=" py-12">
+     <div className='border-b border-white w-full'>
      <PageTitle title="Services" />
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-[60px] p-4'>
+     </div>
+      <div className='container grid grid-cols-1 md:grid-cols-2 gap-[60px] p-4'>
         {services.map((service, index) =>{
           return <div key={index} className='flex-1 flex-col justify-center gap-6 group'>
             <div className='w-full flex justify-between items-center'>
