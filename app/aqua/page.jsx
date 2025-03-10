@@ -79,9 +79,7 @@ const Aqua = () => {
                             <span>Get In Touch</span>
                             </Button> */}
                         </div>
-
-                    </div>
-                    <div className="flex flex-col pt-6 bg-white w-full">
+                        <div className="flex flex-col pt-6 bg-white w-full">
                         <div className="flex flex-col justify-center items-center">
                             <div className='bg-gray-200 text-black p-4 rounded-xl'>
                                 <h3 className="text-black text-center xl:text-left mb-4">Results</h3>
@@ -91,8 +89,10 @@ const Aqua = () => {
                                 </p>
                             </div>
                         </div>
+                    </div>      
                     </div>
-                    <div className="w-full flex flex-col justify-center items-center bg-white py-12">
+                    
+                    <div className="w-full flex flex-col justify-center items-center bg-white pb-6 xl:pb-12">
                         <Button variant="outline" size="lg"
                             className="uppercase flex items-center gap-2 border-black text-black">
                             <span>Get In Touch</span>
