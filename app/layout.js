@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${outfit.variable}`}>
          <Header />
-         <StairTransition />
+         {/* <StairTransition /> */}
          <PageTransition>
          {children}
          </PageTransition>
