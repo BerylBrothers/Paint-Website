@@ -148,7 +148,8 @@ import React from 'react'
 
 const resume = () => {
   return (
-    <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition:{delay: 2.4, duration:0.4, ease:"easeIn"},}}
+    <div 
+    // initial={{opacity: 0}} animate={{opacity: 1, transition:{delay: 2.4, duration:0.4, ease:"easeIn"},}}
     className="min-h-[80vh] flex flex-col justify-center py-12 ">
       <div className="border-b border-white w-full">
         <PageTitle title="Resume" />
@@ -250,7 +251,7 @@ const resume = () => {
           </div>
         </Tabs>
       </div>
-      </motion.div>
+      </div>
   )
 }
 

@@ -55,7 +55,8 @@ const services = [
 const Services = () => {
   return (
     <section className=' flex flex-col justify-center py-6 xl:py-0'>
-     <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition:{delay: 2.4, duration:0.4, ease:"easeIn"},}} className=" py-12">
+     <div // initial={{opacity: 0}} animate={{opacity: 1, transition:{delay: 2.4, duration:0.4, ease:"easeIn"},}} 
+     className=" py-12">
      <div className='border-b border-white w-full'>
      <PageTitle title="Services" />
      </div>
@@ -75,7 +76,7 @@ const Services = () => {
           </div>
         })}
       </div>
-     </motion.div>
+     </div>
       </section>
   )
 }

@@ -308,7 +308,8 @@ console.log('Form data:', Object.fromEntries(formData));
 };
 
 return (
-  <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }} className='py-12'>
+  <section // initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }} 
+  className='py-12'>
    
    <div className="border-b border-white w-full">
         <PageTitle title="Contact" />
@@ -372,7 +373,7 @@ return (
         </div>
       </div>
     </div>
-  </motion.section>
+  </section>
 );
 
 
