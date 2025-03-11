@@ -1,5 +1,8 @@
+'use client'
+
 import React from 'react'
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import {
     FaHtml5,
     FaCss3, FaJs, FaReact, FaFigma, FaNodeJs
@@ -75,7 +78,12 @@ const Work = () => {
               <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
                 {projects.map((project, index) => {
                   return (
-                    <div className='border border-black flex flex-col rounded-xl' key={index}>
+                    <motion.div
+                    initial={{ opacity: 0, x: -200 }}  // Start from the left and invisible
+                    whileInView={{ opacity: 1, x: 0 }}  // Animate to full opacity and original position
+                    viewport={{ once: true }}  // Trigger animation once when in view
+                    transition={{ duration: 0.4, delay: index * 0.2 }} // Staggered animation delay
+                    className='border border-black flex flex-col rounded-xl' key={index}>
                       <Link href={project.href}>
                           <div className='relative h-80 opacity-100 transition-opacity rounded-xl duration-300 ease-in-out hover:opacity-70 '>
                             <Image
@@ -88,14 +96,14 @@ const Work = () => {
                           </div>
                       </Link>
                       <div className="p-2 pt-4 flex flex-row">
-                        {/* Map over the stack array to render each icon */}
+                       
                         {project.stack.map((tech, idx) => (
                           <span key={idx} className="mr-2 text-xl">{tech.name}</span>
                         ))}
                       </div>
                       <div className='p-2'><h3>{project.title}</h3></div>
                       <div className='p-2'>{project.description}</div>
-                    </div>
+                    </motion.div>
                   );
                 })}
               </div>

@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Image from "next/image";
 import {Button} from "../components/ui/button";
@@ -6,6 +8,9 @@ import Socials from "../components/Socials";
 import Photo from "../components/Photo"
 import Stats from "../components/Stats"
 import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { fadeIn } from '@/variants';
+
 
 const Hero = () => {
     return (
