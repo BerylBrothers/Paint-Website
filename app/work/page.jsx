@@ -180,8 +180,8 @@ const work = () => {
 
                     </div>
                   {/* image */}
-                  <div className='relative w-full h-full border-4 border-white'>
-                    <Image src={project.image} fill alt=""/>
+                  <div className='relative w-full h-full border-4 border-white rounded-xl'>
+                    <Image src={project.image} className='rounded-xl'fill alt=""/>
                   </div>
                   </div>
                   

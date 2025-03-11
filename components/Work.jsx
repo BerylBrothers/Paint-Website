@@ -34,7 +34,7 @@ const projects = [
   },
   {
     title: 'Bowl & Soul',
-    description: "The Lotus Garden website features a clean, elegant design that reflects the restaurant's authentic Asian flavors and inviting atmosphere. The interactive menu showcases a variety of dishes with high-quality images and detailed descriptions, while the About Us section shares the restaurant's story and dedication to quality.",
+    description: "The Bowl & Soul website features a clean, elegant design that reflects the restaurant's authentic Asian flavors and inviting atmosphere. The interactive menu showcases a variety of dishes with high-quality images and detailed descriptions, while the About Us section shares the restaurant's story and dedication to quality.",
     href:"/lotus",
     stack:[
       {
@@ -79,10 +79,10 @@ const Work = () => {
                 {projects.map((project, index) => {
                   return (
                     <motion.div
-                    initial={{ opacity: 0, x: -200 }}  // Start from the left and invisible
-                    whileInView={{ opacity: 1, x: 0 }}  // Animate to full opacity and original position
-                    viewport={{ once: true }}  // Trigger animation once when in view
-                    transition={{ duration: 0.4, delay: index * 0.2 }} // Staggered animation delay
+                    // initial={{ opacity: 0, x: -200 }}  // Start from the left and invisible
+                    // whileInView={{ opacity: 1, x: 0 }}  // Animate to full opacity and original position
+                    // viewport={{ once: true }}  // Trigger animation once when in view
+                    // transition={{ duration: 0., delay: index * 0.2 }} // Staggered animation delay
                     className='border border-black flex flex-col rounded-xl' key={index}>
                       <Link href={project.href}>
                           <div className='relative h-80 opacity-100 transition-opacity rounded-xl duration-300 ease-in-out hover:opacity-70 '>

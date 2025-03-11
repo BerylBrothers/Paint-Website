@@ -14,29 +14,29 @@ const services = [
       icons:<FaPencilAlt />,
       title:'UI/UX Design',
       description:
-      "I specialize in building dynamic, user-friendly websites and web apps using React, Next.js, Node.js, and Tailwind CSS. Whether it's a landing page or a complex web app, I create fast, responsive, and visually appealing sites that help businesses stand out online.",
+      "I specialize in creating intuitive and visually appealing UI/UX designs that prioritize user experience. By blending functionality with aesthetics, I design seamless, user-friendly interfaces that enhance engagement and help your brand stand out online.",
     },{
       icons:<FaPencilRuler />,
       title:'Logo Design',
       description:
-      "I specialize in building dynamic, user-friendly websites and web apps using React, Next.js, Node.js, and Tailwind CSS. Whether it's a landing page or a complex web app, I create fast, responsive, and visually appealing sites that help businesses stand out online.",
+      "I create unique and memorable logos that capture your brand's essence. By focusing on simplicity and clarity, I design logos that are visually striking and timeless, helping your business make a lasting impression.",
     },{
       icons:<FaSearch />,
       title:'SEO',
       description:
-      "I specialize in building dynamic, user-friendly websites and web apps using React, Next.js, Node.js, and Tailwind CSS. Whether it's a landing page or a complex web app, I create fast, responsive, and visually appealing sites that help businesses stand out online.",
+      "I offer SEO services that improve your website's visibility and drive organic traffic. By optimizing on-page elements, content, and technical aspects, I help your site rank higher on search engines and attract more potential customers.",
     },
     {
       icons:<FaMobileAlt />,
-    title:'Fully Responsive',
+    title:'Website Analytics',
     description:
-    "I specialize in building dynamic, user-friendly websites and web apps using React, Next.js, Node.js, and Tailwind CSS. Whether it's a landing page or a complex web app, I create fast, responsive, and visually appealing sites that help businesses stand out online.",
+    "I provide website analytics and reporting services to track performance and user behavior. By analyzing key metrics, I offer insights that help optimize your site, improve user experience, and drive better results.",
       },
       {
         icons:<FaCogs />,
-    title:'Custom Experience',
+    title:'Digital Marketing',
     description:
-    "I specialize in building dynamic, user-friendly websites and web apps using React, Next.js, Node.js, and Tailwind CSS. Whether it's a landing page or a complex web app, I create fast, responsive, and visually appealing sites that help businesses stand out online.",
+    "I offer digital marketing services that boost your online presence and drive targeted traffic. From paid ads to social media strategies, I create tailored campaigns that help your business reach the right audience.",
       },
   ]
 
