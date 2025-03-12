@@ -50,8 +50,11 @@ const LotusGarden = () => {
                                     {/* Paragraph with max-width */}
                                     <div className="xl:max-w-[500px]">
                                         <p className="text-left mb-6">
-                                            The design process for the Aqua Solutions Plumbing website began with understanding the client’s goals and conducting research to analyze competitors and industry trends. We focused on improving online visibility, showcasing services, and providing an easy way for customers to get in touch.
-                                            Next, we created wireframes and planned the site layout, prioritizing essential sections like services, contact, and an intuitive booking system. The design integrated Aqua Solutions’ branding with a mobile-first approach to ensure accessibility across all devices. We used high-quality images of the team to build trust and highlight their expertise.
+                                        The design process for Bowl & Soul’s website began by understanding the brand and its target audience. We focused on showcasing the restaurant’s authentic recipes and cozy atmosphere while analyzing competitors and industry trends.
+
+We then created wireframes and mapped out the layout, prioritizing key sections like the menu, online ordering, and contact details. High-quality images of the dishes were integrated to entice visitors, while clear calls to action for reservations and ordering were placed throughout.
+
+A mobile-first approach ensured a seamless experience across all devices, and the design incorporated Bowl & Soul’s warm branding, blending tradition with modern style. The result was a user-friendly, visually engaging website that reflects the restaurant’s unique dining experience.
                                         </p>
                                     </div>
                                     </div>
@@ -86,7 +89,7 @@ const LotusGarden = () => {
                                 <h3 className="text-black text-center xl:text-left mb-4">Results</h3>
                                 {/* Paragraph with max-width */}
                                 <p className="max-w-[600px] text-left mb-6">
-                                    The Lotus Garden website features a clean, elegant design that reflects the restaurant's authentic Asian flavors and inviting atmosphere. The interactive menu showcases a variety of dishes with high-quality images and detailed descriptions, while the About Us section shares the restaurant's story and dedication to quality.
+                                The Bowl & Soul website successfully enhanced the restaurant’s online presence, leading to increased traffic and higher engagement. The easy-to-navigate layout and clear calls to action boosted online orders and reservations. High-quality images of the food captured the essence of the restaurant, enticing visitors to explore the menu further. The mobile-first design ensured a smooth experience across all devices, resulting in increased user interaction. Overall, the website helped strengthen the restaurant’s brand identity and drove more customers through both digital engagement and in-person visits.
                                 </p>
                             </div>
                         </div>

@@ -85,7 +85,7 @@ const Aqua = () => {
                                 <h3 className="text-black text-center xl:text-left mb-4">Results</h3>
                                 {/* Paragraph with max-width */}
                                 <p className="max-w-[600px] text-left mb-6">
-                                    The Lotus Garden website features a clean, elegant design that reflects the restaurant's authentic Asian flavors and inviting atmosphere. The interactive menu showcases a variety of dishes with high-quality images and detailed descriptions, while the About Us section shares the restaurant's story and dedication to quality.
+                                The Aqua Solutions Plumbing website successfully increased online visibility, driving more organic traffic through improved SEO and a user-friendly design. The streamlined layout and intuitive navigation led to a higher conversion rate, with more customers booking services directly through the integrated booking system. The mobile-first design ensured that users across all devices had a seamless experience, contributing to higher engagement and longer time spent on the site. Overall, the website enhanced the company's online presence, built trust with potential clients through professional imagery, and significantly improved customer interaction with the brand.
                                 </p>
                             </div>
                         </div>

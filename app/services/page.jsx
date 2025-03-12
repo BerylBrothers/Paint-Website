@@ -54,7 +54,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className=' flex flex-col justify-center py-6 xl:py-0'>
+    <section className=' flex flex-col justify-center'>
      <div // initial={{opacity: 0}} animate={{opacity: 1, transition:{delay: 2.4, duration:0.4, ease:"easeIn"},}} 
      className=" py-12">
      <div className='border-b border-white w-full'>

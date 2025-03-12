@@ -55,7 +55,7 @@ const projects = [
     num: '02',
     category: 'frontend',
     title: 'Bowl & Soul',
-    description: "The Lotus Garden website features a clean, elegant design that reflects the restaurant's authentic Asian flavors and inviting atmosphere. The interactive menu showcases a variety of dishes with high-quality images and detailed descriptions, while the About Us section shares the restaurant's story and dedication to quality.",
+    description: "The Bowl & Soul website features a clean, elegant design that reflects the restaurant's authentic Asian flavors and inviting atmosphere. The interactive menu showcases a variety of dishes with high-quality images and detailed descriptions, while the About Us section shares the restaurant's story and dedication to quality.",
     stack:[
       {
         name:< FaFigma />

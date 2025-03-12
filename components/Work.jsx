@@ -51,7 +51,7 @@ const projects = [
   },
   {
     title: 'Pulse Fitness',
-    description: "I created a sleek and user-friendly website for Pulse Fitness that showcases the gym's offerings in a modern and engaging way. The design emphasizes simplicity and ease of navigation, highlighting key features like membership options, class schedules, and contact information blah blah blah blah.",
+    description: "Pulse Fitness has a sleek and user-friendly website for Pulse Fitness that showcases the gym's offerings in a modern and engaging way. The design emphasizes simplicity and ease of navigation, highlighting key features like membership options, class schedules, and contact information.",
     href:"/pulse",
     stack:[
       {
