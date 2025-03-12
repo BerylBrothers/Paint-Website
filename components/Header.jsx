@@ -33,7 +33,7 @@ const Header = () => {
      <div className="hidden xl:flex gap-8">
      <Nav />
      <Link href="/contact">
-     <Button className="bg-white">Hire me</Button>
+     <Button className="bg-white hover:text-white">Hire me</Button>
      </Link>
      </div>
 

@@ -28,7 +28,7 @@ const Hero = () => {
                   {/* button and socials */}
                   <div className="flex flex-col xl:flex-row items-center gap-8">
                     <Link href={"/contact"}>
-                    <Button variant="outline" size="lg" className="uppercase flex items-center gap-2 border-white text-white">
+                    <Button variant="outline" size="lg" className="uppercase flex items-center gap-2 border-white text-white hover:bg-white hover:text-black">
                       <span>Get In Touch</span>
                     </Button>
                     </Link>

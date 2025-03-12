@@ -11,9 +11,10 @@ const CallToAction = () => {
                         <div className='flex mt-16'>
                     <h3 className='text-center'>Transform Your Vision Into Stunning Web Designs.</h3>
                     </div>
-                    <div className='flex justify-center items center mt-12'>  <Button variant="outline" size="md" className="uppercase flex justify-center items-center gap-2 border-white text-white">
-                     <span>Get In Touch</span>
-                    </Button>
+                    <div className='flex justify-center items center mt-12'>    
+                        <Button variant="outline" size="lg" className="uppercase flex items-center gap-2 border-white text-white hover:bg-white hover:text-black">
+                         <span>Get In Touch</span>
+                        </Button>
                     </div>
                     </div>
                  

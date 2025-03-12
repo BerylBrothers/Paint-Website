@@ -93,10 +93,15 @@ const Aqua = () => {
                     </div>
                     
                     <div className="w-full flex flex-col justify-center items-center bg-white pb-6 xl:pb-12">
-                        <Button variant="outline" size="lg"
-                            className="uppercase flex items-center gap-2 border-black text-black">
-                            <span>Get In Touch</span>
-                        </Button>
+                    <Button variant="outline" size="lg"
+                    className="uppercase flex items-center gap-2 border-black text-black">
+                    <span>Get In Touch</span>
+                    </Button>
+                    {/* <a href="/contact"> 
+                    <button className="bg-blue-500 text-white font-bold py-2 px-6 rounded-xl transform transition duration-300 ease-in-out hover:scale-110 hover:bg-blue-600 hover:shadow-lg ">
+                    Get In Touch
+                    </button></a> */}
+                   
                     </div>
 
                 </div>

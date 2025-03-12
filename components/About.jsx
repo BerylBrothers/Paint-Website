@@ -31,9 +31,9 @@ const About = () => {
        
           </div>
           <div className=" flex justify-center">
-          <Button variant="outline" size="lg" className="uppercase flex justify-center items-center border-white text-white">
+            <Button variant="outline" size="lg" className="uppercase flex items-center gap-2 border-white text-white hover:bg-white hover:text-black">
             <span>Get In Touch</span>
-          </Button>
+            </Button>
         </div>
           </div>
         </section>
