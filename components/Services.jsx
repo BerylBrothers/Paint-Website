@@ -19,7 +19,7 @@ const services = [
       icons:<FaPencilRuler />,
       title:'Logo Design',
       description:
-      "Creating memorable logos that capture your brand's essence. By focusing on simplicity and clarity, I design logos that are visually striking and timeless, helping your business make a lasting impression.",
+      "Creating memorable logos that capture your brand's essence. By focusing on simplicity and clarity, I design logos that are visually striking and timeless, helping your business make a lasting impression. A well designed logo is essential for a brands image.",
     },{
       icons:<FaSearch />,
       title:'SEO',
