@@ -64,7 +64,7 @@ With a mobile-first approach, we ensured the site was responsive on all devices.
                             <div className="flex flex-col justify-center items-center w-full max-w-[600px] relative border-4 border-black rounded-xl overflow-hidden ">
                                 <div className="w-full h-[600px] relative overflow-hidden group">
                                     <Image
-                                        src="/assets/work/Pulse.png"
+                                        src="/assets/work/Pulse2.png"
                                         alt="Lotus Garden Showcase"
                                         height={1200}
                                         width={1200}
