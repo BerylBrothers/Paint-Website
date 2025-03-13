@@ -3,6 +3,7 @@ import Image from 'next/image';
 import {Button} from "../components/ui/button";
 import { motion } from 'framer-motion';
 
+
 const About = () => {
   return (
     <section className='hero-bg py-6'>
@@ -31,9 +32,11 @@ const About = () => {
        
           </div>
           <div className=" flex justify-center">
+          <a href="/contact">
             <Button variant="outline" size="lg" className="uppercase flex items-center gap-2 border-white text-white hover:bg-white hover:text-black">
             <span>Get In Touch</span>
             </Button>
+            </a>
         </div>
           </div>
         </section>

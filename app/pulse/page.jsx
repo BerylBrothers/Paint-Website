@@ -95,10 +95,12 @@ With a mobile-first approach, we ensured the site was responsive on all devices.
                     </div>
                     
                     <div className="w-full flex flex-col justify-center items-center bg-white pb-6 xl:pb-12">
+                    <a href="/contact">
                         <Button variant="outline" size="lg"
                             className="uppercase flex items-center gap-2 border-black text-black">
                             <span>Get In Touch</span>
                         </Button>
+                        </a>
                     </div>
 
                 </div>
