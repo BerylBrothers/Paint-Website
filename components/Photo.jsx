@@ -30,14 +30,14 @@ const Photo = () => {
           className="relative w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] rounded-full overflow-hidden"
         >
           {/* Image */}
-          <Image
+          {/* <Image
             src="/assets/Wave.jpg"
             priority
             quality={100}
             fill
             alt="Image"
             className="object-cover opacity-60"
-          />
+          /> */}
         </motion.div>
 
         {/* Circle Animation */}
