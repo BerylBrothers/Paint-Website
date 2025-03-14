@@ -95,7 +95,7 @@ const Aqua = () => {
                     </div>
                     
                     <div className="w-full flex flex-row justify-center items-center bg-white pb-6 xl:pb-12">
-                    <div className="flex flex-row justify-between items-center w-full max-w-4xl">
+                    <div className="flex flex-row justify-between items-center w-full max-w-4xl mx-4 xl:mx-0">
                     {/* Left Arrow */}
                     <div className="flex justify-start flex-grow">
                     <a href="/pulse">
