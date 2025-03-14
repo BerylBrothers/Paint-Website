@@ -14,7 +14,7 @@ import PageTitle from "@/components/PageTitle";
 //about data
 const about = {
   title:"About Me",
-  description:"I'm Daniel Collins",
+  description:"Hi, my name is Daniel. I am the lead developer/designer at Beryl Brothers. I decided to go into business for myself after working at numerous companies. I wanted a lifestyle that would let me have complete control of my life and give me the freedom I was after. I am passionate about developing websites and my main goal is to make sure that every client that I work with is satisfied. ",
   info:[
     {
       fieldName: "Name",
@@ -236,18 +236,29 @@ const resume = () => {
               </ul>
             </div>
             </TabsContent>
+            <ScrollArea className="h-[450px]">
             <TabsContent value="about" className="w-full text-center xl:text-left">
-            <div className="flex flex-col gap-[30px]">
-              <h3>{about.title}</h3>
-              <p className="max-w-[600px] mx-auto xl:mx-0" >{about.description}</p>
-              <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">{about.info.map((item, index) => {
-                return <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
-                  <span className="font-bold">{item.fieldName}</span>
-                  <span className="font-semibold">{item.fieldValue}</span>
-                </li>
-              })}</ul>
+  <div className="flex flex-col gap-[30px]">
+    <h3 className="">{about.title}</h3>
+    <p className="max-w-[600px] mx-auto xl:mx-0 text-base ">{about.description}</p>
+    <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 xl:gap-6 max-w-[620px] mx-auto xl:mx-0">
+      {about.info.map((item, index) => {
+        return (
+          <li
+            key={index}
+            className="flex items-center justify-center w-full xl:w-full h-[150px] bg-blue-600 rounded-xl p-4">
+            {/* Field name, centered both vertically and horizontally */}
+            <div className="flex flex-col items-center justify-center text-center text-sm xl:text-base text-white">
+              <span className="">{item.fieldName}</span>
+              <h3 className="text-white ">{item.fieldValue}</h3>
             </div>
-            </TabsContent>
+          </li>
+        );
+      })}
+    </ul>
+  </div>
+</TabsContent>
+</ScrollArea>
           </div>
         </Tabs>
       </div>
