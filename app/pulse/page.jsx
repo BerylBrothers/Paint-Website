@@ -4,6 +4,7 @@ import {motion} from 'framer-motion'
 import PageTitle from '@/components/PageTitle'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
+import {PiCaretRightBold, PiCaretLeftBold} from 'react-icons/pi'
 
 const Pulse = () => {
     return (
@@ -94,13 +95,34 @@ With a mobile-first approach, we ensured the site was responsive on all devices.
                     </div>      
                     </div>
                     
-                    <div className="w-full flex flex-col justify-center items-center bg-white pb-6 xl:pb-12">
-                    <a href="/contact">
-                        <Button variant="outline" size="lg"
-                            className="uppercase flex items-center gap-2 border-black text-black">
+                     
+                                        <div className="w-full flex flex-row justify-center items-center bg-white pb-6 xl:pb-12">
+                                        <div className="flex flex-row justify-between items-center w-full max-w-4xl">
+                                        {/* Left Arrow */}
+                                        <div className="flex justify-start flex-grow">
+                                        <a href="/lotus">
+                                        <button className="bg-black border-black p-4 rounded-xl">
+                                         <PiCaretLeftBold className="text-white" />
+                                        </button>
+                                        </a>
+                                        </div>
+                    
+                        {/* Get In Touch Button */}
+                        <a href="/contact">
+                          <Button variant="outline" size="lg" className="uppercase flex items-center gap-2 border-black text-black">
                             <span>Get In Touch</span>
-                        </Button>
+                          </Button>
                         </a>
+                    
+                        {/* Right Arrow */}
+                        <div className="flex justify-end flex-grow">
+                            <a href="/aqua">
+                          <button className="bg-black border-black p-4 rounded-xl">
+                            <PiCaretRightBold className="text-white" />
+                          </button>
+                          </a>
+                        </div>
+                      </div>
                     </div>
 
                 </div>

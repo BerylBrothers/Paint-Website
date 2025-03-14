@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'; // assuming you're using framer-motion f
 import Image from 'next/image'; // assuming you're using Next.js' Image component
 import PageTitle from '@/components/PageTitle';
 import { Button } from '@/components/ui/button';
+import {PiCaretRightBold, PiCaretLeftBold} from 'react-icons/pi'
 
 const LotusGarden = () => {
     
@@ -96,21 +97,35 @@ A mobile-first approach ensured a seamless experience across all devices, and th
                     </div>      
                     </div>
                     
-                    <div className="w-full flex flex-col justify-center items-center bg-white pb-6 xl:pb-12">
-                    <a href="/contact">
-                         <Button variant="outline" size="lg"
-                                                     className="uppercase flex items-center gap-2 border-black text-black">
-                                                     <span>Get In Touch</span>
-                                                 </Button>
-                                                 </a>
-                         {/* <a href="/contact"> 
-                    <button className="bg-blue-500 text-white font-bold py-2 px-6 rounded-xl transform transition duration-300 ease-in-out hover:scale-110 hover:bg-blue-600 hover:shadow-lg ">
-                    Get In Touch
-                    </button></a> */}
+                    
+                                       <div className="w-full flex flex-row justify-center items-center bg-white pb-6 xl:pb-12">
+                                       <div className="flex flex-row justify-between items-center w-full max-w-4xl">
+                                       {/* Left Arrow */}
+                                       <div className="flex justify-start flex-grow">
+                                       <a href="/aqua">
+                                       <button className="bg-black border-black p-4 rounded-xl">
+                                        <PiCaretLeftBold className="text-white" />
+                                       </button>
+                                       </a>
+                                       </div>
                    
-                        
-
-                    </div>
+                       {/* Get In Touch Button */}
+                       <a href="/contact">
+                         <Button variant="outline" size="lg" className="uppercase flex items-center gap-2 border-black text-black">
+                           <span>Get In Touch</span>
+                         </Button>
+                       </a>
+                   
+                       {/* Right Arrow */}
+                       <div className="flex justify-end flex-grow">
+                           <a href="/pulse">
+                         <button className="bg-black border-black p-4 rounded-xl">
+                           <PiCaretRightBold className="text-white" />
+                         </button>
+                         </a>
+                       </div>
+                     </div>
+                   </div>
 
                 </div>
             </div>
