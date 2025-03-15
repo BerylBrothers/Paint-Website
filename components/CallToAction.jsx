@@ -9,7 +9,7 @@ const CallToAction = () => {
                     {/* Set the width for mobile (w-full), medium screens (w-[90%]), and large screens (w-[700px]) */}
                     <div className='flex flex-col justify-center items-center h-[250px] w-[370px] xl:w-[600px] xl:h-[300px] px-6 rounded-xl border hero-bg border-white'>
                         <div className='flex mt-16'>
-                    <h3 className='text-center'>Transform Your Vision Into Stunning Web Designs.</h3>
+                    <h3 className='text-center'>Transform Your Vision Into Stunning Web Designs</h3>
                     </div>
                     <div className='flex justify-center items center mt-12'>    
                     <a href="/contact">

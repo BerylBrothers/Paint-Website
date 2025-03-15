@@ -236,9 +236,11 @@ const resume = () => {
               </ul>
             </div>
             </TabsContent>
-            <ScrollArea className="h-[450px]">
+           
             <TabsContent value="about" className="w-full text-center xl:text-left">
+           
   <div className="flex flex-col gap-[30px]">
+  
     <h3 className="">{about.title}</h3>
     <p className="max-w-[600px] mx-auto xl:mx-0 text-base ">{about.description}</p>
     <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 xl:gap-6 max-w-[620px] mx-auto xl:mx-0">
@@ -256,9 +258,11 @@ const resume = () => {
         );
       })}
     </ul>
+ 
   </div>
+  
 </TabsContent>
-</ScrollArea>
+
           </div>
         </Tabs>
       </div>
