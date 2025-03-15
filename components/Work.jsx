@@ -30,7 +30,7 @@ const projects = [
         name:<  SiTailwindcss />
       },
     ],
-      image: '/assets/work/Thumbnail2.png',
+      image: '/assets/work/Thumbnail2Gimp.png',
   },
   {
     title: 'Bowl & Soul',
@@ -47,7 +47,7 @@ const projects = [
         name:< FaJs />
       },
     ],
-      image: '/assets/work/Thumbnail1.png',
+      image: '/assets/work/Thumbnail1Gimp.png',
   },
   {
     title: 'Pulse Fitness',
@@ -64,7 +64,7 @@ const projects = [
         name:< FaHtml5 />
       },
     ],
-      image: '/assets/work/Thumbnail3.png',
+      image: '/assets/work/Thumbnail3Gimp.png',
   }
 ]
 
