@@ -30,7 +30,8 @@ const projects = [
         name:<  SiTailwindcss />
       },
     ],
-      image: '/assets/work/Thumbnail2Gimp.png',
+      image: '/assets/work/Aqua.png',
+          hoverClass:"group-hover:translate-y-[-84%] xl:group-hover:translate-y-[-81%]"
   },
   {
     title: 'Bowl & Soul',
@@ -47,7 +48,8 @@ const projects = [
         name:< FaJs />
       },
     ],
-      image: '/assets/work/Thumbnail1Gimp.png',
+      image: '/assets/work/Lotus.png',
+      hoverClass:"group-hover:translate-y-[-76.6%] xl:group-hover:translate-y-[-72%]"
   },
   {
     title: 'Pulse Fitness',
@@ -64,7 +66,9 @@ const projects = [
         name:< FaHtml5 />
       },
     ],
-      image: '/assets/work/Thumbnail3Gimp.png',
+      image: '/assets/work/pulse.png',
+      hoverClass:"group-hover:translate-y-[-83.3%] xl:group-hover:translate-y-[-80%]"
+
   }
 ]
 
@@ -78,32 +82,36 @@ const Work = () => {
               <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
                 {projects.map((project, index) => {
                   return (
-                    <motion.div
-                    // initial={{ opacity: 0, x: -200 }}  // Start from the left and invisible
-                    // whileInView={{ opacity: 1, x: 0 }}  // Animate to full opacity and original position
-                    // viewport={{ once: true }}  // Trigger animation once when in view
-                    // transition={{ duration: 0., delay: index * 0.2 }} // Staggered animation delay
-                    className='border border-black flex flex-col rounded-xl' key={index}>
-                      <Link href={project.href}>
-                          <div className='relative h-80 opacity-100 transition-opacity rounded-xl duration-300 ease-in-out hover:opacity-70 '>
-                            <Image
-                              src={project.image}
-                              alt={project.title}
-                              className='rounded-t-xl'
-                              fill  // This makes the image take up the full container
-                              
-                            />
-                          </div>
-                      </Link>
-                      <div className="p-2 pt-4 flex flex-row">
-                       
-                        {project.stack.map((tech, idx) => (
-                          <span key={idx} className="mr-2 text-xl">{tech.name}</span>
-                        ))}
-                      </div>
-                      <div className='p-2'><h3>{project.title}</h3></div>
-                      <div className='p-2'>{project.description}</div>
-                    </motion.div>
+                   <motion.div
+  className="border border-black flex flex-col rounded-xl group"
+  key={index}
+>
+  <Link href={project.href}>
+    <div className="relative h-80 overflow-hidden rounded-xl border border-black">
+      <div className="relative w-full h-full group">
+        <Image
+          src={project.image}
+          alt={project.title}
+          className={`w-full h-auto object-cover absolute top-0 left-0 transition-transform duration-1000 ease-in-out ${project.hoverClass}`}
+          height={400}
+          width={400}
+        />
+      </div>
+    </div>
+  </Link>
+
+  <div className="p-2 pt-4 flex flex-row">
+    {project.stack.map((tech, idx) => (
+      <span key={idx} className="mr-2 text-xl">{tech.name}</span>
+    ))}
+  </div>
+
+  <div className="p-2">
+    <h3>{project.title}</h3>
+  </div>
+
+  <div className="p-2">{project.description}</div>
+</motion.div>
                   );
                 })}
               </div>
