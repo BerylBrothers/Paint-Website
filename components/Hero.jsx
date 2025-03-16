@@ -21,7 +21,7 @@ const Hero = () => {
               {/* text */}
               <div className="text-center xl:text-left order-2 xl:order-none">
                 <span></span>
-                <h1 className="h1 mb-6">Where Creativity <br /><span className="text-primary">Meets Code</span></h1>
+                {/* <h1 className="h1 mb-6">Where Creativity <br /><span className="text-primary">Meets Code</span></h1> */}
                 <p className="max-w-[500px] mb-9 text-white">I am a web designer/web developer. 
                   I know many different programming 
                   languages and libriaries.</p>
