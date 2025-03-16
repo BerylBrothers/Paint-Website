@@ -31,7 +31,7 @@ const projects = [
       },
     ],
       image: '/assets/work/Aqua.png',
-          hoverClass:"group-hover:translate-y-[-82%] xl:group-hover:translate-y-[-81%]"
+          hoverClass:"group-hover:translate-y-[-81.5%] xl:group-hover:translate-y-[-81%]"
   },
   {
     title: 'Bowl & Soul',
@@ -49,7 +49,7 @@ const projects = [
       },
     ],
       image: '/assets/work/Lotus.png',
-      hoverClass:"group-hover:translate-y-[-73%] xl:group-hover:translate-y-[-72%]"
+      hoverClass:"group-hover:translate-y-[-72.5%] xl:group-hover:translate-y-[-72%]"
   },
   {
     title: 'Pulse Fitness',
@@ -67,7 +67,7 @@ const projects = [
       },
     ],
       image: '/assets/work/Pulse.png',
-      hoverClass:"group-hover:translate-y-[-79%] xl:group-hover:translate-y-[-80%]"
+      hoverClass:"group-hover:translate-y-[-77%] xl:group-hover:translate-y-[-80%]"
 
   }
 ]
