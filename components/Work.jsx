@@ -67,7 +67,7 @@ const projects = [
       },
     ],
       image: '/assets/work/Pulse.png',
-      hoverClass:"group-hover:translate-y-[-77%] xl:group-hover:translate-y-[-80%]"
+      hoverClass:"group-hover:translate-y-[-80%] xl:group-hover:translate-y-[-80%]"
 
   }
 ]
