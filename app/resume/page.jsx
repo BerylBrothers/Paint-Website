@@ -150,10 +150,11 @@ const resume = () => {
   return (
     <div 
     // initial={{opacity: 0}} animate={{opacity: 1, transition:{delay: 2.4, duration:0.4, ease:"easeIn"},}}
-    className="min-h-[80vh] flex flex-col justify-center py-12 ">
+    className="min-h-[80vh] flex flex-col justify-center pt-12 ">
       <div className="border-b border-white w-full">
         <PageTitle title="Resume" />
         </div>
+        <div className="bg-white text-black pb-12">
       <div className="container mx-auto pt-6">
         
       
@@ -177,11 +178,11 @@ const resume = () => {
                     {experience.items.map((item, index) => {
                       return <li key={index} className=" bg-blue-600 h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1]">
                         <span className="text-white">{item.duration}</span>
-                        <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
+                        <h3 className="text-xl text-white max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
                         <div className="flex items-center gap-3">
                           {/* dot */}
                           <span className="w-[6px] h-[6px] rounded-full bg-white"></span>
-                          <p>{item.company}</p>
+                          <p className="text-white">{item.company}</p>
                         </div>
                       </li>
                     })}
@@ -198,11 +199,11 @@ const resume = () => {
                     {education.items.map((item, index) => {
                       return <li key={index} className=" bg-blue-600 h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1]">
                         <span className="text-white">{item.duration}</span>
-                        <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
+                        <h3 className="text-xl text-white max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
                         <div className="flex items-center gap-3">
                           {/* dot */}
                           <span className="w-[6px] h-[6px] rounded-full bg-white"></span>
-                          <p>{item.institution}</p>
+                          <p className="text-white">{item.institution}</p>
                         </div>
                       </li>
                     })}
@@ -218,7 +219,7 @@ const resume = () => {
               </div>
               <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                 {skills.SkillList.map((item, index) => {
-                  return <li key={index}>
+                  return <li className="text-white" key={index}>
                     <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-full h-[150px] bg-blue-600 rounded-xl flex justify-center items-center group">
@@ -265,6 +266,7 @@ const resume = () => {
 
           </div>
         </Tabs>
+      </div>
       </div>
       </div>
   )
