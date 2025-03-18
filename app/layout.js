@@ -32,6 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+      <link rel="icon" href="/bbHead.png" />
 <Script src={"https://www.googletagmanager.com/gtag/js?id=G-HRWFBHTNMP"}></Script>
 <Script>
   {`window.dataLayer = window.dataLayer || [];
