@@ -7,8 +7,8 @@ import StairTransition from "../components/StairTransition";
 import Footer from "../components/Footer"
 
 export const metadata = {
-  title: 'Your Site Title',
-  description: 'A brief description of your site for SEO.',
+  title: 'Beryl Brothers',
+  description: 'Web Design Agency.',
 };
 
 const jetbrains_Mono = JetBrains_Mono({
