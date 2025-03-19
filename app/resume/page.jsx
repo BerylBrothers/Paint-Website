@@ -176,7 +176,7 @@ const resume = () => {
                 <ScrollArea className="h-[400px] ">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index) => {
-                      return <li key={index} className=" bg-blue-600 h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1]">
+                      return <li key={index} className=" bg-black h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1]">
                         <span className="text-white">{item.duration}</span>
                         <h3 className="text-xl text-white max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
                         <div className="flex items-center gap-3">
@@ -197,7 +197,7 @@ const resume = () => {
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item, index) => {
-                      return <li key={index} className=" bg-blue-600 h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1]">
+                      return <li key={index} className=" bg-black h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1]">
                         <span className="text-white">{item.duration}</span>
                         <h3 className="text-xl text-white max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
                         <div className="flex items-center gap-3">
@@ -222,7 +222,7 @@ const resume = () => {
                   return <li className="text-white" key={index}>
                     <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-full h-[150px] bg-blue-600 rounded-xl flex justify-center items-center group">
+                      <TooltipTrigger className="w-full h-[150px] bg-black rounded-xl flex justify-center items-center group">
                         <div className="text-6xl group-hover:text-accent transition-all duration-300">
                           {item.icon}
                           </div>
@@ -249,7 +249,7 @@ const resume = () => {
         return (
           <li
             key={index}
-            className="flex items-center justify-center w-full xl:w-full h-[150px] bg-blue-600 rounded-xl p-4">
+            className="flex items-center justify-center w-full xl:w-full h-[150px] bg-black rounded-xl p-4">
             {/* Field name, centered both vertically and horizontally */}
             <div className="flex flex-col items-center justify-center text-center text-sm xl:text-base text-white">
               <span className="">{item.fieldName}</span>

@@ -140,7 +140,7 @@ const work = () => {
                 {/* stack */}
                 <ul className='flex gap-4 '>
                   {project.stack.map((item, index) =>{
-                    return <li  key={index} className='bg-blue-600 text-xl text-white p-2 rounded-xl'>
+                    return <li  key={index} className='bg-black text-xl text-white p-2 rounded-xl'>
                       {item.name}
                       {/* {index !== project.stack.length - 1 && ","} */}
                       </li>
@@ -154,7 +154,7 @@ const work = () => {
                   <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className='w-[70px] h-[70px] bg-primary  rounded-full flex justify-center items-center group'>
+                      <TooltipTrigger className='w-[70px] h-[70px] bg-black  rounded-full flex justify-center items-center group'>
                         <BsArrowUpRight className="text-white text-3xl transition-all duration-300 group-hover:text-accent"/>
                       </TooltipTrigger>
                       <TooltipContent>
