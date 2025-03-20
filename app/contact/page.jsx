@@ -314,7 +314,7 @@ return (
    <div className="border-b border-white w-full">
         <PageTitle title="Contact" />
         </div>
-        <div className='bg-white text-white pb-12'>
+        <div className='bg-white  pb-12'>
     <div className="container mx-auto pt-6">
    
       <div className='flex flex-col xl:flex-row gap-[30px]'>
@@ -326,8 +326,9 @@ return (
             <p>I’m passionate about creating user-friendly, high-quality websites and web applications. With expertise in modern technologies and design, I’m committed to delivering solutions that match your vision and goals. Let’s work together to bring your ideas to life with clean, efficient code.</p>
 
             {/* input fields */}
-            <div className='text-white grid grid-cols-1 md:grid-cols-2 gap-6 '>
-              <Input name="firstname" type="text" placeholder="First Name" value={formData.firstname} onChange={handleInputChange} className="bg-white text-black"/>
+            <div className='text-black grid grid-cols-1 md:grid-cols-2 gap-6 '>
+              
+              <Input name="firstname" type="text" placeholder="First Name" value={formData.firstname} onChange={handleInputChange} className="bg-white text-black placeholder-gray-500"/>
               <Input name="lastname" type="text" placeholder="Last Name" value={formData.lastname} onChange={handleInputChange} className="bg-white text-black"/>
               <Input name="email" type="email" placeholder="Email Address" value={formData.email} onChange={handleInputChange} className="bg-white text-black"/>
               <Input name="phone" type="phone" placeholder="Phone Number" value={formData.phone} onChange={handleInputChange} className="bg-white text-black"/>
@@ -352,7 +353,7 @@ return (
             <Textarea name="message" className="h-[200px] text-black bg-white" placeholder="Type your message here."  value={formData.message} onChange={handleInputChange} />
 
             {/* Submit button */}
-            <Button size="md" className="max-w-40 bg-white hover:bg-primary hover:text-white" type="submit">Send Message</Button>
+            <Button size="md" className="max-w-40 bg-white hover:bg-blue-600 hover:text-white" type="submit">Send Message</Button>
           </form>
         </div>
 

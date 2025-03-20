@@ -31,6 +31,11 @@ h3{
   -webkit-text-stroke: 1px #90E0EF;
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: #6b7280; /* This will set the placeholder color to gray */
+}
+
 }
 
 @keyframes waveSplash {

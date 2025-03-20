@@ -2,6 +2,12 @@
     overflow: hidden;
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: #6b7280; /* This will set the placeholder color to gray */
+}
+
+
 /* styles.css */
 .main {
   font-family: Rubik, sans-serif;
