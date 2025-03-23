@@ -4,7 +4,7 @@
 
 @layer base {
 body{
-  @apply font-primary bg-gradient-to-b from-[#33b8bd] via-[#0e53d3] to-[#1e3c72] text-white leading-loose;
+ 
   }
 
 h1{
@@ -95,3 +95,53 @@ textarea::placeholder {
   }
 }
 
+.new-container{
+  width: 100%;
+  @media (width >= 40rem /* 640px */) {
+      max-width: 40rem /* 640px */;
+  }
+  @media (width >= 48rem /* 768px */) {
+      max-width: 48rem /* 768px */;
+  }
+  @media (width >= 64rem /* 1024px */) {
+      max-width: 64rem /* 1024px */;
+  }
+  @media (width >= 80rem /* 1280px */) {
+      max-width: 80rem /* 1280px */;
+  }
+  @media (width >= 96rem /* 1536px */) {
+      max-width: 96rem /* 1536px */;
+  }
+}
+
+:root {
+  --color-primary: #10B981; /* You can use this as a fallback for CSS custom properties */
+}
+
+/* Button Styles */
+@layer components {
+  .button {
+    @apply inline-block mt-6 py-2 px-6 text-white font-semibold text-base tracking-wider transition-all duration-300 relative overflow-hidden ;
+  }
+
+  .button::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-full bg-green-500 ;
+    z-index: -2;
+  }
+
+  .button::before {
+    content: '';
+    @apply absolute bottom-0 left-0 h-full bg-green-800 transition-all duration-300;
+    width: 0%;
+    z-index: -1;
+  }
+
+  .button:hover {
+    @apply text-white;
+  }
+
+  .button:hover::before {
+    width: 100%;
+  }
+}

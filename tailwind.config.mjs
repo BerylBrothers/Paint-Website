@@ -38,6 +38,9 @@ export default {
 		  boxShadow: {
 			'blue-glow': '0 4px 15px rgba(0, 0, 255, 0.3)', // Custom blue shadow
 		  },
+		  backgroundImage:{
+			hero:"url('/images/tree-hero.jpg')"
+		  }
   	}
   },
   plugins: [require("tailwindcss-animate")],

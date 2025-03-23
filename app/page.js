@@ -1,19 +1,20 @@
-
-import Hero from "@/components/Hero"
-import Work from "@/components/Work";
+import Image from "next/image";
+import Hero from "@/components/Hero";
+import Parallax from "@/components/Parallax";
 import About from "@/components/About";
 import Services from "@/components/Services";
-import CallToAction from "@/components/CallToAction";
+import Team from "@/components/Team";
+import About2 from "@/components/About2";
 
 export default function Home() {
   return (
     <>
-    <Hero />
-    <Work />
-    <About />
-    <Services />
-    <CallToAction />
-    </>
+<Hero />
+<Parallax />
+<About />
+<About2 />
+<Services />
+<Team />
+</>
   );
-  
 }

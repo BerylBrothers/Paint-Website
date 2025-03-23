@@ -73,3 +73,22 @@ textarea::placeholder {
   box-shadow: inset 0 -5.5rem 0 #e91e63;
   border-bottom: 2px solid #e91e63;
 }
+
+.new-container{
+  width: 100%;
+  @media (width >= 40rem /* 640px */) {
+      max-width: 40rem /* 640px */;
+  }
+  @media (width >= 48rem /* 768px */) {
+      max-width: 48rem /* 768px */;
+  }
+  @media (width >= 64rem /* 1024px */) {
+      max-width: 64rem /* 1024px */;
+  }
+  @media (width >= 80rem /* 1280px */) {
+      max-width: 80rem /* 1280px */;
+  }
+  @media (width >= 96rem /* 1536px */) {
+      max-width: 96rem /* 1536px */;
+  }
+}

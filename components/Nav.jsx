@@ -11,12 +11,12 @@ const links = [
         path:"/",
     } ,
     {
-        name:"services",
-        path:"/services",
+        name:"about",
+        path:"/about",
     },
     {
-        name:"resume",
-        path:"/resume",
+        name:"services",
+        path:"/services",
     },
     {
         name:"projects",
@@ -37,7 +37,7 @@ const Nav = () => {
     <nav className="flex gap-8">
         {links.map((link, index)=>{
             return <Link href={link.path} key={index} 
-            className={`${link.path === pathname && "text-blue-300 border-b-2 border-blue-300"} capitalize font-medium hover:text-blue-300 transition-all`}>
+            className={`${link.path === pathname && "text-green-500 border-b-2 border-green-500"} capitalize font-medium hover:text-green-500 transition-all`}>
                 {link.name}</Link>
         })}
     </nav>

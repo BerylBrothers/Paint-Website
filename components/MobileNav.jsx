@@ -10,27 +10,27 @@ import React from 'react'
 
 const links = [
     {
-        name:'home',
-        path:'/'
+        name:"home",
+        path:"/",
+    } ,
+    {
+        name:"about",
+        path:"/about",
     },
     {
-        name:'services',
-        path:'/services'
+        name:"services",
+        path:"/services",
     },
     {
-        name:'resume',
-        path:'/resume'
+        name:"projects",
+        path:"/work",
     },
     {
-        name:'projects',
-        path:'/work'
+        name:"contact",
+        path:"/contact",
     },
-    {
-        name:'contact',
-        path:'/contact'
-    }
 ]
-
+    
 
 
 
@@ -44,7 +44,7 @@ const MobileNav = () => {
     };
   return <Sheet open={isOpen} onOpenChange={setIsOpen}>
     <SheetTrigger className="flex justify-center items-center">
-        <CiMenuFries className="text-[32px] text-white"/>
+        <CiMenuFries className="text-[32px] text-black"/>
     </SheetTrigger>
     <SheetContent className="flex flex-col">
         {/* logo */}
@@ -54,7 +54,7 @@ const MobileNav = () => {
       Daniel <span className='text-accent'>.</span>
      </h1> */}
        <Image 
-       src={'/assets/logo-transparent.png'}
+       src={'/images/logo-transparent.png'}
        height={100}
        width={100}
        alt=""
@@ -66,7 +66,7 @@ const MobileNav = () => {
         
         <nav className="flex flex-col justify-center items-center gap-8">
             {links.map((link, index)=>{
-                return <Link href={link.path} key={index} onClick={handleLinkClick} className={`${link.path === pathname && "text-accent border-b-2 border-accent"} text-xl capitalize hover:text-accent transition-all`}>{link.name}</Link>
+                return <Link href={link.path} key={index} onClick={handleLinkClick} className={`${link.path === pathname && "text-green-500 border-b-2 border-green-500"} text-xl capitalize hover:text-green-500 transition-all`}>{link.name}</Link>
             })}
         </nav>
      

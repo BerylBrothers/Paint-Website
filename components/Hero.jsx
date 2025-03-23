@@ -1,50 +1,61 @@
 "use client"
 
-import React from 'react'
-import Image from "next/image";
-import {Button} from "../components/ui/button";
-import {FiDownload} from "react-icons/fi";
-import Socials from "../components/Socials";
-import Photo from "../components/Photo"
-import Stats from "../components/Stats"
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { fadeIn } from '@/variants';
-
+import React, { useState, useEffect } from 'react';
 
 const Hero = () => {
-    return (
-        <section className="h-full">
-          <div className="container mx-auto h-full">
-            <div className="flex flex-col xl:flex-row 
-            items-center justify-between pt-6 xl:pt-8 xl:pb-24">
-              {/* text */}
-              <div className="text-center xl:text-left order-2 xl:order-none">
-                <span></span>
-                <h1 className="h1 mb-6">Where Creativity <br /><span className="text-primary">Meets Code</span></h1>
-                <p className="max-w-[500px] mb-9 text-white"> 
-                Blending cutting-edge design with powerful development to craft unique, user-friendly custom coded websites that help your business thrive. </p>
-                  {/* button and socials */}
-                  <div className="flex flex-col xl:flex-row items-center gap-8">
-                    <Link href={"/contact"}>
-                    <Button variant="outline" size="lg" className="uppercase flex items-center gap-2 border-white text-white hover:bg-white hover:text-black">
-                      <span>Get In Touch</span>
-                    </Button>
-                    </Link>
-                    <div className="mb-8 xl:mb-0">
-                      <Socials containerStyles="flex gap-6" />
-                      </div>
-                  </div>
-                </div>
-              {/* photo */}
-              <div className="order-1 xl:order-none mb-8 xl:mb-0">
-                <Photo />
-              </div>
-              </div>
-              </div>
-              <Stats className="flex pb-8"/>
-          </section>
-      );
-}
+  const [imageLoaded, setImageLoaded] = useState(false);
 
-export default Hero
+  useEffect(() => {
+    const image = new Image();
+    image.src = '/images/tree-hero-resize.jpg';
+    image.onload = () => setImageLoaded(true);
+  }, []);
+
+  return (
+    <>
+      {/* Preload the background image */}
+      <link
+        rel="preload"
+        href="/images/tree-hero-resize.jpg"
+        as="image"
+        type="image/jpeg"
+        crossOrigin="anonymous"
+      />
+
+      <section
+        className={`relative w-full h-screen bg-transparent bg-cover bg-center transition-opacity duration-1000 ${
+          imageLoaded ? 'opacity-100' : 'opacity-0'
+        }`}
+        style={{
+          backgroundImage: imageLoaded ? 'url("/images/tree-hero-resize.jpg")' : '',
+        }}
+      >
+        {/* Dark overlay 2*/}
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        {/* Dark overlay 2*/}
+        <div className="absolute inset-0 bg-black opacity-60 w-[40%]"></div>
+
+        {/* Content on top of the image */}
+        <div className="container mx-auto relative z-10 text-white flex items-center justify-center h-full">
+        <div className='flex flex-col xl:justify-start justify-center'> 
+          
+          <p className=" flex xl:justify-start justify-center mt-4 text-xl py-2">Reliable, Safe, and Efficient Tree Removal</p>
+         
+          <h1 className="flex xl:justify-start justify-center text-center xl:text-left text-4xl font-bold xl:text-8xl xl:max-w-[800px]">Professional Tree Cutting Services</h1>
+          
+          
+          <div className='flex xl:justify-start justify-center'>   
+            <button className="button py-2">Get a Quote</button>
+            </div>
+       
+          </div>  
+       
+       
+         
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Hero;

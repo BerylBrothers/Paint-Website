@@ -1,46 +1,48 @@
-import React from 'react';
-import Image from 'next/image';
-import {Button} from "../components/ui/button";
-import { motion } from 'framer-motion';
-
+import React from 'react'
+import Image from 'next/image'
 
 const About = () => {
-  return (
-    <section className='hero-bg py-6'>
-        <div className='container mx-auto'>
-          <div className='flex flex-col xl:flex-row items-center justify-between py-6'>
-            <div className='text-center xl:text-left bg-primary rounded-xl p-4'>
-              <h2 className='mb-6'>About Me</h2>
-              <p className='max-w-[500px]'>I'm a passionate Web Developer and Designer dedicated to crafting seamless digital experiences. With a blend of technical expertise and a strong sense of design, I specialize in building websites that are not only visually stunning but also user-friendly, fast, and responsive.
-                                          I believe that a great website does more than just look good—it should tell 
-                                          your brand’s story, engage visitors, and turn them into loyal customers. 
-              </p>
+    return (
+        <section>
+            <div className="container mx-auto py-12">
+                <div className="flex xl:flex-row flex-col justify-between items-center gap-4">
+                    {/* Image Section */}
+                    <div className="flex flex-col xl:flex-row py-12 ">
+                        <Image 
+                            src={'/images/tree-image-3.jpg'}
+                            height={600}
+                            width={600}
+                            alt="Tree Image"
+                            className="max-h-[700px] w-auto" 
+                        />
+                    </div>
+    
+                    {/* Text Section */}
+                    <div className="flex flex-col justify-center items-center text-left p-6">
+                        <div className='text-center xl:text-left '> 
+                            <h5 className='p-6'>Professional Land & Tree Maintenance</h5>
+                            <h2 className="text-left p-6 max-w-[400px]">Tree Removal Is An Easy Task</h2>
+                        <p className='max-w-[600px] p-6'>Higuera's tree service is proud to serve the comunity work at competitive prices.
+                            <br/>
+                            <br/>
+                            Since the start of our company we have strived to obtain the best quality tools so that the jobs are done to the highest standards.
+                            </p>
+                            <div className='p-6'>
+                            <a href="#" className="button">Hover me</a>
+                            </div>
+                            </div>
+                          
+  
+                       
+                    </div>
+                </div>
+          
+  
+ 
+
             </div>
-            <div className='order-1 xl:order-none mt-8 xl:mt-0 mb-4 xl:mb-0 rounded-full border-white'>
-              <div className='relative w-[298px] h-[298px] xl:w-[400px] xl:h-[400px] rounded-full overflow-hidden border-4 border-white'>
-                <Image 
-                src={"/assets/About-Me.png" } 
-                priority
-            quality={100}
-            fill
-            alt="Image"
-            className="object-cover"
-                />
-              </div>
-             
-              </div>
-       
-          </div>
-          <div className=" flex justify-center">
-          <a href="/contact">
-            <Button variant="outline" size="lg" className="uppercase flex items-center gap-2 border-white text-white hover:bg-white hover:text-black">
-            <span>Get In Touch</span>
-            </Button>
-            </a>
-        </div>
-          </div>
         </section>
-  )
+      );
 }
 
 export default About

@@ -1,47 +1,42 @@
 import React from 'react'
 import Link from 'next/link'
-import {Button} from "./ui/button"
+import { Button } from "./ui/button"
 import Nav from "../components/Nav"
 import MobileNav from './MobileNav'
 import Image from 'next/image'
 
-// bg-[#42a5f5]
-
 const Header = () => {
   return (
-    <header className="py-8 xl:py-6 text-white bg-primary">
+    <header className="py-8 xl:py-6 text-black bg-white border-b border-black">
       <div className='container mx-auto flex justify-between items-center'>
-      {/* logo */}
-     <a href={"/"} title="test">
-    
-     {/* {<h1 className='text-4xl'>
-      Daniel <span className='text-accent'>.</span>
-     </h1> */}
-       <Image 
-       src={'/assets/logo-transparent.png'}
-       height={100}
-       width={100}
-       alt=""
-       className='bg-white object-contain rounded-xl'
-       />
-       
-     </a>
+        {/* Logo */}
+        <a href={"/"} title="test" className="mr-10">
+          <Image
+            src={'/images/logo-transparent.png'}
+            height={125}
+            width={125}
+            alt="Logo"
+            className='bg-black object-contain rounded-xl'
+          />
+        </a>
 
-    
+        {/* Desktop nav & phone number */}
+        <div className="hidden xl:flex justify-center gap-8 items-center w-full">
+          {/* Centered Nav */}
+          <Nav />
+        </div>
 
-     {/* desktop nav & hire me button*/}
-     <div className="hidden xl:flex gap-8">
-     <Nav />
-     <Link href="/contact">
-     <Button className="bg-white hover:text-white">Hire me</Button>
-     </Link>
-     </div>
+        {/* Phone number */}
+        <div className="hidden xl:flex justify-end items-center">
+          <h3 className="whitespace-nowrap">9570 039 03904</h3>
+        </div>
 
-     {/* mobile nav */}
-     <div className='xl:hidden flex'><MobileNav /></div>
-     
-     </div>
-      </header>
+        {/* Mobile nav */}
+        <div className='xl:hidden flex justify-between'>
+          <MobileNav />
+        </div>
+      </div>
+    </header>
   )
 }
 
