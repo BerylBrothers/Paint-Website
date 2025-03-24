@@ -10,7 +10,7 @@ const Services = () => {
       <div className="container mx-auto h-full flex items-center justify-center z-10">
         <div className="relative flex flex-col xl:flex-row justify-center items-center w-full space-y-8 xl:space-x-8 xl:space-y-0">
           {/* Video iframe centered */}
-          <div className="flex justify-center items-center">
+          {/* <div className="flex justify-center items-center">
             <iframe
               width="900"
               height="600"
@@ -20,7 +20,7 @@ const Services = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-          </div>
+          </div> */}
 
           {/* Text content centered */}
           <div className="flex flex-col justify-center items-center text-left p-6 text-white">

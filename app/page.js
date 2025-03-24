@@ -8,6 +8,7 @@ import About2 from "@/components/About2";
 
 export default function Home() {
   return (
+    <div className="overflow:hidden">
     <>
 <Hero />
 <Parallax />
@@ -16,5 +17,6 @@ export default function Home() {
 <Services />
 <Team />
 </>
+</div>
   );
 }
