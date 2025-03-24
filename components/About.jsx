@@ -4,7 +4,7 @@ import Image from 'next/image'
 const About = () => {
     return (
         <section>
-            <div className="container mx-auto py-12">
+            <div className="container mx-auto pt-12 pb-6">
                 <div className="flex xl:flex-row flex-col justify-between items-center gap-4">
                     {/* Image Section */}
                     <div className="flex flex-col xl:flex-row py-12 ">
@@ -21,7 +21,7 @@ const About = () => {
                     <div className="flex flex-col justify-center items-center text-left p-6">
                         <div className='text-center xl:text-left '> 
                             <h5 className='p-6'>Professional Land & Tree Maintenance</h5>
-                            <h2 className="text-left p-6 max-w-[400px]">Tree Removal Is An Easy Task</h2>
+                            <h2 className=" p-6 max-w-[400px]">Tree Removal Is An Easy Task</h2>
                         <p className='max-w-[600px] p-6'>Higuera's tree service is proud to serve the comunity work at competitive prices.
                             <br/>
                             <br/>

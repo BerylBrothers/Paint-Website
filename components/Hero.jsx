@@ -30,7 +30,7 @@ const Hero = () => {
           backgroundImage: imageLoaded ? 'url("/images/tree-hero-resize.jpg")' : '',
         }}
       >
-        {/* Dark overlay 2*/}
+        {/* Dark overlay 1*/}
         <div className="absolute inset-0 bg-black opacity-50"></div>
         {/* Dark overlay 2*/}
         <div className="absolute inset-0 bg-black opacity-60 w-[40%]"></div>
