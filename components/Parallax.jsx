@@ -43,15 +43,15 @@ const Parallax = () => {
     };
   }, [isMobile]);
 
-  // Setting background style dynamically for mobile and desktop
+  // Adjust background style for mobile and desktop
   const backgroundStyle = {
     backgroundImage: 'url("/images/logs.jpg")',
     backgroundSize: "cover",
     backgroundPosition: isMobile
-      ? `center ${scrollY * 0.3}px` // Simulate fixed effect on mobile
-      : "center center", // Keep it fixed on desktop
+      ? `center ${Math.min(scrollY * 0.2, 100)}px` // Limit the vertical scroll effect on mobile
+      : "center center", // Keep the fixed background for desktop
     backgroundAttachment: isMobile ? "scroll" : "fixed", // Use scroll on mobile and fixed on desktop
-    transition: "background-position 0.1s ease-out", // Smooth transition for scroll effect
+    transition: "background-position 0.1s ease-out", // Smooth transition
   };
 
   return (
