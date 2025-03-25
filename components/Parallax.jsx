@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
+// Items
 const items = [
   {
     image: "/images/tiny-image-1.jpg",
@@ -22,13 +23,40 @@ const items = [
 ];
 
 const Parallax = () => {
-  // Background style with parallax effect
+  const [scrollY, setScrollY] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Handle scroll position for mobile devices
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    // Check for mobile devices on initial load
+    setIsMobile(window.innerWidth <= 768);
+
+    // Add scroll event listener for mobile
+    if (isMobile) {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    // Clean up event listener
+    return () => {
+      if (isMobile) {
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, [isMobile]);
+
+  // Parallax background style (mobile vs desktop)
   const backgroundStyle = {
     backgroundImage: 'url("/images/logs.jpg")',
     backgroundSize: "cover",
-    backgroundPosition: "center center",
-    backgroundAttachment: "fixed", // This creates the parallax effect
-    transition: "opacity 1s ease-out",
+    backgroundPosition: isMobile
+      ? `center ${scrollY * 0.3}px`
+      : "center center",
+    backgroundAttachment: isMobile ? "scroll" : "fixed", // No fixed background on mobile
+    transition: "background-position 0.2s ease-out",
   };
 
   return (
@@ -43,38 +71,35 @@ const Parallax = () => {
       <section>
         <div className="container mx-auto text-center px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {items.map((item, index) => {
-              return (
-                <div
-                  className="flex flex-col justify-center items-center text-white z-10 group"
-                  key={index}
-                >
-                  <div className="mb-4 opacity-50 transition-all duration-300 hover:opacity-100">
-                    {/* Flex container for image and text */}
-                    <div className="flex items-center justify-center gap-4 w-full">
-                      {/* Image */}
-                      <div className="relative w-10 h-10 xl:w-20 xl:h-20">
-                        {/* Image size change on mobile */}
-                        <Image
-                          src={item.image}
-                          alt=""
-                          height={100}
-                          width={100}
-                          className="rounded-full object-cover"
-                        />
-                      </div>
-                      {/* Text */}
-                      <div className="flex flex-col justify-center">
-                        <h3 className="">{item.action}</h3>
-                      </div>
+            {items.map((item, index) => (
+              <div
+                className="flex flex-col justify-center items-center text-white z-10 group"
+                key={index}
+              >
+                <div className="mb-4 opacity-50 transition-all duration-300 hover:opacity-100">
+                  {/* Flex container for image and text */}
+                  <div className="flex items-center justify-center gap-4 w-full">
+                    {/* Image */}
+                    <div className="relative w-10 h-10 xl:w-20 xl:h-20">
+                      <Image
+                        src={item.image}
+                        alt=""
+                        height={100}
+                        width={100}
+                        className="rounded-full object-cover"
+                      />
                     </div>
-                    <div className="border-t-2 border-white py-4 mt-4 sm:border-t-1 sm:py-2 md:border-t-2 md:py-4 transition-all duration-300 group-hover:border-green-800">
-                      <p className="">{item.description}</p>
+                    {/* Text */}
+                    <div className="flex flex-col justify-center">
+                      <h3>{item.action}</h3>
                     </div>
                   </div>
+                  <div className="border-t-2 border-white py-4 mt-4 sm:border-t-1 sm:py-2 md:border-t-2 md:py-4 transition-all duration-300 group-hover:border-green-800">
+                    <p>{item.description}</p>
+                  </div>
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         </div>
       </section>
