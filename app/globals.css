@@ -145,3 +145,40 @@ textarea::placeholder {
     width: 100%;
   }
 }
+
+/* global styles or your global css file (e.g., styles/globals.css) */
+
+/* Base background styles for all screen sizes */
+.relative-container {
+  position: relative;
+  background-image: url('/images/logs.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Overlay for the black background on top of the image */
+.relative-container .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Media Query for Tablet and Mobile */
+@media all and (max-width: 1024px) {
+  .relative-container::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-position: inherit;
+    background-image: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+    background-repeat: inherit;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+  }
+}
