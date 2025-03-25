@@ -151,7 +151,7 @@ textarea::placeholder {
   background-image: url("/images/logs.jpg");
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Default for desktop */
   -webkit-backface-visibility: hidden; /* For Safari and Chrome */
   backface-visibility: hidden; /* Standard CSS */
 }
@@ -160,4 +160,11 @@ textarea::placeholder {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Mobile and tablet adjustments */
+@media (max-width: 1024px) {
+  .parallax-background {
+    background-attachment: scroll; /* Allow scrolling background on mobile */
+  }
 }
