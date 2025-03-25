@@ -3,17 +3,17 @@ import Image from "next/image";
 
 const items = [
   {
-    picture: "/images/lumberjack-1.jpg",
+    picture: "/images/lumberjack-1-resize.jpg",
     name: "Eric Lopez",
     title: "Tree Service",
   },
   {
-    picture: "/images/lumberjack-2.jpg",
+    picture: "/images/lumberjack-2-resize.jpg",
     name: "John Phillips",
     title: "Tree Service",
   },
   {
-    picture: "/images/lumberjack-3.jpg",
+    picture: "/images/lumberjack-3-resize.jpg",
     name: "Lance Baker",
     title: "Tree Service",
   },

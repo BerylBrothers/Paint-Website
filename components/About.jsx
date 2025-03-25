@@ -9,7 +9,7 @@ const About = () => {
           {/* Image Section */}
           <div className="flex flex-col xl:flex-row py-12 ">
             <Image
-              src={"/images/tree-image-3.jpg"}
+              src={"/images/tree-image-3-resize.jpg"}
               height={600}
               width={600}
               alt="Tree Image"

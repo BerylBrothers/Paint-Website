@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <section
       className="relative w-full h-screen bg-cover bg-center"
-      style={{ backgroundImage: 'url("/images/tree-image-7.jpg")' }}
+      style={{ backgroundImage: 'url("/images/tree-image-7-resize.jpg")' }}
     >
       <div className="absolute inset-0 bg-black opacity-80"></div>
       <div className="container mx-auto h-full flex items-center justify-center z-10">

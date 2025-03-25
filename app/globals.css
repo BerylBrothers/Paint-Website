@@ -151,7 +151,7 @@ textarea::placeholder {
   top: 0;
   left: 0;
   right: 0;
-  background-image: url("/images/logs.jpg");
+  background-image: url("/images/logs-resize.jpg");
   background-size: cover; /* Ensure the background image fills the section */
   background-position: center center;
   z-index: -1; /* Ensures the background stays behind the content */
