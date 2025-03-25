@@ -58,7 +58,7 @@ const Parallax = () => {
     backgroundImage: 'url("/images/logs.jpg")',
     backgroundSize: "cover",
     backgroundPosition: `center ${
-      isMobile ? Math.min(scrollY * 0.15, maxScroll) : 0
+      isMobile ? Math.min(scrollY * 0.08, maxScroll) : 0
     }px`, // Limit the movement on mobile
     backgroundAttachment: "fixed", // Fixed background for mobile and desktop
     transition: "background-position 0.2s ease-out", // Smooth transition for mobile
