@@ -154,6 +154,9 @@ textarea::placeholder {
   background-attachment: fixed;
   -webkit-backface-visibility: hidden; /* For Safari and Chrome */
   backface-visibility: hidden; /* Standard CSS */
+  z-index: -1000;
+  top: 0;
+  left: 0;
 }
 
 .overlay {
