@@ -29,7 +29,10 @@ const Parallax = () => {
   // Handle scroll position for mobile devices
   useEffect(() => {
     const handleScroll = () => {
-      setScrollY(window.scrollY);
+      // Using requestAnimationFrame to make scrolling smoother
+      requestAnimationFrame(() => {
+        setScrollY(window.scrollY);
+      });
     };
 
     // Check for mobile devices on initial load
@@ -52,11 +55,9 @@ const Parallax = () => {
   const backgroundStyle = {
     backgroundImage: 'url("/images/logs.jpg")',
     backgroundSize: "cover",
-    backgroundPosition: isMobile
-      ? `center ${scrollY * 0.1}px`
-      : "center center",
-    backgroundAttachment: isMobile ? "scroll" : "fixed", // No fixed background on mobile
-    transition: "background-position 0.2s ease-out",
+    backgroundPosition: `center ${isMobile ? scrollY * 0.15 : 0}px`, // More subtle effect on mobile
+    backgroundAttachment: "fixed", // Fixed background for mobile and desktop
+    transition: "background-position 0.2s ease-out", // Smooth transition for mobile
   };
 
   return (
