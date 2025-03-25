@@ -52,10 +52,14 @@ const Parallax = () => {
   }, [isMobile]);
 
   // Parallax background style (mobile vs desktop)
+  // Ensure background doesn't scroll off the screen
+  const maxScroll = 150; // Limit to how much the background should move
   const backgroundStyle = {
     backgroundImage: 'url("/images/logs.jpg")',
     backgroundSize: "cover",
-    backgroundPosition: `center ${isMobile ? scrollY * 0.15 : 0}px`, // More subtle effect on mobile
+    backgroundPosition: `center ${
+      isMobile ? Math.min(scrollY * 0.15, maxScroll) : 0
+    }px`, // Limit the movement on mobile
     backgroundAttachment: "fixed", // Fixed background for mobile and desktop
     transition: "background-position 0.2s ease-out", // Smooth transition for mobile
   };
