@@ -146,6 +146,48 @@ textarea::placeholder {
   }
 }
 
+.parallax-background2 {
+  position: fixed; /* Fix background to viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url("/images/logs.jpg");
+  background-size: cover; /* Ensure the background image fills the section */
+  background-position: center center;
+  z-index: -1; /* Ensures the background stays behind the content */
+  width: 100%; /* Full width of the section */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional dark overlay */
+  z-index: 0; /* Ensures overlay stays behind the content */
+}
+
+/* Content container: stack above background */
+.container {
+  position: relative; /* This ensures the content is positioned relative to its container */
+  z-index: 10; /* Content will appear above the background and overlay */
+  
+}
+
+/* Flexbox settings for centering content */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid styling for content items */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
 
 
 .parallax-background {
