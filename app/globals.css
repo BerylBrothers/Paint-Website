@@ -145,3 +145,19 @@ textarea::placeholder {
     width: 100%;
   }
 }
+
+/* For global styles (globals.css) or scoped styles (ParallaxComponent.module.css) */
+.parallax-background {
+  background-image: url("/images/logs.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-backface-visibility: hidden; /* For Safari and Chrome */
+  backface-visibility: hidden; /* Standard CSS */
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}

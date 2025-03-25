@@ -1,6 +1,5 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Image from "next/image";
 
 // Items
@@ -23,22 +22,9 @@ const items = [
 ];
 
 const ParallaxComponent = () => {
-  // Adjust background style for mobile and desktop
-  const backgroundStyle = {
-    backgroundImage: 'url("/images/logs.jpg")',
-    backgroundSize: "cover",
-    backgroundPosition: "center center", // Keep the fixed background for desktop
-    backgroundAttachment: "fixed", // Use scroll on mobile and fixed on desktop
-    WebkitBackfaceVisibility: "hidden", // Add for Safari and Chrome (Webkit browsers)
-    backfaceVisibility: "hidden", // Standard CSS property for other browsers
-  };
-
   return (
-    <div
-      className="relative w-full h-[70vh] xl:h-[50vh] bg-cover bg-bottom bg-no-repeat flex items-center py-12 justify-center"
-      style={backgroundStyle}
-    >
-      <div className="absolute inset-0 bg-black opacity-80"></div>
+    <div className="parallax-background relative w-full h-[70vh] xl:h-[50vh] bg-cover bg-bottom bg-no-repeat flex items-center py-12 justify-center">
+      <div className="overlay"></div>
       <section>
         <div className="container mx-auto text-center px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
