@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Hero from "@/components/Hero";
-import Parallax from "@/components/Parallax";
+import ParallaxComponent from "@/components/ParallaxComponent";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Team from "@/components/Team";
@@ -11,7 +11,7 @@ export default function Home() {
     <div className="overflow:hidden">
     <>
 <Hero />
-<Parallax />
+<ParallaxComponent />
 <About />
 <About2 />
 <Services />

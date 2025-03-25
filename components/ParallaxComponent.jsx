@@ -22,36 +22,15 @@ const items = [
   },
 ];
 
-const Parallax = () => {
-  const [scrollY, setScrollY] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      requestAnimationFrame(() => setScrollY(window.scrollY));
-    };
-
-    setIsMobile(window.innerWidth <= 768);
-    if (isMobile) {
-      window.addEventListener("scroll", handleScroll);
-    }
-
-    return () => {
-      if (isMobile) {
-        window.removeEventListener("scroll", handleScroll);
-      }
-    };
-  }, [isMobile]);
-
+const ParallaxComponent = () => {
   // Adjust background style for mobile and desktop
   const backgroundStyle = {
     backgroundImage: 'url("/images/logs.jpg")',
     backgroundSize: "cover",
-    backgroundPosition: isMobile
-      ? `center ${Math.min(scrollY * 0.2, 100)}px` // Limit the vertical scroll effect on mobile
-      : "center center", // Keep the fixed background for desktop
-    backgroundAttachment: isMobile ? "scroll" : "fixed", // Use scroll on mobile and fixed on desktop
-    transition: "background-position 0.1s ease-out", // Smooth transition
+    backgroundPosition: "center center", // Keep the fixed background for desktop
+    backgroundAttachment: "fixed", // Use scroll on mobile and fixed on desktop
+    WebkitBackfaceVisibility: "hidden", // Add for Safari and Chrome (Webkit browsers)
+    backfaceVisibility: "hidden", // Standard CSS property for other browsers
   };
 
   return (
@@ -96,4 +75,4 @@ const Parallax = () => {
   );
 };
 
-export default Parallax;
+export default ParallaxComponent;
