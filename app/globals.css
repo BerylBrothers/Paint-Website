@@ -174,12 +174,7 @@ textarea::placeholder {
   
 }
 
-/* Flexbox settings for centering content */
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 /* Grid styling for content items */
 .grid {
