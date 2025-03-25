@@ -23,7 +23,7 @@ const Team = () => {
   return (
     <section className="bg-white">
       <div className="container mx-auto py-12">
-        <div className="flex flex-col xl:flex justify-center items-center pt-12">
+        <div className="flex flex-col xl:flex justify-center items-center py-12">
           <div className="flex flex-col justify-center items-center">
             <p className="font-normal">Professional Land & Tree Maintenance</p>
             <div className="py-12">
