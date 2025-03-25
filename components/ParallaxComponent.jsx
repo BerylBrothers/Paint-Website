@@ -23,9 +23,9 @@ const items = [
 
 const ParallaxComponent = () => {
   return (
-    <div className="parallax-background relative w-full h-[70vh] xl:h-[50vh] bg-cover bg-bottom bg-no-repeat flex items-center py-12 justify-center">
-      <div className="overlay"></div>
-      <section>
+    <section className=" relative w-full z-10">
+      <div className="parallax-background bg-cover bg-bottom bg-no-repeat flex items-center py-12 justify-center">
+        <div className="overlay"></div>
         <div className="container mx-auto text-center px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {items.map((item, index) => (
@@ -56,8 +56,8 @@ const ParallaxComponent = () => {
             ))}
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
