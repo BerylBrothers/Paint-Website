@@ -26,24 +26,16 @@ const Parallax = () => {
   const [scrollY, setScrollY] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Handle scroll position for mobile devices
   useEffect(() => {
     const handleScroll = () => {
-      // Using requestAnimationFrame to make scrolling smoother
-      requestAnimationFrame(() => {
-        setScrollY(window.scrollY);
-      });
+      requestAnimationFrame(() => setScrollY(window.scrollY));
     };
 
-    // Check for mobile devices on initial load
     setIsMobile(window.innerWidth <= 768);
-
-    // Add scroll event listener for mobile
     if (isMobile) {
       window.addEventListener("scroll", handleScroll);
     }
 
-    // Clean up event listener
     return () => {
       if (isMobile) {
         window.removeEventListener("scroll", handleScroll);
@@ -51,17 +43,11 @@ const Parallax = () => {
     };
   }, [isMobile]);
 
-  // Parallax background style (mobile vs desktop)
-  // Ensure background doesn't scroll off the screen
-  const maxScroll = 150; // Limit to how much the background should move
   const backgroundStyle = {
     backgroundImage: 'url("/images/logs.jpg")',
     backgroundSize: "cover",
-    backgroundPosition: `center ${
-      isMobile ? Math.min(scrollY * 0.08, maxScroll) : 0
-    }px`, // Limit the movement on mobile
-    backgroundAttachment: "fixed", // Fixed background for mobile and desktop
-    transition: "background-position 0.2s ease-out", // Smooth transition for mobile
+    backgroundPosition: "center center",
+    backgroundAttachment: isMobile ? "initial" : "fixed", // Fixed for desktop, initial for mobile
   };
 
   return (
@@ -69,10 +55,18 @@ const Parallax = () => {
       className="relative w-full h-[70vh] xl:h-[50vh] bg-cover bg-bottom bg-no-repeat flex items-center py-12 justify-center"
       style={backgroundStyle}
     >
-      {/* Dark overlay */}
+      {isMobile && (
+        <div
+          className="absolute inset-0 bg-cover bg-bottom"
+          style={{
+            top: -scrollY * 0.1 + "px", // Adjust top position dynamically
+            backgroundImage: 'url("/images/logs.jpg")',
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+          }}
+        ></div>
+      )}
       <div className="absolute inset-0 bg-black opacity-80"></div>
-
-      {/* Content */}
       <section>
         <div className="container mx-auto text-center px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -82,9 +76,7 @@ const Parallax = () => {
                 key={index}
               >
                 <div className="mb-4 opacity-50 transition-all duration-300 hover:opacity-100">
-                  {/* Flex container for image and text */}
                   <div className="flex items-center justify-center gap-4 w-full">
-                    {/* Image */}
                     <div className="relative w-10 h-10 xl:w-20 xl:h-20">
                       <Image
                         src={item.image}
@@ -94,7 +86,6 @@ const Parallax = () => {
                         className="rounded-full object-cover"
                       />
                     </div>
-                    {/* Text */}
                     <div className="flex flex-col justify-center">
                       <h3>{item.action}</h3>
                     </div>
