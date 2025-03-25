@@ -157,6 +157,7 @@ textarea::placeholder {
   z-index: -1; /* Ensures the background stays behind the content */
   width: 100%; /* Full width of the section */
   height: 100vh; /* Full viewport height */
+  touch-action: none; /* Prevent touch events from affecting background */
 }
 
 /* Overlay */
