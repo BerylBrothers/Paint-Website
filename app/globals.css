@@ -146,25 +146,49 @@ textarea::placeholder {
   }
 }
 
-/* For global styles (globals.css) or scoped styles (ParallaxComponent.module.css) */
 .parallax-background {
   background-image: url("/images/logs.jpg");
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed; /* Default for desktop */
+  background-attachment: fixed; /* This works on desktop */
   -webkit-backface-visibility: hidden; /* For Safari and Chrome */
   backface-visibility: hidden; /* Standard CSS */
+}
+
+/* Simulate parallax effect on mobile */
+@media (max-width: 1024px) {
+  .parallax-background {
+    background-attachment: scroll; /* Disable fixed background on mobile */
+    background-position: center; /* Center the background image */
+    transform: translateY(0); /* Reset transform on mobile */
+    transition: background-position 0.3s ease-out;
+  }
+
+  /* Use pseudo-element to simulate parallax on scroll */
+  .parallax-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    background-attachment: inherit;
+    transform: translateY(0); /* You can add any transform effect here */
+    z-index: -1; /* Ensure it's behind other content */
+    pointer-events: none;
+  }
+
+  /* Adding slight background movement on mobile */
+  .parallax-background:hover::after {
+    transform: translateY(-10px); /* Adjust this for desired parallax effect */
+  }
 }
 
 .overlay {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Mobile and tablet adjustments */
-@media (max-width: 1024px) {
-  .parallax-background {
-    background-attachment: scroll; /* Allow scrolling background on mobile */
-  }
 }
