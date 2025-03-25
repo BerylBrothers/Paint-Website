@@ -46,8 +46,11 @@ const Parallax = () => {
   const backgroundStyle = {
     backgroundImage: 'url("/images/logs.jpg")',
     backgroundSize: "cover",
-    backgroundPosition: "center center",
+    backgroundPosition: isMobile
+      ? `center ${scrollY * 0.1}px`
+      : "center center", // Apply scroll effect for mobile
     backgroundAttachment: isMobile ? "initial" : "fixed", // Fixed for desktop, initial for mobile
+    transition: "background-position 0.2s ease-out",
   };
 
   return (
@@ -55,17 +58,6 @@ const Parallax = () => {
       className="relative w-full h-[70vh] xl:h-[50vh] bg-cover bg-bottom bg-no-repeat flex items-center py-12 justify-center"
       style={backgroundStyle}
     >
-      {isMobile && (
-        <div
-          className="absolute inset-0 bg-cover bg-bottom"
-          style={{
-            top: -scrollY * 0.1 + "px", // Adjust top position dynamically
-            backgroundImage: 'url("/images/logs.jpg")',
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-          }}
-        ></div>
-      )}
       <div className="absolute inset-0 bg-black opacity-80"></div>
       <section>
         <div className="container mx-auto text-center px-4">
