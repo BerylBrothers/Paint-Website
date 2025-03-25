@@ -35,11 +35,11 @@ const Testimonials = ({ SwiperComponent }) => {
   };
 
   return (
-    <section className="py-12">
-      <div className="container mx-auto">
+    <section className="pt-12">
+      <div className=" mx-auto">
         <div className="flex xl:flex-row flex-col justify-between border border-black">
           {/* text container */}
-          <div className="flex xl:flex-row flex-col border border-black bg-blue-100 w-full xl:w-[50%] h-full">
+          <div className="flex xl:flex-row flex-col justify-center items-center border border-black bg-blue-100 w-full xl:w-[50%] h-full">
             <div className="flex flex-col justify-center items-center text-center xl:text-left p-6 ">
               <div className="text-center xl:text-left ">
                 <h5 className="p-6">Professional Land & Tree Maintenance</h5>
