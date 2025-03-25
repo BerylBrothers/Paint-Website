@@ -10,23 +10,25 @@ const Services = () => {
       <div className="container mx-auto h-full flex items-center justify-center z-10">
         <div className="relative flex flex-col xl:flex-row justify-center items-center w-full space-y-8 xl:space-x-8 xl:space-y-0">
           {/* Video iframe centered */}
-          {/* <div className="flex justify-center items-center">
-            <iframe
-              width="900"
-              height="600"
-              src="https://www.youtube-nocookie.com/embed/WTkuJzGIDoM"
-              title="YouTube video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div> */}
-
+          <div className="flex justify-center items-center w-full">
+            <div className="relative w-full max-w-[800px] pb-[56.25%]">
+              {" "}
+              {/* 16:9 aspect ratio */}
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/WTkuJzGIDoM"
+                title="YouTube video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
           {/* Text content centered */}
           <div className="flex flex-col justify-center items-center text-left p-6 text-white">
             <div className="text-center xl:text-left">
               <h5 className="p-6">Professional Land & Tree Maintenance</h5>
-              <h2 className="p-6 max-w-[400px] text-center xl:text-left">
+              <h2 className="p-6 max-w-full xl:max-w-[400px] text-center xl:text-left">
                 Tree Removal Is An Easy Task
               </h2>
               <p className="max-w-[600px] p-6 text-center xl:text-left">

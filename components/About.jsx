@@ -18,10 +18,10 @@ const About = () => {
           </div>
 
           {/* Text Section */}
-          <div className="flex flex-col justify-center items-center text-left p-6 ">
+          <div className="flex flex-col justify-center items-center text-center xl:text-left p-6 ">
             <div className="text-center xl:text-left ">
               <h5 className="p-6">Professional Land & Tree Maintenance</h5>
-              <h2 className=" p-6 max-w-[400px]">
+              <h2 className=" p-6 max-w-full xl:max-w-[400px]">
                 Tree Removal Is An Easy Task
               </h2>
               <p className="max-w-[600px] p-6">
