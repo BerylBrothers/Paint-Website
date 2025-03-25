@@ -158,6 +158,7 @@ textarea::placeholder {
   width: 100%; /* Full width of the section */
   height: 100vh; /* Full viewport height */
   touch-action: none; /* Prevent touch events from affecting background */
+  pointer-events: none;
 }
 
 /* Overlay */
