@@ -2,9 +2,10 @@
 
 import React from "react";
 import { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import SwiperComponent from "./SwiperComponent";
 import WorkSliderButtons from "./WorkSliderButtons";
+import { PiCaretRightBold, PiCaretLeftBold } from "react-icons/pi";
 
 const items = [
   {
@@ -24,7 +25,7 @@ const items = [
   },
 ];
 
-const Testimonials = ({ SwiperComponent }) => {
+const Testimonials = ({}) => {
   // const [items, setItems] = useState[0];
 
   const handleSlideChange = (swiper) => {
@@ -33,6 +34,8 @@ const Testimonials = ({ SwiperComponent }) => {
     //update project state based on current slide index
     setItems(items[currentIndex]);
   };
+
+  const swiper = useSwiper();
 
   return (
     <section className="pt-12">
@@ -56,14 +59,30 @@ const Testimonials = ({ SwiperComponent }) => {
                   standards.
                 </p>
                 <div className="p-6">
-                  <WorkSliderButtons />
+                  <button onClick={() => swiper.slidePrev()}>
+                    <PiCaretLeftBold />
+                  </button>
+                  <button onClick={() => swiper.slideNext()}>
+                    <PiCaretRightBold />
+                  </button>
                 </div>
               </div>
             </div>
           </div>
           {/* image container */}
-          <div className="flex xl:flex-row flex-col border border-black h-full w-full xl:w-[50%] ">
-            Image
+          <div className="flex flex-row  border border-black h-full w-full xl:w-[50%] ">
+            <Swiper
+              spaceBetween={50}
+              slidesPerView={3}
+              onSlideChange={() => console.log("slide change")}
+              onSwiper={(swiper) => console.log(swiper)}
+            >
+              <SwiperSlide>Slide 1</SwiperSlide>
+              <SwiperSlide>Slide 2</SwiperSlide>
+              <SwiperSlide>Slide 3</SwiperSlide>
+              <SwiperSlide>Slide 4</SwiperSlide>
+              ...
+            </Swiper>
           </div>
         </div>
       </div>
