@@ -146,6 +146,14 @@ textarea::placeholder {
   }
 }
 
+.forest-bg-1 {
+  background-image: url("/images/forest-bg-1.jpg");
+}
+
+.forest-bg-2 {
+  background-image: url("/images/forest-bg-2.jpg");
+}
+
 .parallax-background2 {
   position: fixed; /* Fix background to viewport */
   top: 0;
