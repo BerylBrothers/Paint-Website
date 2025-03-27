@@ -1,0 +1,84 @@
+import React from "react";
+import Image from "next/image";
+
+const items = [
+  {
+    picture: "/images/New-York.jpg",
+    name: "New York",
+    title: "Tree Service",
+  },
+  {
+    picture: "/images/Atlanta.jpg",
+    name: "Atlanta",
+    title: "Tree Service",
+  },
+  {
+    picture: "/images/London.jpg",
+    name: "London",
+    title: "Tree Service",
+  },
+  {
+    picture: "/images/New-Orleans.jpg",
+    name: "New Orleans",
+    title: "Tree Service",
+  },
+  {
+    picture: "/images/Miami.jpg",
+    name: "Miami",
+    title: "Tree Service",
+  },
+  {
+    picture: "/images/Dallas.jpg",
+    name: "Dallas",
+    title: "Tree Service",
+  },
+];
+
+const Areas = () => {
+  return (
+    <section className="bg-white">
+      <div className="container mx-auto py-12">
+        <div className="flex flex-col xl:flex justify-center items-center py-12">
+          <div className="flex flex-col justify-center items-center">
+            <p className="font-normal">Professional Land & Tree Maintenance</p>
+            <div className="py-12">
+              <h2>Areas We Service</h2>
+            </div>
+            <div className="grid grid-cols-1 xl:grid-cols-3 grid-rows-2 gap-6">
+              {items.map((item, index) => {
+                return (
+                  <a href="/" key={index} className="group">
+                    <div className="relative">
+                      {/* Wrapper div around the image */}
+                      <div className="relative overflow-hidden">
+                        <Image
+                          src={item.picture}
+                          height={400}
+                          width={400}
+                          alt=""
+                          className="transition-all duration-500 ease-in-out"
+                        />
+                        {/* Black overlay directly on the image */}
+                        <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+                      </div>
+
+                      {/* Image text content */}
+                      <div className="py-3">
+                        <h3>{item.name}</h3>
+                      </div>
+                      <div>
+                        <p>{item.title}</p>
+                      </div>
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Areas;
