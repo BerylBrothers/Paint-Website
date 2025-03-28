@@ -27,7 +27,10 @@ const Services = () => {
           {/* Text content centered */}
           <div className="flex flex-col justify-center items-center text-left p-6 text-white">
             <div className="text-center xl:text-left">
-              <h5 className="p-6">Professional Land & Tree Maintenance</h5>
+              <div className="p-6">
+                <p className="py-2">Professional Land & Tree Maintenance</p>
+                <div className=" border-green-800 border-b-2 w-16 "></div>
+              </div>
               <h2 className="p-6 max-w-full xl:max-w-[400px] text-center xl:text-left">
                 Tree Removal Is An Easy Task
               </h2>

@@ -40,7 +40,10 @@ const Areas = () => {
       <div className="container mx-auto py-12">
         <div className="flex flex-col xl:flex justify-center items-center py-12">
           <div className="flex flex-col justify-center items-center">
-            <p className="font-normal">Professional Land & Tree Maintenance</p>
+            <div className="flex flex-col justify-center items-center p-6">
+              <p className="py-2">Professional Land & Tree Maintenance</p>
+              <div className="flex justify-center items-center border-green-800 border-b-2 w-16 "></div>
+            </div>
             <div className="py-12">
               <h2>Areas We Service</h2>
             </div>

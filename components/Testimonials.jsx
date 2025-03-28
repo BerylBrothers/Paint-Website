@@ -49,11 +49,10 @@ const Testimonials = () => {
       <div className=" mx-auto">
         <div className="flex xl:flex-row flex-col justify-between ">
           {/* text container */}
-          <div className="relative flex xl:flex-row flex-col justify-center items-center border forest-bg-1 border-black  w-full xl:w-[50%] h-full">
+          <div className="relative flex xl:flex-row flex-col justify-center items-center border forest-bg-1 border-black  w-full xl:w-[50%] h-[70vh]">
             <div className="absolute inset-0 opacity-60 bg-green-300"></div>
             <div className="flex flex-col justify-center items-center text-center xl:text-left p-6 z-10">
-              <h5 className="p-6">Professional Land & Tree Maintenance</h5>
-              <h2 className="p-6 max-w-full xl:max-w-[400px] text-center">
+              <h2 className="p-6 max-w-full xl:max-w-[500px] text-center">
                 Tree Removal Is An Easy Task
               </h2>
               <p className="max-w-[600px] p-6">
@@ -65,20 +64,7 @@ const Testimonials = () => {
                 best quality tools so that the jobs are done to the highest
                 standards.
               </p>
-              <div className="p-6">
-                <button
-                  onClick={prevTestimonial}
-                  className="text-white p-3 mx-2"
-                >
-                  <PiCaretLeftBold />
-                </button>
-                <button
-                  onClick={nextTestimonial}
-                  className="text-white p-3 mx-2"
-                >
-                  <PiCaretRightBold />
-                </button>
-              </div>
+              <div className="p-6"></div>
             </div>
           </div>
 
@@ -88,7 +74,6 @@ const Testimonials = () => {
             {/* Display only the current testimonial */}
             <div className="relative z-10">
               <div className="flex flex-col justify-center items-center text-center xl:text-left p-6 z-10 text-white">
-                <h5 className="p-6">Professional Land & Tree Maintenance</h5>
                 <h2 className="p-6 max-w-full xl:max-w-[350px] text-center">
                   Join Our Tree Service
                 </h2>
@@ -101,10 +86,10 @@ const Testimonials = () => {
                   best quality tools so that the jobs are done to the highest
                   standards.
                 </p>
-                <div className="">
-                  <a href="#" className="button z-10">
+                <div className="p-6">
+                  {/* <a href="#" className="button z-10">
                     Hover me
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

@@ -9,7 +9,10 @@ const About = () => {
           {/* Text Section */}
           <div className="flex flex-col xl:order-1 order-2 justify-center items-center text-left p-6">
             <div className="text-center xl:text-left">
-              <h5 className="p-6">Professional Land & Tree Maintenance</h5>
+              <div className="p-6">
+                <p className="py-2">Professional Land & Tree Maintenance</p>
+                <div className=" border-green-800 border-b-2 w-16 "></div>
+              </div>
               <h2 className=" p-6 max-w-full xl:max-w-[400px]">
                 Tree Removal Is An Easy Task
               </h2>
