@@ -47,14 +47,14 @@ const Testimonials = () => {
   return (
     <section className="pt-12">
       <div className=" mx-auto">
-        <div className="flex xl:flex-row flex-col justify-between border border-black">
+        <div className="flex xl:flex-row flex-col justify-between ">
           {/* text container */}
           <div className="relative flex xl:flex-row flex-col justify-center items-center border forest-bg-1 border-black  w-full xl:w-[50%] h-full">
-            <div className="absolute inset-0 opacity-60 bg-green-500"></div>
+            <div className="absolute inset-0 opacity-60 bg-green-600"></div>
             <div className="flex flex-col justify-center items-center text-center xl:text-left p-6 z-10">
               <h5 className="p-6">Professional Land & Tree Maintenance</h5>
-              <h2 className="p-6 max-w-full xl:max-w-[400px]">
-                Tree Removal Is An Easy Task
+              <h2 className="p-6 max-w-full xl:max-w-[350px] text-center">
+                Join Our Tree Service
               </h2>
               <p className="max-w-[600px] p-6">
                 Higuera's tree service is proud to serve the community with
@@ -66,22 +66,19 @@ const Testimonials = () => {
                 standards.
               </p>
               <div className="p-6">
-                <button onClick={prevTestimonial} className="p-3 mx-2">
-                  <PiCaretLeftBold />
-                </button>
-                <button onClick={nextTestimonial} className="p-3 mx-2">
-                  <PiCaretRightBold />
-                </button>
+                <a href="#" className="button z-10">
+                  Hover me
+                </a>
               </div>
             </div>
           </div>
 
           {/* carousel container */}
           <div className="relative flex flex-col justify-center items-center w-full xl:w-[50%] forest-bg-2">
-            <div className="absolute inset-0 opacity-60 bg-green-800"></div>
+            <div className="absolute inset-0 opacity-60 bg-black "></div>
             {/* Display only the current testimonial */}
             <div className="relative z-10">
-              <div className="flex flex-col justify-center items-center text-center xl:text-left p-6 z-10">
+              <div className="flex flex-col justify-center items-center text-center xl:text-left p-6 z-10 text-white">
                 <h5 className="p-6">Professional Land & Tree Maintenance</h5>
                 <h2 className="p-6 max-w-full xl:max-w-[400px]">
                   Tree Removal Is An Easy Task
