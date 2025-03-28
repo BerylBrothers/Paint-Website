@@ -23,9 +23,14 @@ const About = () => {
                 standards.
               </p>
               <div className="p-6">
-                <a href="#" className="button z-10">
-                  Hover me
-                </a>
+                <div id="container">
+                  <button className="learn-more button-style">
+                    <span className="circle" aria-hidden="true">
+                      <span className="icon arrow"></span>
+                    </span>
+                    <span className="button-text">Learn More</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
