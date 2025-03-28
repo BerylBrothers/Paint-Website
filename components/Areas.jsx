@@ -10,6 +10,7 @@ const items = [
   {
     picture: "/images/Atlanta.jpg",
     name: "Atlanta",
+
     title: "Tree Service",
   },
   {
@@ -69,8 +70,9 @@ const Areas = () => {
                       <div className="py-3">
                         <h3>{item.name}</h3>
                       </div>
+                      <div className="border-green-800 border-b-2 w-16 "></div>
                       <div>
-                        <p>{item.title}</p>
+                        <p className="py-2">{item.title}</p>
                       </div>
                     </div>
                   </a>
