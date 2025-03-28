@@ -50,7 +50,7 @@ const Areas = () => {
                   <a href="/" key={index} className="group">
                     <div className="relative">
                       {/* Wrapper div around the image */}
-                      <div className="relative overflow-hidden">
+                      <div className="relative overflow-hidden border border-black">
                         <Image
                           src={item.picture}
                           height={400}
