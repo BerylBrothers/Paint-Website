@@ -30,7 +30,7 @@ const Team = () => {
               <div className="flex justify-center items-center border-green-800 border-b-2 w-16 "></div>
             </div>
             <div className="py-12">
-              <h2>Our Best Lumberjacks</h2>
+              <h2>Our Lumberjacks</h2>
             </div>
             <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
               {items.map((item, index) => {
