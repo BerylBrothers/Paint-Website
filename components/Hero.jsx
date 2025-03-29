@@ -40,10 +40,12 @@ const Hero = () => {
         {/* Content on top of the image */}
         <div className="container mx-auto relative z-10 text-white flex items-center justify-center h-full">
           <div className="flex flex-col xl:justify-start justify-center">
-            <p className=" flex xl:justify-start justify-center mt-4 text-xl py-2 ">
-              Reliable, Safe, and Efficient Tree Removal
-            </p>
-            <div className="border-green-800 border-b-2 w-16 "></div>
+            <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center ">
+              <p className=" flex xl:justify-start xl:items-start items-center justify-center mt-4 text-xl py-2 ">
+                Reliable, Safe, and Efficient Tree Removal
+              </p>
+              <div className="flex xl:justify-start justify-center xl:items-start items-center border-green-800 border-b-2 w-16 "></div>
+            </div>
 
             <h1 className="flex xl:justify-start justify-center text-center xl:text-left text-4xl font-bold xl:text-8xl xl:max-w-[800px]">
               Professional Tree Cutting Services
