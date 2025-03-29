@@ -41,7 +41,7 @@ const Hero = () => {
         <div className="container mx-auto relative z-10 text-white flex items-center justify-center h-full">
           <div className="flex flex-col xl:justify-start justify-center">
             <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center ">
-              <p className=" flex xl:justify-start xl:items-start items-center justify-center mt-4 text-xl py-2 ">
+              <p className=" flex xl:justify-start xl:items-start items-center justify-center mt-4 text-lg py-2 ">
                 Reliable, Safe, and Efficient Tree Removal
               </p>
               <div className="flex xl:justify-start justify-center xl:items-start items-center border-green-800 border-b-2 w-16 "></div>
