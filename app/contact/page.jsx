@@ -31,11 +31,11 @@ const page = () => {
         <PageTitle title="Contact" />
       </div>
       <div className="flex justify-center items-center mx-auto container">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-16">
           {cards.map((card, index) => {
             return (
               <div
-                className="flex justify-center items-center border border-black h-[350px] w-[350px]"
+                className="flex justify-center items-center border bg-green-800 text-white border-black h-[350px] w-[350px]"
                 key={index}
               >
                 <div className="flex flex-col justify-center items-center">
@@ -46,6 +46,18 @@ const page = () => {
               </div>
             );
           })}
+        </div>
+      </div>
+      <div className="flex xl:flex-row flex-col justify-between ">
+        {/* text container */}
+        <div className="relative flex xl:flex-row flex-col justify-center items-center border forest-bg-1 border-black  w-full xl:w-[50%] h-[70vh]">
+          <div className="absolute inset-0 opacity-60 bg-green-300"></div>
+        </div>
+
+        {/* carousel container */}
+        <div className="relative flex flex-col justify-center items-center w-full xl:w-[50%] forest-bg-2">
+          <div className="absolute inset-0 opacity-60 bg-black "></div>
+          {/* Display only the current testimonial */}
         </div>
       </div>
     </section>
