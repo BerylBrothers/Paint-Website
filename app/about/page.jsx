@@ -5,7 +5,7 @@ const page = () => {
   return (
     <section className=" flex flex-col justify-center ">
       <div>
-        <PageTitle title="About" />
+        <PageTitle title="About Us" />
       </div>
       <div className="container">About</div>
     </section>

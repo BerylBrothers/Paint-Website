@@ -5,33 +5,32 @@ import Image from "next/image";
 const services = [
   {
     picture: "/images/New-York.jpg",
-    name: "New York",
+    name: "Tree Removal",
     title: "Tree Service",
   },
   {
     picture: "/images/Atlanta.jpg",
-    name: "Atlanta",
-
+    name: "Tree Planting",
     title: "Tree Service",
   },
   {
     picture: "/images/London.jpg",
-    name: "London",
+    name: "Tree Health Assessments",
     title: "Tree Service",
   },
   {
     picture: "/images/New-Orleans.jpg",
-    name: "New Orleans",
+    name: "Cabling and Bracing",
     title: "Tree Service",
   },
   {
     picture: "/images/Miami.jpg",
-    name: "Miami",
+    name: "Land Clearing",
     title: "Tree Service",
   },
   {
     picture: "/images/Dallas.jpg",
-    name: "Dallas",
+    name: "Tree Fertilization",
     title: "Tree Service",
   },
 ];
@@ -43,8 +42,8 @@ const page = () => {
         <PageTitle title="Services" />
       </div>
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex justify-center items-center py-12">
-          <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col xl:flex justify-center items-center py-16">
+          <div className="flex flex-col justify-center items-center py-16">
             <div className="grid grid-cols-1 xl:grid-cols-3 grid-rows-2 gap-6">
               {services.map((service, index) => {
                 return (
