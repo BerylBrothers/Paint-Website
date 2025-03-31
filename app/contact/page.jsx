@@ -31,7 +31,7 @@ const page = () => {
       <div>
         <PageTitle title="Contact" />
       </div>
-      <div className="flex justify-center items-center mx-auto container">
+      <div className="flex justify-center items-center mx-auto container py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-16">
           {cards.map((card, index) => {
             return (

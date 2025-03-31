@@ -1,18 +1,19 @@
-import * as React from "react"
+import * as React from "react";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 const Textarea = React.forwardRef(({ className, ...props }, ref) => {
   return (
-    (<textarea
+    <textarea
       className={cn(
-        "flex min-h-[80px] rounded-xl border border-white bg-primary placeholder:text-white outline-none px-4 py-5 text-base",
+        "flex min-h-[80px] border border-white bg-primary placeholder:text-white outline-none px-4 py-5 text-base",
         className
       )}
       ref={ref}
-      {...props} />)
+      {...props}
+    />
   );
-})
-Textarea.displayName = "Textarea"
+});
+Textarea.displayName = "Textarea";
 
-export { Textarea }
+export { Textarea };
