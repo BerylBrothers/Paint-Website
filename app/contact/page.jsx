@@ -55,7 +55,7 @@ const page = () => {
         </div>
 
         {/* carousel container */}
-        <div className="relative flex flex-col justify-center items-center w-full xl:w-[50%] forest-bg-2">
+        <div className="relative flex flex-col justify-center items-center w-full xl:w-[50%] forest-bg-2 h-[70vh]">
           <div className="absolute inset-0 opacity-60 bg-black "></div>
           {/* Display only the current testimonial */}
         </div>
