@@ -48,15 +48,94 @@ const page = () => {
           })}
         </div>
       </div>
-      <div className="flex xl:flex-row flex-col justify-between ">
+      <div className="flex xl:flex-row flex-col justify-between items-center ">
         {/* text container */}
-        <div className="relative flex xl:flex-row flex-col justify-center items-center border forest-bg-1 border-black  w-full xl:w-[50%] h-[70vh]">
-          <div className="absolute inset-0 opacity-60 bg-green-300"></div>
+        <div className="relative flex xl:flex-row flex-col justify-center items-center border forest-bg-1 border-black  w-full xl:w-[50%] h-[85vh] xl:h-[70vh]">
+          <div className="absolute inset-0 opacity-60 bg-black "></div>
+          <form
+            className="flex flex-col gap-6 p-10 z-10"
+            // onSubmit={handleSubmit}
+          >
+            <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center">
+              <p className="text-white py-2">
+                Professional Land & Tree Maintenance
+              </p>
+              <div className=" flex justify-center items-center border-green-800 border-b-2 w-16 "></div>
+            </div>
+            <h2 className="text-white">Contact</h2>
+
+            {/* input fields */}
+            <div className="text-black grid grid-cols-1 md:grid-cols-2 gap-6 ">
+              <Input
+                name="firstname"
+                type="text"
+                placeholder="First Name"
+                // value={formData.firstname}
+                // onChange={handleInputChange}
+                className="bg-white text-black placeholder-gray-500"
+              />
+              <Input
+                name="lastname"
+                type="text"
+                placeholder="Last Name"
+                // value={formData.lastname}
+                // onChange={handleInputChange}
+                className="bg-white text-black"
+              />
+              <Input
+                name="email"
+                type="email"
+                placeholder="Email Address"
+                // value={formData.email}
+                // onChange={handleInputChange}
+                className="bg-white text-black"
+              />
+              <Input
+                name="phone"
+                type="phone"
+                placeholder="Phone Number"
+                // value={formData.phone}
+                // onChange={handleInputChange}
+                className="bg-white text-black"
+              />
+            </div>
+
+            {/* Select dropdown
+            <Select value={formData.service} onValueChange={handleServiceChange}>
+              <SelectTrigger className="w-full rounded-xl">
+                <SelectValue placeholder="Select a service" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup>
+                  <SelectLabel>Select a service</SelectLabel>
+                  <SelectItem value="Web-Dev">Web Development</SelectItem>
+                  <SelectItem value="Ui/UX">UI/UX</SelectItem>
+                  <SelectItem value="Logo-Design">Logo Design</SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select> */}
+
+            {/* Text Area */}
+            <Textarea
+              name="message"
+              className="h-[200px] text-black bg-white"
+              placeholder="Type your message here."
+              // value={formData.message}
+              // onChange={handleInputChange}
+            />
+
+            {/* Submit button */}
+            <div className="flex xl:justify-start justify-center">
+              <button type="submit" className="button py-2">
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
 
         {/* carousel container */}
-        <div className="relative flex flex-col justify-center items-center w-full xl:w-[50%] forest-bg-2 h-[70vh]">
-          <div className="absolute inset-0 opacity-60 bg-black "></div>
+        <div className="relative flex flex-col justify-center items-center w-full xl:w-[50%] forest-bg-2 h-[85vh] xl:h-[70vh]">
+          <div className="absolute inset-0 opacity-60 bg-green-300 "></div>
           {/* Display only the current testimonial */}
         </div>
       </div>
