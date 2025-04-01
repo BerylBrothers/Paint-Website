@@ -20,8 +20,8 @@ const links = [
     path: "/services",
   },
   {
-    name: "work",
-    path: "/work",
+    name: "gallery",
+    path: "/gallery",
   },
   {
     name: "contact",
@@ -30,11 +30,11 @@ const links = [
 ];
 
 const info = [
-  { icon: <FaPhoneAlt />, title: "Phone", description: "904-477-8782" },
+  { icon: <FaPhoneAlt />, title: "Phone", description: "9570 039 03904" },
   {
     icon: <FaEnvelope />,
     title: "Envelope",
-    description: "Daniel@BerylBrothers.com",
+    description: "Services@TreeService.com",
   },
   // {icon: <FaMapMarkerAlt />,
   //   title:"Address",

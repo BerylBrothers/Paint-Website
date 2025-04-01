@@ -4,42 +4,42 @@ import Image from "next/image";
 
 const services = [
   {
-    picture: "/images/New-York.jpg",
+    picture: "/images/tree-image-6-resize.jpg",
     name: "Tree Removal",
     title: "Tree Service",
   },
   {
-    picture: "/images/Atlanta.jpg",
+    picture: "/images/gallery-1.jpg",
     name: "Tree Planting",
     title: "Tree Service",
   },
   {
-    picture: "/images/London.jpg",
+    picture: "/images/gallery-2.jpg",
     name: "Tree Health Assessments",
     title: "Tree Service",
   },
   {
-    picture: "/images/New-Orleans.jpg",
+    picture: "/images/gallery-3.jpg",
     name: "Cabling and Bracing",
     title: "Tree Service",
   },
   {
-    picture: "/images/Miami.jpg",
+    picture: "/images/gallery-4.jpg",
     name: "Land Clearing",
     title: "Tree Service",
   },
   {
-    picture: "/images/Dallas.jpg",
+    picture: "/images/gallery-5.jpg",
     name: "Tree Fertilization",
     title: "Tree Service",
   },
   {
-    picture: "/images/New-York.jpg",
+    picture: "/images/gallery-6.jpg",
     name: "Tree Removal",
     title: "Tree Service",
   },
   {
-    picture: "/images/Atlanta.jpg",
+    picture: "/images/gallery-7.jpg",
     name: "Tree Planting",
     title: "Tree Service",
   },
@@ -49,12 +49,12 @@ const page = () => {
   return (
     <section className=" flex flex-col justify-center ">
       <div>
-        <PageTitle title="Projects" />
+        <PageTitle title="Gallery" />
       </div>
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex justify-center items-center py-16">
           <div className="flex flex-col justify-center items-center py-16">
-            <div className="grid grid-cols-1 xl:grid-cols-2 grid-rows-2 gap-6">
+            <div className="grid grid-cols-1 xl:grid-cols-2 grid-rows-2 gap-8">
               {services.map((service, index) => {
                 return (
                   <a href="/" key={index} className="group">
@@ -73,13 +73,13 @@ const page = () => {
                       </div>
 
                       {/* Image text content */}
-                      <div className="py-3">
+                      {/* <div className="py-3">
                         <h3>{service.name}</h3>
                       </div>
                       <div className="border-green-800 border-b-2 w-16 "></div>
                       <div>
                         <p className="py-2">{service.title}</p>
-                      </div>
+                      </div> */}
                     </div>
                   </a>
                 );
