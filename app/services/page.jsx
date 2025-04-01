@@ -4,33 +4,33 @@ import Image from "next/image";
 
 const services = [
   {
-    picture: "/images/New-York.jpg",
+    picture: "/images/tree-removal-resize.jpg",
     name: "Tree Removal",
     title: "Tree Service",
   },
   {
-    picture: "/images/Atlanta.jpg",
-    name: "Tree Planting",
+    picture: "/images/tree-trimming-resize.jpg",
+    name: "Tree Trimming",
     title: "Tree Service",
   },
   {
-    picture: "/images/London.jpg",
+    picture: "/images/tree-health-assessment-resize.jpg",
     name: "Tree Health Assessments",
     title: "Tree Service",
   },
   {
-    picture: "/images/New-Orleans.jpg",
-    name: "Cabling and Bracing",
+    picture: "/images/storm-clean-up-resize.jpg",
+    name: "Storm Clean Up",
     title: "Tree Service",
   },
   {
-    picture: "/images/Miami.jpg",
+    picture: "/images/land-clearing-resize.jpg",
     name: "Land Clearing",
     title: "Tree Service",
   },
   {
-    picture: "/images/Dallas.jpg",
-    name: "Tree Fertilization",
+    picture: "/images/tree-planting-resize.jpg",
+    name: "Tree Planting",
     title: "Tree Service",
   },
 ];
@@ -50,13 +50,14 @@ const page = () => {
                   <a href="/" key={index} className="group">
                     <div className="relative">
                       {/* Wrapper div around the image */}
-                      <div className="relative overflow-hidden border border-black">
+                      <div className="relative overflow-hidden border border-black ">
                         <Image
                           src={service.picture}
                           height={400}
                           width={400}
                           alt=""
                           className="transition-all duration-500 ease-in-out"
+                          objectFit="cover"
                         />
                         {/* Black overlay directly on the image */}
                         <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
