@@ -26,8 +26,8 @@ const page = () => {
       <div>
         <PageTitle title="About Us" />
       </div>
-      <div className="container mx-auto pt-6 pb-12">
-        <div className="flex xl:flex-row flex-col justify-between items-center gap-4">
+      <div className="container mx-auto py-16">
+        <div className="flex xl:flex-row flex-col justify-between items-center gap-4 py-4">
           {/* Text Section */}
           <div className="flex flex-col xl:order-1 order-2 justify-center items-center text-left p-6">
             <div className="text-center xl:text-left">
