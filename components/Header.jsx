@@ -33,11 +33,11 @@ const Header = () => {
 
         {/* Phone number */}
         <div className="hidden xl:flex justify-end items-center">
-          <span className="mr-2">
+          {/* <span className="mr-2">
             {" "}
-            {/* Add margin to the span */}
+           
             <FaPhoneAlt />
-          </span>
+          </span> */}
           <h3 className="whitespace-nowrap">9570 039 03904</h3>
         </div>
 
