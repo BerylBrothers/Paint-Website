@@ -23,7 +23,7 @@ const items = [
 
 const ParallaxComponent = () => {
   return (
-    <section className="relative w-full h-[70vh] xl:h-[50vh] flex items-center justify-center">
+    <section className="relative w-full h-[90vh] xl:h-[50vh] flex items-center justify-center">
       <div className="parallax-background">
         <div className="overlay"></div>
 

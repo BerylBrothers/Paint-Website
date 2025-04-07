@@ -16,7 +16,7 @@ const Hero = () => {
       {/* Preload the background image */}
       <link
         rel="preload"
-        href="/images/tree-hero-resize.jpg"
+        href="/images/tree-hero-resize-new.jpg"
         as="image"
         type="image/jpeg"
         crossOrigin="anonymous"
@@ -28,7 +28,7 @@ const Hero = () => {
         }`}
         style={{
           backgroundImage: imageLoaded
-            ? 'url("/images/tree-hero-resize.jpg")'
+            ? 'url("/images/tree-hero-resize-new.jpg")'
             : "",
         }}
       >
