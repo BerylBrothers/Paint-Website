@@ -61,7 +61,7 @@ const MobileNav = () => {
               height={100}
               width={100}
               alt=""
-              className="flex bg-white object-contain rounded-xl justify-center"
+              className="flex object-contain rounded-xl justify-center"
             />
           </Link>
         </SheetTitle>

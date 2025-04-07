@@ -14,7 +14,8 @@ const About = () => {
                 <div className=" flex justify-center items-center border-green-800 border-b-2 w-16 "></div>
               </div>
               <h2 className=" p-6 max-w-full xl:max-w-[400px]">
-                Tree Removal Is An Easy Task
+                Tree Removal{" "}
+                <span className="text-green-800">Is An Easy Task </span>
               </h2>
               <p className="max-w-[600px] p-6">
                 Higuera's tree service is proud to serve the comunity work at

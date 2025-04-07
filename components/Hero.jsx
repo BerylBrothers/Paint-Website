@@ -47,7 +47,7 @@ const Hero = () => {
               <div className="flex xl:justify-start justify-center xl:items-start items-center border-green-800 border-b-2 w-16 "></div>
             </div>
 
-            <h1 className="flex xl:justify-start justify-center text-center xl:text-left text-4xl font-bold xl:text-8xl xl:max-w-[800px]">
+            <h1 className="flex xl:justify-start justify-center text-center xl:text-left text-4xl font-bold xl:text-8xl xl:max-w-[900px]">
               Professional Tree Cutting Services
             </h1>
 
