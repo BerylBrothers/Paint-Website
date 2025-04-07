@@ -18,7 +18,7 @@ const Hero = () => {
           imageLoaded ? "opacity-100" : "opacity-0"
         }`}
         style={{
-          backgroundImage: imageLoaded ? 'url("/images/hero-image-2.jpg")' : "",
+          backgroundImage: 'url("/images/hero-image-2.jpg")',
         }}
       >
         {/* Dark overlay 1*/}
