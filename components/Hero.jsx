@@ -7,7 +7,7 @@ const Hero = () => {
 
   useEffect(() => {
     const image = new Image();
-    image.src = "/images/tree-hero-resize-new.jpg";
+    image.src = "/images/hero-image-2.jpg";
     image.onload = () => setImageLoaded(true);
   }, []);
 
@@ -16,26 +16,24 @@ const Hero = () => {
       {/* Preload the background image */}
       <link
         rel="preload"
-        href="/images/tree-hero-resize-new.jpg"
+        href="/images/hero-image-2.jpg"
         as="image"
         type="image/jpeg"
         crossOrigin="anonymous"
       />
 
       <section
-        className={`relative w-full h-screen bg-transparent bg-cover bg-center transition-opacity duration-1000 ${
+        className={`relative w-full h-[85vh] xl:h-screen bg-transparent bg-cover bg-center transition-opacity duration-1000 ${
           imageLoaded ? "opacity-100" : "opacity-0"
         }`}
         style={{
-          backgroundImage: imageLoaded
-            ? 'url("/images/tree-hero-resize-new.jpg")'
-            : "",
+          backgroundImage: imageLoaded ? 'url("/images/hero-image-2.jpg")' : "",
         }}
       >
         {/* Dark overlay 1*/}
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-30"></div>
         {/* Dark overlay 2*/}
-        <div className="absolute inset-0 bg-black opacity-60 w-[40%]"></div>
+        <div className="absolute inset-0 bg-black opacity-40 w-[40%]"></div>
 
         {/* Content on top of the image */}
         <div className="container mx-auto relative z-10 text-white flex items-center justify-center h-full">
