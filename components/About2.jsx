@@ -42,7 +42,7 @@ const About = () => {
 
           <div className="flex flex-col xl:flex-row py-12 xl:order-1 order-1">
             <Image
-              src={"/images/tree-image-4-resize.jpg"}
+              src={"/images/tree-image-4-resize-new.jpg"}
               height={800}
               width={600}
               alt="Tree Image"
