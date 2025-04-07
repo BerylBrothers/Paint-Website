@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <>
       <section
-        className={`relative w-full h-[85vh] xl:h-screen bg-transparent bg-cover bg-center transition-opacity duration-1000 ${
+        className={`relative w-full h-[85vh] xl:h-screen bg-transparent bg-cover bg-center transition-opacity duration-500 ${
           imageLoaded ? "opacity-100" : "opacity-0"
         }`}
         style={{
