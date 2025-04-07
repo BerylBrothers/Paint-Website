@@ -13,15 +13,6 @@ const Hero = () => {
 
   return (
     <>
-      {/* Preload the background image */}
-      <link
-        rel="preload"
-        href="/images/hero-image-2.jpg"
-        as="image"
-        type="image/jpeg"
-        crossOrigin="anonymous"
-      />
-
       <section
         className={`relative w-full h-[85vh] xl:h-screen bg-transparent bg-cover bg-center transition-opacity duration-1000 ${
           imageLoaded ? "opacity-100" : "opacity-0"
