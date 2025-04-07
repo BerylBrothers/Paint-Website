@@ -13,10 +13,17 @@ const Hero = () => {
 
   return (
     <>
-      <section
+      {/* <section
         className={`relative w-full h-[85vh] xl:h-screen bg-transparent bg-cover bg-center transition-opacity duration-500 ${
           imageLoaded ? "opacity-100" : "opacity-0"
         }`}
+        style={{
+          backgroundImage: imageLoaded ? 'url("/images/hero-image-2.jpg")' : "",
+        }}
+      > */}
+
+      <section
+        className="relative w-full h-[85vh] xl:h-screen bg-transparent bg-cover bg-center transition-opacity duration-500 opacity-100"
         style={{
           backgroundImage: 'url("/images/hero-image-2.jpg")',
         }}
