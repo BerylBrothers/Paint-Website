@@ -7,7 +7,7 @@ const Hero = () => {
 
   useEffect(() => {
     const image = new Image();
-    image.src = "/images/tree-hero-resize.jpg";
+    image.src = "/images/tree-hero-resize-new.jpg";
     image.onload = () => setImageLoaded(true);
   }, []);
 
@@ -16,7 +16,7 @@ const Hero = () => {
       {/* Preload the background image */}
       <link
         rel="preload"
-        href="/images/tree-hero-resize.jpg"
+        href="/images/tree-hero-resize-new.jpg"
         as="image"
         type="image/jpeg"
         crossOrigin="anonymous"
