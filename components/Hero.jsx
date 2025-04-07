@@ -16,7 +16,7 @@ const Hero = () => {
       {/* Preload the background image */}
       <link
         rel="preload"
-        href="/images/tree-hero-resize-new.jpg"
+        href="/images/tree-hero-resize.jpg"
         as="image"
         type="image/jpeg"
         crossOrigin="anonymous"
