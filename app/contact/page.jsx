@@ -21,7 +21,7 @@ const cards = [
   {
     icon: <FaEnvelope />,
     title: "Email",
-    info: "Service@TreeCutting.com",
+    info: "Services@TreeService.com",
   },
 ];
 

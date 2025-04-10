@@ -6,17 +6,17 @@ const items = [
   {
     picture: "/images/lumberjack-1-resize.jpg",
     name: "Eric Lopez",
-    title: "Tree Service",
+    title: "Lumberjack",
   },
   {
     picture: "/images/lumberjack-2-resize.jpg",
     name: "John Phillips",
-    title: "Tree Service",
+    title: "Lumberjack",
   },
   {
     picture: "/images/lumberjack-3-resize.jpg",
     name: "Lance Baker",
-    title: "Tree Service",
+    title: "Lumberjack",
   },
 ];
 
@@ -72,22 +72,15 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex flex-col justify-center items-center w-full forest-bg-2 h-[45vh]">
+      <div className="relative flex flex-col justify-center items-center w-full forest-bg-2 h-[35vh]">
         <div className="absolute inset-0 opacity-60 bg-black "></div>
         {/* Display only the current testimonial */}
         <div className="relative z-10 ">
           <div className="flex flex-col justify-center items-center text-center xl:text-left p-6 z-10 text-white ">
-            <h2 className="flex justify-center items p-6 max-w-full xl:max-w-[350px] text-center">
-              Join Our Tree Service
+            <h2 className="flex justify-center items p-6 max-w-full xl:max-w-[450px] text-center">
+              Call Us Today
             </h2>
-            <p className="max-w-[600px]">
-              Higuera's tree service is proud to serve the community with
-              competitive prices.
-              <br />
-              <br />
-              Since the start of our company, we have strived to obtain the best
-              quality tools so that the jobs are done to the highest standards.
-            </p>
+            <h3 className="max-w-[600px]">9570 039 03904</h3>
             <div className="">
               <a href="#" className="button z-10">
                 Hover me

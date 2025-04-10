@@ -4,34 +4,34 @@ import Image from "next/image";
 const items = [
   {
     picture: "/images/New-York.jpg",
-    name: "New York",
-    title: "Tree Service",
+    name: "New York City",
+    title: "New York",
   },
   {
     picture: "/images/Atlanta.jpg",
     name: "Atlanta",
 
-    title: "Tree Service",
+    title: "Georgia",
   },
   {
     picture: "/images/London.jpg",
     name: "London",
-    title: "Tree Service",
+    title: "England",
   },
   {
     picture: "/images/New-Orleans.jpg",
     name: "New Orleans",
-    title: "Tree Service",
+    title: "Louisiana",
   },
   {
     picture: "/images/Miami.jpg",
     name: "Miami",
-    title: "Tree Service",
+    title: "Florida",
   },
   {
     picture: "/images/Dallas.jpg",
     name: "Dallas",
-    title: "Tree Service",
+    title: "Texas",
   },
 ];
 

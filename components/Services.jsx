@@ -14,24 +14,24 @@ const Services = () => {
             <div className="relative w-full max-w-[800px] pb-[56.25%]">
               {" "}
               {/* 16:9 aspect ratio */}
-              {/* <iframe
+              <iframe
                 className="absolute top-0 left-0 w-full h-full"
                 src="https://www.youtube.com/embed/WTkuJzGIDoM"
                 title="YouTube video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-              ></iframe> */}
+              ></iframe>
             </div>
           </div>
           {/* Text content centered */}
-          <div className="flex flex-col justify-center items-center text-left p-6 text-white">
+          <div className="flex flex-col justify-center items-center text-left p-4 text-white">
             <div className="text-center xl:text-left">
               <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center p-6">
                 <p className="py-2">Professional Land & Tree Maintenance</p>
                 <div className=" flex justify-center items-center border-green-800 border-b-2 w-16 "></div>
               </div>
-              <h2 className="p-6 max-w-full xl:max-w-[400px] text-center xl:text-left">
+              <h2 className="p-4 max-w-full xl:max-w-[400px] text-center xl:text-left">
                 Tree Removal{" "}
                 <span className="text-green-800">Is An Easy Task </span>
               </h2>

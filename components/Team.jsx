@@ -5,17 +5,17 @@ const items = [
   {
     picture: "/images/lumberjack-1-resize.jpg",
     name: "Eric Lopez",
-    title: "Tree Service",
+    title: "Lumberjack",
   },
   {
     picture: "/images/lumberjack-2-resize.jpg",
     name: "John Phillips",
-    title: "Tree Service",
+    title: "Lumberjack",
   },
   {
     picture: "/images/lumberjack-3-resize.jpg",
     name: "Lance Baker",
-    title: "Tree Service",
+    title: "Lumberjack",
   },
 ];
 
