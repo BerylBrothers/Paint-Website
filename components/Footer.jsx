@@ -46,18 +46,19 @@ const Footer = () => {
   const pathname = usePathname();
 
   return (
-    <footer className="py-8 xl:py-8 text-white bg-green-800 ">
+    <footer className="py-6 xl:py-6 text-white bg-green-800 ">
       <div className="container mx-auto grid grid-cols-1 xl:grid-cols-3 gap-6">
         {/* Image Column */}
         <div className="flex justify-center xl:justify-start items-center mb-8 xl:mb-0">
           <Link href={"/"}>
-            <Image
+            {/* <Image
               src={"/images/logo-transparent.png"}
               height={100}
               width={100}
               alt="Logo"
               className=""
-            />
+            /> */}
+            <h3>Logo</h3>
           </Link>
         </div>
 

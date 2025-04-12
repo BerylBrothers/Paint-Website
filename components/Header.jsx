@@ -16,13 +16,14 @@ const Header = () => {
           title="test"
           className="flex justify-start items-center mr-10 h-[110px] w-[110px] xl:h-[150px] xl:w-[150px]"
         >
-          <Image
+          {/* <Image
             src={"/images/logo-transparent.png"}
             height={150}
             width={150}
             alt="Logo"
             className=""
-          />
+          /> */}
+          <h3>Logo</h3>
         </a>
 
         {/* Desktop nav & phone number */}

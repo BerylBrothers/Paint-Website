@@ -56,13 +56,14 @@ const MobileNav = () => {
             {/* {<h1 className='text-4xl'>
       Daniel <span className='text-accent'>.</span>
      </h1> */}
-            <Image
+            {/* <Image
               src={"/images/logo-transparent.png"}
               height={100}
               width={100}
               alt=""
               className="flex object-contain rounded-xl justify-center"
-            />
+            /> */}
+            <h3 className="text-white">Logo</h3>
           </Link>
         </SheetTitle>
         {/* navigation */}
