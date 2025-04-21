@@ -129,7 +129,7 @@ const page = () => {
       </div>
       <div className="flex xl:flex-row flex-col justify-between items-center ">
         {/* text container */}
-        <div className="relative flex xl:flex-row flex-col justify-center items-center border forest-bg-1 border-black  w-full xl:w-[50%] h-[100vh] xl:h-[90vh]">
+        <div className="relative flex xl:flex-row flex-col justify-center items-center border forest-bg-1 border-black  w-full xl:w-[50%] h-[110vh] xl:h-[90vh]">
           <div className="absolute inset-0 opacity-60 bg-black "></div>
           <form
             onSubmit={handleSubmit}
