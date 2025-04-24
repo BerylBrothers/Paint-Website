@@ -29,7 +29,7 @@ const Socials = ({}) => {
             href={item.path}
             key={index}
             title="test"
-            className={`w-6 h-6 flex flex-row justify-center items-center text-green-500 text-base`}
+            className={`w-6 h-6 flex flex-row justify-center items-center text-[#FFFFFF] text-base`}
           >
             {item.icon}
           </a>

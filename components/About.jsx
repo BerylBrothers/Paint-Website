@@ -9,7 +9,7 @@ const About = () => {
           {/* Image Section */}
           <div className="flex flex-col xl:flex-row py-12 ">
             <Image
-              src={"/images/tree-image-3-resize-new.jpg"}
+              src={"/images/paint-image-1.jpg"}
               height={600}
               width={600}
               alt="Tree Image"
@@ -22,11 +22,11 @@ const About = () => {
             <div className="text-center xl:text-left ">
               <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center p-6">
                 <p className="py-2">Professional Land & Tree Maintenance</p>
-                <div className=" flex justify-center items-center border-green-800 border-b-2 w-16 "></div>
+                <div className=" flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
               </div>
               <h2 className=" p-6 max-w-full xl:max-w-[400px]">
                 Tree Removal{" "}
-                <span className="text-green-800">Is An Easy Task </span>
+                <span className="text-[#00008B]">Is An Easy Task </span>
               </h2>
               <p className="max-w-[600px] p-6">
                 Higuera's tree service is proud to serve the comunity work at

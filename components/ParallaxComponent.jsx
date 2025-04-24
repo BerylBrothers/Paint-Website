@@ -49,7 +49,7 @@ const ParallaxComponent = () => {
                       <h3>{item.action}</h3>
                     </div>
                   </div>
-                  <div className="border-t-2 border-white py-4 mt-4 sm:border-t-1 sm:py-2 md:border-t-2 md:py-4 transition-all duration-300 group-hover:border-green-800">
+                  <div className="border-t-2 border-white py-4 mt-4 sm:border-t-1 sm:py-2 md:border-t-2 md:py-4 transition-all duration-300 group-hover:border-[#00008B]">
                     <p>{item.description}</p>
                   </div>
                 </div>

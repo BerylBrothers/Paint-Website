@@ -67,7 +67,7 @@ const page = () => {
                       <div className="py-3">
                         <h3>{service.name}</h3>
                       </div>
-                      <div className="border-green-800 border-b-2 w-16 "></div>
+                      <div className="border-[#00008B] border-b-2 w-16 "></div>
                       <div>
                         <p className="py-2">{service.title}</p>
                       </div>

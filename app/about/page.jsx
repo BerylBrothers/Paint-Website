@@ -4,17 +4,17 @@ import Image from "next/image";
 
 const items = [
   {
-    picture: "/images/lumberjack-1-resize.jpg",
+    picture: "/images/paint-team-2.jpg",
     name: "Eric Lopez",
     title: "Lumberjack",
   },
   {
-    picture: "/images/lumberjack-2-resize.jpg",
+    picture: "/images/paint-team-1.jpg",
     name: "John Phillips",
     title: "Lumberjack",
   },
   {
-    picture: "/images/lumberjack-3-resize.jpg",
+    picture: "/images/paint-team-4.jpg",
     name: "Lance Baker",
     title: "Lumberjack",
   },
@@ -33,7 +33,7 @@ const page = () => {
             <div className="text-center xl:text-left">
               <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center p-6">
                 <p className="py-2">Professional Land & Tree Maintenance</p>
-                <div className=" flex justify-center items-center border-green-800 border-b-2 w-16 "></div>
+                <div className=" flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
               </div>
               <h2 className=" p-6 max-w-full xl:max-w-[400px]">
                 Our Mission Statement
@@ -63,7 +63,7 @@ const page = () => {
 
           <div className="flex flex-col xl:flex-row py-12 xl:order-1 order-1">
             <Image
-              src={"/images/tree-image-4-resize.jpg"}
+              src={"/images/paint-about.jpg"}
               height={800}
               width={600}
               alt="Tree Image"
@@ -93,7 +93,7 @@ const page = () => {
         <div className="flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center items-center p-6">
             <p className="py-2">Professional Land & Tree Maintenance</p>
-            <div className="flex justify-center items-center border-green-800 border-b-2 w-16 "></div>
+            <div className="flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
           </div>
           <div className="py-12">
             <h2>Our Lumberjacks</h2>
@@ -120,7 +120,7 @@ const page = () => {
                     <div className="py-2">
                       <h3>{item.name}</h3>
                     </div>
-                    <div className="border-green-800 border-b-2 w-16 "></div>
+                    <div className="border-[#00008B] border-b-2 w-16 "></div>
                     <div>
                       <p className="py-2">{item.title}</p>
                     </div>

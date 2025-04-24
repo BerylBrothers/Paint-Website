@@ -43,7 +43,7 @@ const Areas = () => {
           <div className="flex flex-col justify-center items-center">
             <div className="flex flex-col justify-center items-center p-6">
               <p className="py-2">Professional Land & Tree Maintenance</p>
-              <div className="flex justify-center items-center border-green-800 border-b-2 w-16 "></div>
+              <div className="flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
             </div>
             <div className="py-12">
               <h2>Areas We Service</h2>
@@ -70,7 +70,7 @@ const Areas = () => {
                       <div className="py-3">
                         <h3>{item.name}</h3>
                       </div>
-                      <div className="border-green-800 border-b-2 w-16 "></div>
+                      <div className="border-[#00008B] border-b-2 w-16 "></div>
                       <div>
                         <p className="py-2">{item.title}</p>
                       </div>

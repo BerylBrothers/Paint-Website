@@ -50,7 +50,7 @@ const Testimonials = () => {
         <div className="flex xl:flex-row flex-col justify-between ">
           {/* text container */}
           <div className="relative flex xl:flex-row flex-col justify-center items-center border forest-bg-1 border-black  w-full xl:w-[50%] h-[70vh]">
-            <div className="absolute inset-0 opacity-60 bg-green-300"></div>
+            <div className="absolute inset-0 opacity-60 bg-[#1098F7]"></div>
             <div className="flex flex-col justify-center items-center text-center xl:text-left p-6 z-10">
               <h2 className="p-6 max-w-full xl:max-w-[500px] text-center">
                 Tree Removal Is An Easy Task

@@ -114,7 +114,7 @@ const page = () => {
           {cards.map((card, index) => {
             return (
               <div
-                className="flex justify-center items-center border bg-green-800 text-white border-black h-[350px] w-[350px]"
+                className="flex justify-center items-center border bg-[#00008B] text-white border-black h-[350px] w-[350px]"
                 key={index}
               >
                 <div className="flex flex-col justify-center items-center">
@@ -139,7 +139,7 @@ const page = () => {
               <p className="text-white py-2">
                 Professional Land & Tree Maintenance
               </p>
-              <div className=" flex justify-center items-center border-green-800 border-b-2 w-16 "></div>
+              <div className=" flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
             </div>
             <h2 className="text-white">Contact</h2>
 

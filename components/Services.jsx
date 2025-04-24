@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <section
       className="relative w-full h-screen bg-cover bg-center"
-      style={{ backgroundImage: 'url("/images/tree-image-7-resize.jpg")' }}
+      style={{ backgroundImage: 'url("/images/paint-bg-1.jpg")' }}
     >
       <div className="absolute inset-0 bg-black opacity-80"></div>
       <div className="container mx-auto h-full flex items-center justify-center z-10">
@@ -29,11 +29,11 @@ const Services = () => {
             <div className="text-center xl:text-left">
               <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center p-6">
                 <p className="py-2">Professional Land & Tree Maintenance</p>
-                <div className=" flex justify-center items-center border-green-800 border-b-2 w-16 "></div>
+                <div className=" flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
               </div>
               <h2 className="p-4 max-w-full xl:max-w-[400px] text-center xl:text-left">
                 Tree Removal{" "}
-                <span className="text-green-800">Is An Easy Task </span>
+                <span className="text-[#00008B]">Is An Easy Task </span>
               </h2>
               <p className="max-w-[600px] p-6 text-center xl:text-left">
                 Higuera's tree service is proud to serve the community with

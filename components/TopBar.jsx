@@ -4,7 +4,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const TopBar = () => {
   return (
-    <section className="bg-black text-green-500">
+    <section className="bg-[#00008B] text-[#FFFFFF]">
       <div className="flex flex-row container mx py-2 justify-between">
         <div className="flex gap-4 justify-center items-center">
           <FaEnvelope />
