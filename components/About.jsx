@@ -21,15 +21,15 @@ const About = () => {
           <div className="flex flex-col justify-center items-center text-center xl:text-left p-6 ">
             <div className="text-center xl:text-left ">
               <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center p-6">
-                <p className="py-2">Professional Land & Tree Maintenance</p>
+                <p className="py-2">Professional Paint & House Maintenance</p>
                 <div className=" flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
               </div>
               <h2 className=" p-6 max-w-full xl:max-w-[400px]">
-                Tree Removal{" "}
+                House Painting{" "}
                 <span className="text-[#00008B]">Is An Easy Task </span>
               </h2>
               <p className="max-w-[600px] p-6">
-                Higuera's tree service is proud to serve the comunity work at
+                Higuera's paint service is proud to serve the comunity work at
                 competitive prices.
                 <br />
                 <br />

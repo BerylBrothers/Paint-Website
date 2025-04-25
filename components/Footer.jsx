@@ -34,7 +34,7 @@ const info = [
   {
     icon: <FaEnvelope />,
     title: "Envelope",
-    description: "Services@TreeService.com",
+    description: "Services@PaintService.com",
   },
   // {icon: <FaMapMarkerAlt />,
   //   title:"Address",

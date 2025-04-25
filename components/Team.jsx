@@ -5,17 +5,17 @@ const items = [
   {
     picture: "/images/paint-team-2.jpg",
     name: "Eric Lopez",
-    title: "Lumberjack",
+    title: "Painter",
   },
   {
     picture: "/images/paint-team-1.jpg",
     name: "John Phillips",
-    title: "Lumberjack",
+    title: "Painter",
   },
   {
     picture: "/images/paint-team-4.jpg",
     name: "Lance Baker",
-    title: "Lumberjack",
+    title: "Painter",
   },
 ];
 
@@ -26,11 +26,11 @@ const Team = () => {
         <div className="flex flex-col xl:flex justify-center items-center py-12">
           <div className="flex flex-col justify-center items-center">
             <div className="flex flex-col justify-center items-center p-6">
-              <p className="py-2">Professional Land & Tree Maintenance</p>
+              <p className="py-2">Professional Paint & House Maintenance</p>
               <div className="flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
             </div>
             <div className="py-12">
-              <h2>Our Lumberjacks</h2>
+              <h2>Our Painters</h2>
             </div>
             <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
               {items.map((item, index) => {

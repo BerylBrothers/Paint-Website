@@ -53,10 +53,10 @@ const Testimonials = () => {
             <div className="absolute inset-0 opacity-60 bg-[#1098F7]"></div>
             <div className="flex flex-col justify-center items-center text-center xl:text-left p-6 z-10">
               <h2 className="p-6 max-w-full xl:max-w-[500px] text-center">
-                Tree Removal Is An Easy Task
+                House Painting Is An Easy Task
               </h2>
               <p className="max-w-[600px] p-6">
-                Higuera's tree service is proud to serve the community with
+                Higuera's paint service is proud to serve the community with
                 competitive prices.
                 <br />
                 <br />
@@ -74,11 +74,11 @@ const Testimonials = () => {
             {/* Display only the current testimonial */}
             <div className="relative z-10">
               <div className="flex flex-col justify-center items-center text-center xl:text-left p-6 z-10 text-white">
-                <h2 className="p-6 max-w-full xl:max-w-[350px] text-center">
-                  Join Our Tree Service
+                <h2 className="p-6 max-w-full xl:max-w-[375px] text-center">
+                  Join Our Paint Service
                 </h2>
                 <p className="max-w-[600px] p-6">
-                  Higuera's tree service is proud to serve the community with
+                  Higuera's paint service is proud to serve the community with
                   competitive prices.
                   <br />
                   <br />

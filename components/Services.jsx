@@ -27,16 +27,16 @@ const Services = () => {
           {/* Text content centered */}
           <div className="flex flex-col justify-center items-center text-left p-4 text-white">
             <div className="text-center xl:text-left">
-              <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center p-6">
-                <p className="py-2">Professional Land & Tree Maintenance</p>
+              <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center p-2">
+                <p className="py-2">Professional Paint & House Maintenance</p>
                 <div className=" flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
               </div>
-              <h2 className="p-4 max-w-full xl:max-w-[400px] text-center xl:text-left">
-                Tree Removal{" "}
+              <h2 className="p-2 max-w-full xl:max-w-[400px] text-center xl:text-left">
+                House Painting{" "}
                 <span className="text-[#00008B]">Is An Easy Task </span>
               </h2>
-              <p className="max-w-[600px] p-6 text-center xl:text-left">
-                Higuera's tree service is proud to serve the community with
+              <p className="max-w-[600px] p-4 text-center xl:text-left">
+                Higuera's paint service is proud to serve the community with
                 competitive prices.
                 <br />
                 <br />

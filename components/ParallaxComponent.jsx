@@ -11,7 +11,7 @@ const items = [
   },
   {
     image: "/images/tiny-image-2.jpg",
-    action: "2 Cutting Trees",
+    action: "2 Painting Houses",
     description: "You can depend on our trained employees to provide service.",
   },
   {

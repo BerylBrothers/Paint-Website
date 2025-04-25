@@ -6,17 +6,17 @@ const items = [
   {
     picture: "/images/paint-team-2.jpg",
     name: "Eric Lopez",
-    title: "Lumberjack",
+    title: "Painter",
   },
   {
     picture: "/images/paint-team-1.jpg",
     name: "John Phillips",
-    title: "Lumberjack",
+    title: "Painter",
   },
   {
     picture: "/images/paint-team-4.jpg",
     name: "Lance Baker",
-    title: "Lumberjack",
+    title: "Painter",
   },
 ];
 
@@ -32,14 +32,14 @@ const page = () => {
           <div className="flex flex-col xl:order-1 order-2 justify-center items-center text-left p-6">
             <div className="text-center xl:text-left">
               <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center p-6">
-                <p className="py-2">Professional Land & Tree Maintenance</p>
+                <p className="py-2">Professional Paint & House Maintenance</p>
                 <div className=" flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
               </div>
               <h2 className=" p-6 max-w-full xl:max-w-[400px]">
                 Our Mission Statement
               </h2>
               <p className="max-w-[600px] p-6">
-                Higuera's tree service is proud to serve the comunity work at
+                Higuera's paint service is proud to serve the comunity work at
                 competitive prices.
                 <br />
                 <br />
@@ -92,11 +92,11 @@ const page = () => {
       <div className="flex flex-col xl:flex justify-center items-center py-12">
         <div className="flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center items-center p-6">
-            <p className="py-2">Professional Land & Tree Maintenance</p>
+            <p className="py-2">Professional Paint & House Maintenance</p>
             <div className="flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
           </div>
           <div className="py-12">
-            <h2>Our Lumberjacks</h2>
+            <h2>Our Painters</h2>
           </div>
           <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
             {items.map((item, index) => {

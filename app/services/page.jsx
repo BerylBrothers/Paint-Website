@@ -5,33 +5,33 @@ import Image from "next/image";
 const services = [
   {
     picture: "/images/tree-removal-resize.jpg",
-    name: "Tree Removal",
-    title: "Tree Service",
+    name: "Interior Painting",
+    title: "Paint Service",
   },
   {
     picture: "/images/tree-trimming-resize.jpg",
-    name: "Tree Trimming",
-    title: "Tree Service",
+    name: "Exterior Painting",
+    title: "Paint Service",
   },
   {
     picture: "/images/tree-health-assessment-resize.jpg",
-    name: "Tree Health Assessments",
-    title: "Tree Service",
+    name: "Commercial Painting",
+    title: "Paint Service",
   },
   {
     picture: "/images/storm-clean-up-resize.jpg",
-    name: "Storm Clean Up",
-    title: "Tree Service",
+    name: "Specialty Coatings",
+    title: "Paint Service",
   },
   {
     picture: "/images/land-clearing-resize.jpg",
-    name: "Land Clearing",
-    title: "Tree Service",
+    name: "Cabinet Painting & Refinishing",
+    title: "Paint Service",
   },
   {
     picture: "/images/tree-planting-resize.jpg",
-    name: "Tree Planting",
-    title: "Tree Service",
+    name: "Deck & Fence Painting",
+    title: "Paint Service",
   },
 ];
 

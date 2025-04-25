@@ -24,7 +24,7 @@ const cards = [
   {
     icon: <FaEnvelope />,
     title: "Email",
-    info: "Services@TreeService.com",
+    info: "Services@PaintService.com",
   },
 ];
 
@@ -137,7 +137,7 @@ const page = () => {
           >
             <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center">
               <p className="text-white py-2">
-                Professional Land & Tree Maintenance
+                Professional Paint & House Maintenance
               </p>
               <div className=" flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
             </div>
@@ -180,48 +180,54 @@ const page = () => {
             </div>
 
             <div className="text-white">
-              <p className="text-white ">Select Tree Removal Services</p>
+              <p className="text-white ">Select House Painting Services</p>
               <label className="flex items-center gap-2">
                 <input
                   type="checkbox"
-                  name="treeRemoval"
-                  checked={formData.selectedServices.includes("treeRemoval")}
-                  onChange={handleServiceChange}
-                  className="h-4 w-4"
-                />
-                Tree Removal
-              </label>
-              <label className="flex items-center gap-2">
-                <input
-                  type="checkbox"
-                  name="treeTrimming"
-                  checked={formData.selectedServices.includes("treeTrimming")}
-                  onChange={handleServiceChange}
-                  className="h-4 w-4"
-                />
-                Tree Trimming
-              </label>
-              <label className="flex items-center gap-2">
-                <input
-                  type="checkbox"
-                  name="treeHealthAssessments"
+                  name="interiorPainting"
                   checked={formData.selectedServices.includes(
-                    "treeHealthAssessments"
+                    "interiorPainting"
                   )}
                   onChange={handleServiceChange}
                   className="h-4 w-4"
                 />
-                Tree Health Assessments
+                Interior Painting
               </label>
               <label className="flex items-center gap-2">
                 <input
                   type="checkbox"
-                  name="landClearing"
-                  checked={formData.selectedServices.includes("landClearing")}
+                  name="exteriorPainting"
+                  checked={formData.selectedServices.includes(
+                    "exteriorPainting"
+                  )}
                   onChange={handleServiceChange}
                   className="h-4 w-4"
                 />
-                Land Clearing
+                Exterior Painting
+              </label>
+              <label className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  name="commercialPainting"
+                  checked={formData.selectedServices.includes(
+                    "commercialPainting"
+                  )}
+                  onChange={handleServiceChange}
+                  className="h-4 w-4"
+                />
+                Commercial Painting
+              </label>
+              <label className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  name="specialtyCoating"
+                  checked={formData.selectedServices.includes(
+                    "specialtyCoating"
+                  )}
+                  onChange={handleServiceChange}
+                  className="h-4 w-4"
+                />
+                Specialty Coating
               </label>
             </div>
 
