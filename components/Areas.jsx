@@ -38,29 +38,29 @@ const items = [
 const Areas = () => {
   return (
     <section className="bg-white">
-      <div className="container mx-auto py-12">
-        <div className="flex flex-col xl:flex justify-center items-center py-12">
+      <div className="container mx-auto">
+        <div className="flex flex-col xl:flex justify-center items-center py-6">
           <div className="flex flex-col justify-center items-center">
             <div className="flex flex-col justify-center items-center p-6">
-              <p className="py-2">Professional House & Paint Maintenance</p>
+              <p className="py-2">Professional Land & Tree Maintenance</p>
               <div className="flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
             </div>
             <div className="py-12">
               <h2>Areas We Service</h2>
             </div>
-            <div className="grid grid-cols-1 xl:grid-cols-3 grid-rows-2 gap-6">
+            <div className="grid grid-cols-1 xl:grid-cols-2 grid-rows-2 gap-6">
               {items.map((item, index) => {
                 return (
-                  <a href="/" key={index} className="group">
+                  <div href="/" key={index} className="group">
                     <div className="relative">
                       {/* Wrapper div around the image */}
                       <div className="relative overflow-hidden border border-black">
                         <Image
                           src={item.picture}
-                          height={400}
-                          width={400}
+                          height={600}
+                          width={600}
                           alt=""
-                          className="transition-all duration-500 ease-in-out"
+                          className="transition-all duration-500 ease-in-out h-64 object-cover"
                         />
                         {/* Black overlay directly on the image */}
                         <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
@@ -70,12 +70,12 @@ const Areas = () => {
                       <div className="py-3">
                         <h3>{item.name}</h3>
                       </div>
-                      <div className="border-[#00008B] border-b-2 w-16 "></div>
+                      <div className="border-green-800 border-b-2 w-16 "></div>
                       <div>
                         <p className="py-2">{item.title}</p>
                       </div>
                     </div>
-                  </a>
+                  </div>
                 );
               })}
             </div>

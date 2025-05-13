@@ -2,44 +2,44 @@ import React from "react";
 import PageTitle from "@/components/PageTitle";
 import Image from "next/image";
 
-const services = [
+const pictures = [
   {
-    picture: "/images/tree-image-6-resize.jpg",
+    image: "/images/paint-gallery-1.jpg",
     name: "Tree Removal",
     title: "Tree Service",
   },
   {
-    picture: "/images/gallery-1.jpg",
+    image: "/images/paint-gallery-2.jpg",
     name: "Tree Planting",
     title: "Tree Service",
   },
   {
-    picture: "/images/gallery-2.jpg",
+    image: "/images/paint-gallery-3.jpg",
     name: "Tree Health Assessments",
     title: "Tree Service",
   },
   {
-    picture: "/images/gallery-3.jpg",
+    image: "/images/paint-gallery-4.jpg",
     name: "Cabling and Bracing",
     title: "Tree Service",
   },
   {
-    picture: "/images/gallery-4.jpg",
+    image: "/images/paint-gallery-5.jpg",
     name: "Land Clearing",
     title: "Tree Service",
   },
   {
-    picture: "/images/gallery-5.jpg",
+    image: "/images/paint-gallery-6.jpg",
     name: "Tree Fertilization",
     title: "Tree Service",
   },
   {
-    picture: "/images/gallery-6.jpg",
+    image: "/images/paint-gallery-7.jpg",
     name: "Tree Removal",
     title: "Tree Service",
   },
   {
-    picture: "/images/gallery-7.jpg",
+    image: "/images/paint-gallery-8.jpg",
     name: "Tree Planting",
     title: "Tree Service",
   },
@@ -52,21 +52,21 @@ const page = () => {
         <PageTitle title="Gallery" />
       </div>
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex justify-center items-center py-16">
+        <div className="flex flex-col xl:flex justify-center items-center ">
           <div className="flex flex-col justify-center items-center py-16">
-            <div className="grid grid-cols-1 xl:grid-cols-2 grid-rows-2 gap-8">
-              {services.map((service, index) => {
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
+              {pictures.map((picture, index) => {
                 return (
-                  <a href="/" key={index} className="group">
+                  <div href="/" key={index} className="group">
                     <div className="relative">
                       {/* Wrapper div around the image */}
                       <div className="relative overflow-hidden border border-black">
                         <Image
-                          src={service.picture}
+                          src={picture.image}
                           height={600}
                           width={600}
                           alt=""
-                          className="transition-all duration-500 ease-in-out"
+                          className="transition-all duration-500 ease-in-out object-cover"
                         />
                         {/* Black overlay directly on the image */}
                         <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
@@ -81,7 +81,7 @@ const page = () => {
                         <p className="py-2">{service.title}</p>
                       </div> */}
                     </div>
-                  </a>
+                  </div>
                 );
               })}
             </div>

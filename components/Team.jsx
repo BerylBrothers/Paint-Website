@@ -22,20 +22,20 @@ const items = [
 const Team = () => {
   return (
     <section className="bg-white">
-      <div className="container mx-auto py-12">
-        <div className="flex flex-col xl:flex justify-center items-center py-12">
+      <div className="container mx-auto ">
+        <div className="flex flex-col xl:flex justify-center items-center py-6">
           <div className="flex flex-col justify-center items-center">
             <div className="flex flex-col justify-center items-center p-6">
-              <p className="py-2">Professional Paint & House Maintenance</p>
+              <p className="py-2">Professional Land & Tree Maintenance</p>
               <div className="flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
             </div>
             <div className="py-12">
-              <h2>Our Painters</h2>
+              <h2>Our Founders</h2>
             </div>
             <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
               {items.map((item, index) => {
                 return (
-                  <a href="/" key={index} className="group">
+                  <div href="/" key={index} className="group">
                     <div className="relative">
                       {/* Wrapper div around the image */}
                       <div className="relative overflow-hidden">
@@ -54,12 +54,12 @@ const Team = () => {
                       <div className="py-2">
                         <h3>{item.name}</h3>
                       </div>
-                      <div className="border-[#00008B] border-b-2 w-16 "></div>
+                      <div className="border-green-800 border-b-2 w-16 "></div>
                       <div>
                         <p className="py-2">{item.title}</p>
                       </div>
                     </div>
-                  </a>
+                  </div>
                 );
               })}
             </div>

@@ -14,12 +14,12 @@ const cards = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    info: "9570-039-03904",
+    info: "9570 039 03904",
   },
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    info: "123 oak st.",
+    info: " Longwood, FL 32750",
   },
   {
     icon: <FaEnvelope />,
@@ -65,7 +65,7 @@ const page = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "bacb4a20-3433-4d36-be48-0fb135276c46");
+    formData.append("access_key", "bb4bf156-51a3-4a45-b1fe-5ebad937ad73");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -109,7 +109,7 @@ const page = () => {
       <div>
         <PageTitle title="Contact" />
       </div>
-      <div className="flex justify-center items-center mx-auto container py-16">
+      <div className="flex justify-center items-center mx-auto container py:0 xl:py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-16">
           {cards.map((card, index) => {
             return (
@@ -129,7 +129,7 @@ const page = () => {
       </div>
       <div className="flex xl:flex-row flex-col justify-between items-center ">
         {/* text container */}
-        <div className="relative flex xl:flex-row flex-col justify-center items-center border forest-bg-1 border-black  w-full xl:w-[50%] h-[110vh] xl:h-[90vh]">
+        <div className="relative flex xl:flex-row flex-col justify-center items-center border forest-bg-1 border-black  w-full xl:w-[50%] h-[125vh] xl:h-[110vh]">
           <div className="absolute inset-0 opacity-60 bg-black "></div>
           <form
             onSubmit={handleSubmit}
@@ -137,9 +137,9 @@ const page = () => {
           >
             <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center">
               <p className="text-white py-2">
-                Professional Paint & House Maintenance
+                Professional Land & Tree Maintenance
               </p>
-              <div className=" flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
+              <div className=" flex justify-center items-center border-green-800 border-b-2 w-16 "></div>
             </div>
             <h2 className="text-white">Contact</h2>
 
@@ -179,55 +179,91 @@ const page = () => {
               />
             </div>
 
-            <div className="text-white">
-              <p className="text-white ">Select House Painting Services</p>
+            <div className="text-white grid grid-cols-2 ">
+              <p className="text-white col-span-2">
+                Select Tree Removal Services
+              </p>
               <label className="flex items-center gap-2">
                 <input
                   type="checkbox"
-                  name="interiorPainting"
-                  checked={formData.selectedServices.includes(
-                    "interiorPainting"
-                  )}
+                  name="treeRemoval"
+                  checked={formData.selectedServices.includes("treeRemoval")}
                   onChange={handleServiceChange}
                   className="h-4 w-4"
                 />
-                Interior Painting
+                Tree Removal
               </label>
               <label className="flex items-center gap-2">
                 <input
                   type="checkbox"
-                  name="exteriorPainting"
-                  checked={formData.selectedServices.includes(
-                    "exteriorPainting"
-                  )}
+                  name="treeTrimming"
+                  checked={formData.selectedServices.includes("treeTrimming")}
                   onChange={handleServiceChange}
                   className="h-4 w-4"
                 />
-                Exterior Painting
+                Tree Trimming
               </label>
               <label className="flex items-center gap-2">
                 <input
                   type="checkbox"
-                  name="commercialPainting"
-                  checked={formData.selectedServices.includes(
-                    "commercialPainting"
-                  )}
+                  name="stumpGrinding"
+                  checked={formData.selectedServices.includes("strumpGrinding")}
                   onChange={handleServiceChange}
                   className="h-4 w-4"
                 />
-                Commercial Painting
+                Stump Grinding
               </label>
               <label className="flex items-center gap-2">
                 <input
                   type="checkbox"
-                  name="specialtyCoating"
+                  name="hedgeTrimming"
+                  checked={formData.selectedServices.includes("hedgeTrimming")}
+                  onChange={handleServiceChange}
+                  className="h-4 w-4"
+                />
+                Hedge Trimming
+              </label>
+              <label className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  name="grading"
+                  checked={formData.selectedServices.includes("grading")}
+                  onChange={handleServiceChange}
+                  className="h-4 w-4"
+                />
+                Grading
+              </label>
+              <label className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  name="sodMulchInstallation"
                   checked={formData.selectedServices.includes(
-                    "specialtyCoating"
+                    "sodMulchInstallation"
                   )}
                   onChange={handleServiceChange}
                   className="h-4 w-4"
                 />
-                Specialty Coating
+                Sod/Mulch Installation
+              </label>
+              <label className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  name="hardscaping"
+                  checked={formData.selectedServices.includes("hardscaping")}
+                  onChange={handleServiceChange}
+                  className="h-4 w-4"
+                />
+                Hardscaping
+              </label>
+              <label className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  name="landClearing"
+                  checked={formData.selectedServices.includes("landClearing")}
+                  onChange={handleServiceChange}
+                  className="h-4 w-4"
+                />
+                Land Clearing
               </label>
             </div>
 
@@ -243,17 +279,17 @@ const page = () => {
             {/* Submit button */}
             <div className="flex xl:justify-start justify-center">
               <button type="submit" className="button py-2">
-                Submit
+                Request a Quote
               </button>
             </div>
           </form>
         </div>
 
         {/* carousel container */}
-        <div className="relative flex flex-col justify-center items-center w-full xl:w-[50%] h-[85vh] xl:h-[90vh]">
+        <div className="relative flex flex-col justify-center items-center w-full xl:w-[50%] h-[125vh] xl:h-[110vh]">
           <div className="z-10" style={{ width: "100%", height: "100%" }}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509123!2d144.9537353153164!3d-37.81627997975157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11f1b3%3A0x5045675218ceed30!2sMelbourne%20CBD%2C%20Victoria%2C%20Australia!5e0!3m2!1sen!2sus!4v1616161616161!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27996.765416849335!2d-81.35320555!3d28.70173905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e76c87fb061ddf%3A0x4bbf95ec0e15a33c!2sLongwood%2C%20FL%2032750!5e0!3m2!1sen!2sus!4v1745973555243!5m2!1sen!2sus"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -269,3 +305,13 @@ const page = () => {
 };
 
 export default page;
+
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1795352.9134898128!2d-81.646989!3d28.493136099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa111ef8c24fea42b%3A0xd110901a958cdad!2sRoots%20and%20Canopy%20Tree%20Service!5e0!3m2!1sen!2sus!4v1746139613145!5m2!1sen!2sus"
+  width="600"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+></iframe>;

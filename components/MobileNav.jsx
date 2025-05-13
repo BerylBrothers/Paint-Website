@@ -77,8 +77,8 @@ const MobileNav = () => {
                 onClick={handleLinkClick}
                 className={`${
                   link.path === pathname &&
-                  "text-green-500 border-b-2 border-green-500"
-                } text-xl capitalize hover:text-green-500 transition-all`}
+                  "text-[#00008B] border-b-2 border-[#00008B]"
+                } text-xl capitalize hover:text-[#00008B] transition-all`}
               >
                 {link.name}
               </Link>
