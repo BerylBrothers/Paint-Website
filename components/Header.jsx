@@ -8,7 +8,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 left-0 right-0 py-2 xl:py-0 text-white bg-[#1098F7] border-b border-white z-50">
+    <header className="sticky top-0 left-0 right-0 py-2 xl:py-0 text-white rainbow-header border-b border-white z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <a

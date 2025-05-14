@@ -8,7 +8,7 @@ const items = [
     image: "/images/tiny-phone-image.jpg",
     action: "1 Request Us",
     description:
-      "Initiate the process by reaching out to our team with your tree service needs.",
+      "Initiate the process by reaching out to our team with your house painting needs.",
   },
   {
     image: "/images/tiny-house.jpg",
@@ -18,21 +18,21 @@ const items = [
   },
   {
     image: "/images/tiny-image-2.jpg",
-    action: "3 Cutting Trees",
+    action: "3 Painting Houses",
     description:
-      "Our team will arrive at your location to efficiently cut down the trees.",
+      "Our team will arrive at your location to efficiently paint your home or business.",
   },
   {
     image: "/images/tiny-image-3.jpg",
     action: "4 Service Done",
     description:
-      "Once the tree cutting is complete, we will clean up the area, removing debris.",
+      "Once the the job is complete, we will clean up the area, and leave the property.",
   },
 ];
 
 const ParallaxComponent = () => {
   return (
-    <section className="relative w-full h-[100vh] xl:h-[40vh] flex items-center justify-center">
+    <section className="relative w-full h-min-screen xl:h-[40vh] flex items-center justify-center">
       <div className="parallax-background">
         <div className="overlay"></div>
 

@@ -46,7 +46,7 @@ const Footer = () => {
   const pathname = usePathname();
 
   return (
-    <footer className="py-6 xl:py-6 text-white bg-[#1098F7] ">
+    <footer className="py-6 xl:py-6 text-white rainbow-header ">
       <div className="container mx-auto grid grid-cols-1 xl:grid-cols-3 gap-6">
         {/* Image Column */}
         <div className="flex justify-center xl:justify-start items-center mb-8 xl:mb-0">

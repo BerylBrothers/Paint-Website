@@ -79,7 +79,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex flex-col justify-center items-center w-full forest-bg-2 h-[35vh]">
+      <div className="relative flex flex-col justify-center items-center w-full paint-bg-1 h-[35vh]">
         <div className="absolute inset-0 opacity-60 bg-black "></div>
         {/* Display only the current testimonial */}
         <div className="relative z-10 ">
@@ -96,19 +96,19 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col xl:flex justify-center items-center py-12">
+      <div className="flex flex-col xl:flex justify-center items-center py-6">
         <div className="flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center items-center p-6">
-            <p className="py-2">Professional Paint & House Maintenance</p>
+            <p className="py-2">Professional Land & Tree Maintenance</p>
             <div className="flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
           </div>
           <div className="py-12">
-            <h2>Our Painters</h2>
+            <h2>Our Founders</h2>
           </div>
           <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
             {items.map((item, index) => {
               return (
-                <a href="/" key={index} className="group">
+                <div href="/" key={index} className="group">
                   <div className="relative">
                     {/* Wrapper div around the image */}
                     <div className="relative overflow-hidden">
@@ -132,7 +132,7 @@ const page = () => {
                       <p className="py-2">{item.title}</p>
                     </div>
                   </div>
-                </a>
+                </div>
               );
             })}
           </div>

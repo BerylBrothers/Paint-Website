@@ -159,6 +159,31 @@ textarea::placeholder {
   background-image: url("/images/paint-image-4.jpg");
 }
 
+
+.paint-bg-1 {
+  background-image: url("/images/paint-can.jpg");
+  
+}
+
+.paint-bg-2 {
+  background-image: url("/images/paint-bg-1.jpg");
+  
+}
+
+.rainbow-header {
+  background: linear-gradient(90deg, 
+      red, 
+      orange, 
+      yellow, 
+      green, 
+      blue, 
+      indigo, 
+      violet);
+  color: white; /* Text color */
+  text-align: center;
+
+}
+
 .parallax-background2 {
   position: fixed; /* Fix background to viewport */
   top: 0;

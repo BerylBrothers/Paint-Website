@@ -34,6 +34,8 @@ const page = () => {
     lastname: "",
     email: "",
     phone: "",
+    address: "",
+    zipcode: "",
     service: "",
     message: "",
     selectedServices: [], // Array to store selected services
@@ -65,7 +67,7 @@ const page = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "bb4bf156-51a3-4a45-b1fe-5ebad937ad73");
+    formData.append("access_key", "bacb4a20-3433-4d36-be48-0fb135276c46 ");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -88,6 +90,8 @@ const page = () => {
           lastname: "",
           email: "",
           phone: "",
+          address: "",
+          zipcode: "",
           service: "",
           message: "",
           selectedServices: [],
@@ -129,7 +133,7 @@ const page = () => {
       </div>
       <div className="flex xl:flex-row flex-col justify-between items-center ">
         {/* text container */}
-        <div className="relative flex xl:flex-row flex-col justify-center items-center border forest-bg-1 border-black  w-full xl:w-[50%] h-[125vh] xl:h-[110vh]">
+        <div className="relative flex xl:flex-row flex-col justify-center items-center border paint-bg-2 border-black  w-full xl:w-[50%] h-[125vh] xl:h-[110vh]">
           <div className="absolute inset-0 opacity-60 bg-black "></div>
           <form
             onSubmit={handleSubmit}
@@ -139,7 +143,7 @@ const page = () => {
               <p className="text-white py-2">
                 Professional Land & Tree Maintenance
               </p>
-              <div className=" flex justify-center items-center border-green-800 border-b-2 w-16 "></div>
+              <div className=" flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
             </div>
             <h2 className="text-white">Contact</h2>
 
@@ -177,6 +181,22 @@ const page = () => {
                 onChange={handleInputChange}
                 value={formData.phone}
               />
+              <Input
+                name="address"
+                type="address"
+                placeholder="Address"
+                className="bg-white text-black"
+                onChange={handleInputChange}
+                value={formData.address}
+              />
+              <Input
+                name="zipcode"
+                type="zipcode"
+                placeholder="Zipcode"
+                className="bg-white text-black"
+                onChange={handleInputChange}
+                value={formData.zipcode}
+              />
             </div>
 
             <div className="text-white grid grid-cols-2 ">
@@ -186,84 +206,74 @@ const page = () => {
               <label className="flex items-center gap-2">
                 <input
                   type="checkbox"
-                  name="treeRemoval"
-                  checked={formData.selectedServices.includes("treeRemoval")}
-                  onChange={handleServiceChange}
-                  className="h-4 w-4"
-                />
-                Tree Removal
-              </label>
-              <label className="flex items-center gap-2">
-                <input
-                  type="checkbox"
-                  name="treeTrimming"
-                  checked={formData.selectedServices.includes("treeTrimming")}
-                  onChange={handleServiceChange}
-                  className="h-4 w-4"
-                />
-                Tree Trimming
-              </label>
-              <label className="flex items-center gap-2">
-                <input
-                  type="checkbox"
-                  name="stumpGrinding"
-                  checked={formData.selectedServices.includes("strumpGrinding")}
-                  onChange={handleServiceChange}
-                  className="h-4 w-4"
-                />
-                Stump Grinding
-              </label>
-              <label className="flex items-center gap-2">
-                <input
-                  type="checkbox"
-                  name="hedgeTrimming"
-                  checked={formData.selectedServices.includes("hedgeTrimming")}
-                  onChange={handleServiceChange}
-                  className="h-4 w-4"
-                />
-                Hedge Trimming
-              </label>
-              <label className="flex items-center gap-2">
-                <input
-                  type="checkbox"
-                  name="grading"
-                  checked={formData.selectedServices.includes("grading")}
-                  onChange={handleServiceChange}
-                  className="h-4 w-4"
-                />
-                Grading
-              </label>
-              <label className="flex items-center gap-2">
-                <input
-                  type="checkbox"
-                  name="sodMulchInstallation"
+                  name="interiorPainting"
                   checked={formData.selectedServices.includes(
-                    "sodMulchInstallation"
+                    "interiorPainting"
                   )}
                   onChange={handleServiceChange}
                   className="h-4 w-4"
                 />
-                Sod/Mulch Installation
+                Interior Painting
               </label>
               <label className="flex items-center gap-2">
                 <input
                   type="checkbox"
-                  name="hardscaping"
-                  checked={formData.selectedServices.includes("hardscaping")}
+                  name="exteriorPainting"
+                  checked={formData.selectedServices.includes(
+                    "exteriorPainting"
+                  )}
                   onChange={handleServiceChange}
                   className="h-4 w-4"
                 />
-                Hardscaping
+                Exterior Painting
               </label>
               <label className="flex items-center gap-2">
                 <input
                   type="checkbox"
-                  name="landClearing"
-                  checked={formData.selectedServices.includes("landClearing")}
+                  name="commercialPainting"
+                  checked={formData.selectedServices.includes(
+                    "commercialPainting"
+                  )}
                   onChange={handleServiceChange}
                   className="h-4 w-4"
                 />
-                Land Clearing
+                Commercial Painting
+              </label>
+              <label className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  name="specialtyCoating"
+                  checked={formData.selectedServices.includes(
+                    "specialtyCoating"
+                  )}
+                  onChange={handleServiceChange}
+                  className="h-4 w-4"
+                />
+                Specialty Coating
+              </label>
+              <label className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  name="cabinetPainting"
+                  checked={formData.selectedServices.includes(
+                    "caninetPainting"
+                  )}
+                  onChange={handleServiceChange}
+                  className="h-4 w-4"
+                />
+                Cabinet Painting
+              </label>
+              <label className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  name="deckAndFencePainting"
+                  checked={formData.selectedServices.includes(
+                    "deckAndFencePainting"
+                  )}
+                  onChange={handleServiceChange}
+                  className="h-4 w-4"
+                />
+                Deck and Fence Painting
               </label>
             </div>
 
