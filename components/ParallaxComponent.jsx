@@ -32,7 +32,7 @@ const items = [
 
 const ParallaxComponent = () => {
   return (
-    <section className="relative w-full h-min-screen py-4 xl:py-0 xl:h-[40vh] flex items-center justify-center">
+    <section className="relative w-full h-min-screen xl:h-[40vh] flex items-center justify-center">
       <div className="parallax-background py-4 xl:py-0">
         <div className="overlay"></div>
 
