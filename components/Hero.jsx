@@ -7,7 +7,7 @@ const Hero = () => {
 
   useEffect(() => {
     const image = new Image();
-    image.src = "/images/paint-hero.jpg";
+    image.src = "/images/paint-hero-resize.jpg";
     image.onload = () => setImageLoaded(true);
   }, []);
 
@@ -25,7 +25,7 @@ const Hero = () => {
       <section
         className="relative w-full h-[85vh] xl:h-screen bg-transparent bg-cover bg-center transition-opacity duration-500 opacity-100"
         style={{
-          backgroundImage: 'url("/images/paint-hero.jpg")',
+          backgroundImage: 'url("/images/paint-hero-resize.jpg")',
         }}
       >
         {/* Dark overlay 1*/}
