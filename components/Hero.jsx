@@ -44,7 +44,7 @@ const Hero = () => {
             </div>
 
             <h1 className="flex xl:justify-start justify-center text-center xl:text-left text-4xl font-bold xl:text-8xl xl:max-w-[900px]">
-              Color Your World with Every Stroke
+              Color Your World With Every Stroke
             </h1>
 
             <div className="flex xl:justify-start justify-center">
