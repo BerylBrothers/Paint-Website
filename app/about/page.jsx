@@ -33,7 +33,7 @@ const page = () => {
             <div className="text-center xl:text-left">
               <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center p-6">
                 <p className="py-2 whitespace-nowrap">
-                  Professional Land & Tree Maintenance
+                  Professional Paint & House Maintenance
                 </p>
                 <div className=" flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
               </div>
@@ -41,28 +41,30 @@ const page = () => {
                 Our Mission <span className="text-[#00008B]">Statement </span>
               </h2>
               <p className="max-w-[600px] p-6">
-                After years of working in the tree industry, Carlos and Amina
-                felt led to serve our local Central Florida community as a team.
-                We are passionate about beautifying our community and keeping
-                homes safe from potential tree damage. We strive to set
-                ourselves apart by leaving each property more beautiful and safe
-                than when we arrived. We pour our hearts and soul into the
-                business and our customers can feel the difference. You may also
-                see our two kids and dog occasionally checking on the site or
-                bringing lunch!
+                This house painting service specializes in enhancing the beauty
+                and value of residential properties through high-quality
+                painting solutions. With a team of skilled professionals, they
+                offer a comprehensive range of services, including interior and
+                exterior painting, surface preparation, and color consultations.
+                Dedicated to using premium, eco-friendly materials, the service
+                ensures that every project is completed with attention to detail
+                and craftsmanship. They understand the importance of a home’s
+                aesthetic and work closely with clients to bring their vision to
+                life, whether it’s a single room refresh or a complete exterior
+                transformation.
                 <br />
                 <br />
-                With years of experience in the industry, we are equipped to
-                handle a wide range of tree care services, from pruning and
-                trimming to complete tree removal and stump grinding. We take
-                great pride in our commitment to safety and environmental
-                responsibility, ensuring that all our practices are sustainable
-                and beneficial to the local ecosystem. Our passion for trees and
-                dedication to our community drives us to provide exceptional
-                service that not only enhances the beauty of your property but
-                also promotes the health and longevity of your trees. Trust us
-                to treat your landscape as if it were our own, delivering
-                results that you can admire for years to come.
+                This house painting service specializes in enhancing the beauty
+                and value of residential properties through high-quality
+                painting solutions. With a team of skilled professionals, they
+                offer a comprehensive range of services, including interior and
+                exterior painting, surface preparation, and color consultations.
+                Dedicated to using premium, eco-friendly materials, the service
+                ensures that every project is completed with attention to detail
+                and craftsmanship. They understand the importance of a home’s
+                aesthetic and work closely with clients to bring their vision to
+                life, whether it’s a single room refresh or a complete exterior
+                transformation.
               </p>
             </div>
           </div>
@@ -99,7 +101,7 @@ const page = () => {
       <div className="flex flex-col xl:flex justify-center items-center py-6">
         <div className="flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center items-center p-6">
-            <p className="py-2">Professional Land & Tree Maintenance</p>
+            <p className="py-2">Professional Paint & House Maintenance</p>
             <div className="flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
           </div>
           <div className="py-12">

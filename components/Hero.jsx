@@ -38,13 +38,13 @@ const Hero = () => {
           <div className="flex flex-col xl:justify-start justify-center">
             <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center ">
               <p className=" flex xl:justify-start xl:items-start items-center justify-center mt-4 text-lg py-2 ">
-                Reliable, Safe, and Efficient Tree Removal
+                Reliable, Safe, and Efficient Painting Services
               </p>
-              <div className="flex xl:justify-start justify-center xl:items-start items-center border-green-800 border-b-2 w-16 "></div>
+              <div className="flex xl:justify-start justify-center xl:items-start items-center border-[#00008B] border-b-2 w-16 "></div>
             </div>
 
             <h1 className="flex xl:justify-start justify-center text-center xl:text-left text-4xl font-bold xl:text-8xl xl:max-w-[900px]">
-              Professional Tree Cutting Services
+              Color Your World with Every Stroke!
             </h1>
 
             <div className="flex xl:justify-start justify-center">

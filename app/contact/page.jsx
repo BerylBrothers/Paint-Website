@@ -141,7 +141,7 @@ const page = () => {
           >
             <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center">
               <p className="text-white py-2">
-                Professional Land & Tree Maintenance
+                Professional Paint & House Maintenance
               </p>
               <div className=" flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
             </div>
@@ -201,7 +201,7 @@ const page = () => {
 
             <div className="text-white grid grid-cols-2 ">
               <p className="text-white col-span-2">
-                Select Tree Removal Services
+                Select House Painting Services
               </p>
               <label className="flex items-center gap-2">
                 <input

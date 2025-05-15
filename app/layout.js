@@ -1,8 +1,9 @@
-import { Geist, Geist_Mono, Montserrat, Righteous, Inter } from "next/font/google";
+import { Geist, Geist_Mono, Montserrat, Righteous, Inter, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TopBar from "@/components/TopBar";
+import BottomBar from "@/components/BottomBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,6 +17,11 @@ const geistMono = Geist_Mono({
 
 const montserrat = Montserrat({
   variable: "--font-monserrat",
+  subsets: ["latin"],
+})
+
+const openSans = Open_Sans({
+  variable: "--open-sans",
   subsets: ["latin"],
 })
 
@@ -48,11 +54,12 @@ export default function RootLayout({ children }) {
       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
       </head>
       <body
-        className={`${inter.variable} antialiased`}>
+        className={`${openSans.variable} antialiased`}>
           <TopBar />
           <Header/>
         {children}
         <Footer />
+        <BottomBar />
       </body>
     </html>
   );
