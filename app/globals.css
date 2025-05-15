@@ -153,10 +153,16 @@ textarea::placeholder {
 
 .forest-bg-1 {
   background-image: url("/images/paint-image-3.jpg");
+  background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 .forest-bg-2 {
   background-image: url("/images/paint-image-4.jpg");
+  background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 
