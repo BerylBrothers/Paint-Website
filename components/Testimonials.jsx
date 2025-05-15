@@ -45,51 +45,63 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="pt-12">
+    <section className="">
       <div className=" mx-auto">
         <div className="flex xl:flex-row flex-col justify-between ">
           {/* text container */}
-          <div className="relative flex xl:flex-row flex-col justify-center items-center border forest-bg-1 border-black  w-full xl:w-[50%] h-[70vh]">
-            <div className="absolute inset-0 opacity-60 bg-[#1098F7]"></div>
+          <div className="relative flex xl:flex-row flex-col justify-center items-center border forest-bg-1 border-black  w-full xl:w-[50%] h-[85vh] xl:h-[70vh]">
+            <div className="absolute inset-0 opacity-60 bg-blue-300"></div>
             <div className="flex flex-col justify-center items-center text-center xl:text-left p-6 z-10">
-              <h2 className="p-6 max-w-full xl:max-w-[500px] text-center">
-                House Painting Is An Easy Task
+              <h2 className="p-6 max-w-full xl:max-w-[800px] text-center">
+                Committed To Exceeding
+                <br />
+                Your Expectations
               </h2>
               <p className="max-w-[600px] p-6">
-                Higuera's paint service is proud to serve the community with
-                competitive prices.
+                At our painting company, we focus on fostering strong
+                relationships with our clients by offering tailored services and
+                attentive support. Our dedicated team takes the time to
+                understand your specific painting needs, ensuring you feel
+                valued and informed throughout the entire process.
                 <br />
                 <br />
-                Since the start of our company, we have strived to obtain the
-                best quality tools so that the jobs are done to the highest
-                standards.
+                We pride ourselves on clear communication, prompt responses, and
+                a steadfast commitment to delivering exceptional results. Your
+                satisfaction is our top priority, and we are dedicated to
+                exceeding your expectations with every project we undertake.
               </p>
               <div className="p-6"></div>
             </div>
           </div>
 
           {/* carousel container */}
-          <div className="relative flex flex-col justify-center items-center w-full xl:w-[50%] forest-bg-2 h-[70vh]">
+          <div className="relative flex flex-col justify-center items-center w-full xl:w-[50%] forest-bg-2 h-[85vh] xl:h-[70vh]">
             <div className="absolute inset-0 opacity-60 bg-black "></div>
             {/* Display only the current testimonial */}
             <div className="relative z-10">
               <div className="flex flex-col justify-center items-center text-center xl:text-left p-6 z-10 text-white">
-                <h2 className="p-6 max-w-full xl:max-w-[375px] text-center">
-                  Join Our Paint Service
+                <h2 className="p-6 max-w-full xl:max-w-[600px] text-center">
+                  We Strive For Customer Satisfaction
                 </h2>
                 <p className="max-w-[600px] p-6">
-                  Higuera's paint service is proud to serve the community with
-                  competitive prices.
+                  At our painting company, our customers are at the heart of
+                  everything we do. We believe in building lasting relationships
+                  with our clients by providing personalized service and
+                  attentive care.
                   <br />
                   <br />
-                  Since the start of our company, we have strived to obtain the
-                  best quality tools so that the jobs are done to the highest
-                  standards.
+                  Our team is dedicated to understanding your unique painting
+                  needs and ensuring that you feel valued and supported
+                  throughout the entire process. We take pride in our
+                  transparent communication, timely responses, and commitment to
+                  delivering high-quality results. Whether you require interior
+                  painting, exterior touch-ups, or a complete home makeover, we
+                  are here to bring your vision to life.
                 </p>
                 <div className="p-6">
                   {/* <a href="#" className="button z-10">
-                    Hover me
-                  </a> */}
+                  Hover me
+                </a> */}
                 </div>
               </div>
             </div>

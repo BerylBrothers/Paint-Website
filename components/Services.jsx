@@ -4,31 +4,31 @@ import Image from "next/image";
 const testimonials = [
   {
     picture: "/images/google_small_icon.svg",
-    name: "Wendy Groth",
+    name: "Sarah Thompson",
     rating: 5,
     review:
-      "I had a huge dead tree that needed to come down. They are fantastic! They cut the tree and hauled away the debris for a very fair price and in just a few hours. I was sad to see the tree go but Roots and Canopy made the process easy and simple. Thank you so much! I would recommend them for any job, large or small. A plus!",
+      "I recently hired this house painting company to refresh the exterior of my home, and I couldn't be happier with the results! The team was professional, punctual, and paid great attention to detail. They helped me choose the perfect color scheme, and the transformation is stunning. I highly recommend their services to anyone looking to enhance their home's curb appeal!",
   },
   {
     picture: "/images/google_small_icon.svg",
-    name: "Barrett Schemmel",
+    name: "Mark Johnson",
     rating: 5,
     review:
-      "Roots and Canopy Tree service did a great job replacing my shrubs. They showed up on time, did every thing they said they would. They protected the lawn and cleaned up.All this for a fair price. HIGHLY RECOMMEND. 5 stars",
+      "From start to finish, my experience with this painting company was fantastic. The crew was friendly and respectful, and they worked efficiently to complete the job ahead of schedule. The quality of their work is top-notch, and I appreciate how they took the time to clean up after themselves. I will definitely be using them again for future projects.",
   },
   {
     picture: "/images/google_small_icon.svg",
-    name: "Terrill Coley",
+    name: "Emily Rodriguez",
     rating: 5,
     review:
-      "I couldn't be happier with the yard work that was done! The team went above and beyond—every detail was handled with care and precision. The grass is perfectly trimmed, the edges are neat, and the entire yard looks clean and professionally maintained. They even took the time to clear out debris and leave everything spotless. It’s honestly the best my yard has looked in a long time. If you're looking for reliable, top-notch service, this is the crew to call. Highly recommend!",
+      "I can't say enough good things about this house painting company! They painted the interior of my home, and the results exceeded my expectations. The painters were meticulous and took the time to ensure every corner was perfect. They were also very accommodating to my schedule. I’ve received so many compliments from friends and family. I will be recommending them to everyone!",
   },
   {
     picture: "/images/google_small_icon.svg",
-    name: "Tom Calato",
+    name: "David Lee",
     rating: 5,
     review:
-      "Awesome communication prior to the work, followed up with superior trimming of my large oak. I cannot say enough good things about their professionalism and quality work. Not only did I get a very competitive and very fair price, I ended up feeling like I got a tremendous value. Hauling away the branches was done quickly and the thorough cleaning up of the yard was unexpected. You can't go wrong!",
+      "I was nervous about hiring a painting company, but this team made the process so easy and stress-free. They provided a detailed estimate and were transparent about the timeline and costs. The quality of their work is exceptional, and they truly transformed my living space. I’m thrilled with the outcome and would recommend them to anyone looking for reliable and skilled painters.",
   },
 ];
 
