@@ -70,7 +70,7 @@ const page = () => {
           </div>
           {/* Image Section */}
 
-          <div className="flex flex-col xl:flex-row pt-6 pb-3 xl:pb-6 xl:order-1 order-1">
+          <div className="flex flex-col xl:flex-row pt-12 pb-3 xl:pb-6 xl:order-1 order-1">
             <Image
               src={"/images/paint-about.jpg"}
               height={800}

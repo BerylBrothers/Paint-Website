@@ -4,10 +4,10 @@ import Image from "next/image";
 const About = () => {
   return (
     <section className="bg-white z-10 text-black">
-      <div className="container mx-auto pt-6">
+      <div className="container mx-auto pt-12 xl:pt-0 ">
         <div className="flex xl:flex-row flex-col justify-between items-center gap-4">
           {/* Image Section */}
-          <div className="flex flex-col xl:flex-row py-6 xl:py-12 p-6">
+          <div className="flex flex-col xl:flex-row py-0 xl:py-12 p-6">
             <Image
               src={"/images/paint-image-1.jpg"}
               height={600}

@@ -24,6 +24,11 @@ h3{
   @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
 }
 
+h4{
+  @apply text-[16px] xl:text-[20px] leading-[1.1] font-semibold;
+}
+
+
 .hero-bg{
   @apply font-primary bg-gradient-to-b from-[#33b8bd] via-[#0e53d3] to-[#1e3c72] text-white leading-loose;
 }

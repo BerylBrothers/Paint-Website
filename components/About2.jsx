@@ -4,7 +4,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <section className="bg-white">
-      <div className="container mx-auto py-6">
+      <div className="container mx-auto py-0 xl:py-12">
         <div className="flex xl:flex-row flex-col justify-between items-center gap-4">
           {/* Text Section */}
           <div className="flex flex-col xl:order-1 order-2 justify-center items-center text-left">
@@ -46,7 +46,7 @@ const About = () => {
           </div>
           {/* Image Section */}
 
-          <div className="flex flex-col xl:flex-row py-12 xl:order-1 order-1 px-6 xl:px-16">
+          <div className="flex flex-col xl:flex-row xl:order-1 order-1 px-6 xl:px-16">
             <Image
               src={"/images/paint-image-2.jpg"}
               height={800}
