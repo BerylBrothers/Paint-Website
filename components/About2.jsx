@@ -4,7 +4,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <section className="bg-white">
-      <div className="container mx-auto py-0 xl:py-12">
+      <div className="container mx-auto pb-12 pt-0 xl:pt-12">
         <div className="flex xl:flex-row flex-col justify-between items-center gap-4">
           {/* Text Section */}
           <div className="flex flex-col xl:order-1 order-2 justify-center items-center text-left">
