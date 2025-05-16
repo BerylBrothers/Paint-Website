@@ -10,7 +10,9 @@ const About = () => {
           <div className="flex flex-col xl:order-1 order-2 justify-center items-center text-left">
             <div className="text-center xl:text-left">
               <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center p-6">
-                <p className="py-2">Professional Paint & House Maintenance</p>
+                <p className="py-2 whitespace-nowrap">
+                  Professional Paint & House Maintenance
+                </p>
                 <div className=" flex justify-center items-center border-[#00008B] border-b-2 w-16 "></div>
               </div>
               <h2 className=" p-6 max-w-full xl:max-w-[400px]">
