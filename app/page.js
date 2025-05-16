@@ -7,6 +7,7 @@ import About2 from "@/components/About2";
 import ParallaxComponent from "@/components/ParallaxComponent";
 import Testimonials from "@/components/Testimonials";
 import Areas from "@/components/Areas";
+import CallToAction from "@/components/CallToAction";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
 <About />
 <About2 />
 <Services />
+<CallToAction />
 <Team />
 <Testimonials />
 <Areas />

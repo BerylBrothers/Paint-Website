@@ -181,6 +181,14 @@ textarea::placeholder {
   
 }
 
+.paint-bg-3 {
+  background-image: url("/images/color-spectrum.jpg");
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+
 .rainbow-header {
   background: linear-gradient(90deg, 
       red, 
