@@ -73,7 +73,7 @@ const page = () => {
                         <h3 className="text-center">{service.name}</h3>
                       </div>
                       <div className="flex justify-center">
-                        <div className="border-green-800 border-b-2 w-16 "></div>
+                        <div className="border-[#00008B] border-b-2 w-16 "></div>
                       </div>
 
                       <div className="flex justify-center">
